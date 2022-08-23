@@ -4,6 +4,8 @@ window.onload = function () {
 		once: true,
 		duration: 2000,
 	});
+
+
 	// Слайдер вина
 	if ($('.item-slider').length != 0) {
 		let items = $('.item-slider .item'),
@@ -78,7 +80,7 @@ function PopupTimer(flag) {
 			blackout.addClass('active').animate({ opacity: 1 }, delay2Open);
 		}, 3000);
 		setTimeout(function () {
-			popup.addClass('active').animate({ opacity: 1, top: '12.7em' }, delayOpen);
+			popup.addClass('active').animate({ opacity: 1 }, delayOpen);
 		}, 3300);
 	}
 }
@@ -103,7 +105,7 @@ function OpenPopup(id) {
 	blackout.addClass('active').attr('data-popup', id).animate({ opacity: 1 }, delay2Open);
 
 	setTimeout(function () {
-		popup.addClass('active').animate({ opacity: 1, top: '12.7em' }, delayOpen);
+		popup.addClass('active').animate({ opacity: 1 }, delayOpen);
 	}, 300);
 }
 function ClosePopup(id) {
@@ -144,3 +146,21 @@ Fancybox.bind('[data-fancybox="gallery"]', {
 	},
 });
 
+
+const searchBtn = document.querySelector('.js-search')
+const searchBtnInput = document.querySelector('.search-input')
+const searchBtnCross = document.querySelector('.js-cross')
+searchBtn.addEventListener('click', ()=> {
+	searchBtnInput.classList.add('ON6A2O')
+	searchBtnCross.classList.add('active')
+
+	console.log('loh')
+})
+
+searchBtnCross.addEventListener('click', ()=> {
+	searchBtnInput.classList.remove('ON6A2O')
+		searchBtnCross.classList.remove('active')
+		console.log('this')
+	console.log('this2')
+
+})
