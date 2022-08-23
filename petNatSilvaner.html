@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VUBES</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+    <div class="left-menu">
+        <a href="/" title="Главная">
+            <div class="logo">
+                <div class="images">
+                </div>
+                <div class="text-logo">
+                    <span class="head">VIBES</span>
+                    <span class="down">VINICULTURAL SOCIETY</span>
+                </div>
+            </div>
+        </a>
+        <div class="link-menu">
+            <div class="profile">
+                <a href="javascript:" onclick="OpenPopup('login')" title="Профиль">
+                    <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg"
+                         width="50" height="50"
+                         viewBox="0 0 50 50">
+                        <g>
+                            <path
+                                    d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="basket">
+                <a href="#" title="Корзина">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
+                         viewBox="5.7 0 105.5 126.1"
+                         preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
+                        <path
+                                d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z">
+                        </path>
+                        <path
+                                d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">
+                        </path>
+                        <text x="58.5" y="77" dy=".35em" text-anchor="middle" data-hook="items-count">
+                            0
+                        </text>
+                    </svg>
+                    <span class="quantity">0</span>
+                </a>
+            </div>
+            <div class="feedback">
+                <a href="javascript:" onclick="OpenPopup('call-back')" title="Обратная связь">
+                    <img src="images/call-phone.webp" alt="Обратная связь">
+                    <span>CALL BACK</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="right-menu">
+        <div class="navbar">
+            <a href="./about-the-project.html"" title="О VIBES">О VIBES</a>
+            <div class="sun-menu__wrp"><a href="./wine-list.html" title="НАШИ ВИНА" class="sub-menu">НАШИ ВИНА </a>
+                <ul class="sub-menu__list">
+                    <li><a href="./silvaner.html">2021 | SILVANER</a></li>
+                    <li><a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a></li>
+                    <li><a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a></li>
+                    <li><a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANC-PINOT NOIR</a></li>
+                    <li><a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a></li>
+                    <li><a href="./petNatSilvaner.html">2021 | PET-NAT SILVANER</a></li>
+                    <li><a href="./petNatPinotGris.html">2021 | PET-NAT PINOT GRIS</a></li>
+                </ul>
+            </div>
+
+            <a href="./story.html" title="INSPIRATION">INSPIRATION</a>
+            <a href="./shops.html" title="ГДЕ КУПИТЬ?">ГДЕ КУПИТЬ?</a>
+            <a href="#" title="INSPIRATION">BLOG</a>
+            <a href="./store.html" title="INSPIRATION">STORE</a>
+        </div>
+    </div>
+</header>
+<section>
+    <div data-mesh-id="ContainercwpaninlineContent-gridContainer"
+         data-testid="mesh-container-content">
+        <div id="comp-l473me38" class="content" style="visibility: inherit;"
+             data-angle="0" data-angle-style-location="style"
+             data-screen-in-hide="done">
+            <div class="content__bg" data-aos="fade-left" data-testid="container-bg"></div>
+            <div data-mesh-id="comp-l473me38inlineContent"
+                 data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l473me38inlineContent-gridContainer"
+                     data-testid="mesh-container-content">
+                    <div id="comp-l34sgk4b" data-aos="fade-left" class="_1KV2M"
+                         style="visibility: inherit;" data-angle="0"
+                         data-angle-style-location="style"
+                         data-screen-in-hide="done">
+                        <div data-mesh-id="comp-l34sgk4binlineContent"
+                             data-testid="inline-content" class="">
+                            <div data-mesh-id="comp-l34sgk4binlineContent-gridContainer"
+                                 data-testid="mesh-container-content">
+                                <div id="comp-l34o73ts" class="_2Hij5 _3bcaz"
+                                     data-testid="richTextElement">
+                                    <p
+                                            class="font_7"
+                                            style="font-size:20px; line-height:normal; text-align:justify;">
+                              <span style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
+                                      style="color:#131313;"><span
+                                      style="font-size:18px;"><span
+                                      style="letter-spacing:normal;">Особенности производства</span></span></span></span><span
+                                            style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                            style="color:#131313;"><span
+                                            style="font-size:18px;"><span
+                                            style="letter-spacing:normal;">:</span></span></span></span>
+                                    </p>
+                                </div>
+                                <div id="comp-l34s9s3a" class="_2Hij5 _3bcaz"
+                                     data-testid="richTextElement">
+                                    <p
+                                            class="font_7"
+                                            style="font-size:16px; line-height:normal;">
+                              <span style="font-size:16px;"><span
+                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                      style="color:#131313;"><span
+                                      style="letter-spacing:normal;">Древний способ изготовления игристого вина. Петийан Натюрель с французского – натуральное игристое, особенный метод производства которого заключается в однократном брожении виноградного сока на натуральных дрожжах в бутылке без добавления серы. Начало брожения – конец сентября, ручной дегоржаж – конец января. Органолептика хорошего пет-ната - это нечто среднее между классическим игристым вином, нефильтрованным пшеничным пивом и нормандским сидром. Может спонтанно выбродить в «сухую», в других случаях сохраняется небольшое количество остаточного сахара. Продукт получается необычайно легким, свежим, с низким содержанием алкоголя.</span></span></span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comp-l34sgmun" data-aos="fade-left" data-aos-delay="1000" class="_1KV2M"
+                         style="visibility: inherit;" data-angle="0"
+                         data-angle-style-location="style"
+                         data-screen-in-hide="done">
+                        <div data-mesh-id="comp-l34sgmuninlineContent"
+                             data-testid="inline-content" class="">
+                            <div data-mesh-id="comp-l34sgmuninlineContent-gridContainer"
+                                 data-testid="mesh-container-content">
+                                <div id="comp-l34sae13" class="_2Hij5 _3bcaz"
+                                     data-testid="richTextElement">
+                                    <p
+                                            class="font_7"
+                                            style="font-size:18px; line-height:normal; text-align:justify;">
+                              <span style="font-size:18px;"><span
+                                      style="color:#131313;"><span
+                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
+                                      style="letter-spacing:normal;">Органолептика</span></span><span
+                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                      style="letter-spacing:normal;">:</span></span></span></span>
+                                    </p>
+                                </div>
+                                <div id="comp-l34sbc2e" class="_2Hij5 _3bcaz"
+                                     data-testid="richTextElement">
+                                    <p
+                                            class="font_7"
+                                            style="font-size:16px; line-height:normal;">
+                              <span style="font-size:16px;"><span
+                                      style="color:#131313;"><span
+                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
+                                      style="letter-spacing:normal;">Ароматика</span></span><span
+                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                      style="letter-spacing:normal;"> - свежая, цитрусовая, взрывная, цедровая с кориандром и пшеницей, дрожжевая выпечка с лимонным курдом.</span></span></span></span>
+                                    </p>
+                                </div>
+                                <div id="comp-l34sd1kg" class="_2Hij5 _3bcaz"
+                                     data-testid="richTextElement">
+                                    <p
+                                            class="font_7"
+                                            style="font-size:16px; line-height:normal;">
+                              <span style="font-size:16px;"><span
+                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
+                                      style="color:#131313;"><span
+                                      style="letter-spacing:normal;">Вкус</span></span></span><span
+                                      style="font-family:wfont_15f976_270b07d9ac084e40aaf3e55266409e37,wf_270b07d9ac084e40aaf3e5526,orig_circe;"><span
+                                      style="color:#131313;"><span
+                                      style="letter-spacing:normal;"> </span></span></span><span
+                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                      style="color:#131313;"><span
+                                      style="letter-spacing:normal;">- высокая кислотность лимонного сорбета компенсируется остаточным сахаром. Душес с кусочком лайма. Категория по сахару - Экстра драй.</span></span></span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comp-l34sgpaw" data-aos="fade-left" data-aos-delay="1000" class="_1KV2M"
+                         style="visibility: inherit;" data-angle="0"
+                         data-angle-style-location="style"
+                         data-screen-in-hide="done">
+                        <div data-mesh-id="comp-l34sgpawinlineContent"
+                             data-testid="inline-content" class="">
+                            <div data-mesh-id="comp-l34sgpawinlineContent-gridContainer"
+                                 data-testid="mesh-container-content">
+                                <div id="comp-l34scf9d" class="_2Hij5 _3bcaz"
+                                     data-testid="richTextElement">
+                                    <p
+                                            class="font_7"
+                                            style="font-size:18px; line-height:normal; text-align:justify;">
+                              <span style="font-size:18px;"><span
+                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
+                                      style="color:#131313;"><span
+                                      style="letter-spacing:normal;">Тираж</span></span></span><span
+                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                      style="color:#131313;"><span
+                                      style="letter-spacing:normal;">:</span></span></span></span>
+                                    </p>
+                                </div>
+                                <div id="comp-l34sdvz3" class="_2Hij5 _3bcaz"
+                                     data-testid="richTextElement">
+                                    <p
+                                            class="font_7"
+                                            style="font-size:16px; line-height:normal;">
+                              <span style="font-size:16px;"><span
+                                      style="color:#131313;"><span
+                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                      style="letter-spacing:normal;">Выпущено -<span
+                                      style="letter-spacing:normal;"> </span></span></span><span
+                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
+                                      style="letter-spacing:normal;">150</span></span><span
+                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                                      style="letter-spacing:normal;"> бутылок. Тип бутылки - «Магнум» 1.5 литра. Укупорка - кронен.</span></span></span></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="comp-l4737lhg" data-aos="fade-left" data-aos-delay="1000" style="visibility: inherit;"
+                         data-angle="0" data-angle-style-location="style"
+                         class="" data-screen-in-hide="done">
+                        <a
+                                data-testid="linkElement"
+                                href="https://www.vibes-wine.ru/wine-list"
+                                target="_self"
+                                class="StylableButton2545352419__root style-l47692bu__root StylableButton2545352419__link"
+                                aria-label="ИЗУЧИТЬ ВСЕ ВИНА VIBES" tabindex="0">
+                            <div class="StylableButton2545352419__container">
+                        <span
+                                class="StylableButton2545352419__label"
+                                data-testid="stylablebutton-label">ИЗУЧИТЬ ВСЕ ВИНА VIBES</span>
+                                <span
+                                        class="StylableButton2545352419__icon"
+                                        aria-hidden="true"
+                                        data-testid="stylablebutton-icon">
+                           <div>
+                              <svg
+                                      data-bbox="13.05 2.55 33.878 54.8"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 60 60">
+                                 <g>
+                                    <path d="M46.5 28.9L20.6 3c-.6-.6-1.6-.6-2.2 0l-4.8 4.8c-.6.6-.6 1.6 0 2.2l19.8 20-19.9 19.9c-.6.6-.6 1.6 0 2.2l4.8 4.8c.6.6 1.6.6 2.2 0l21-21 4.8-4.8c.8-.6.8-1.6.2-2.2z"></path>
+                                 </g>
+                              </svg>
+                           </div>
+                        </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="comp-l34qi8f2" data-aos="fade-right" class="_2Hij5 _3bcaz"
+             data-testid="richTextElement" style="visibility: inherit;"
+             data-angle="0" data-angle-style-location="style"
+             data-screen-in-hide="done">
+            <p class="font_7"
+               style="font-size:14px; line-height:normal;">
+
+            </p>
+        </div>
+        <div id="comp-l34qjneb" data-aos="fade-right" class="_2Hij5 _3bcaz"
+             data-testid="richTextElement" style="visibility: inherit;"
+             data-angle="0" data-angle-style-location="style"
+             data-screen-in-hide="done">
+            <p class="font_7"
+               style="font-size:14px; line-height:normal;">
+            <span style="color:#131313;">
+                <span style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;">
+                <span style="font-size:14px;">
+            </span>
+            </span>
+                <span style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;">
+                <span style="font-size:14px;">
+                <span style="letter-spacing:normal;">
+                    Древнейший немецкий сорт винограда. Родственник Рислинга и Грюнер Вельтлинера.
+                    <br>
+                    <br>
+                    Наш Пет-нат Сильванер, урожая <b>2021</b> года, происходит со старых лоз посадки. <br> Виноградник расположен на северной стороне Севастополя в зоне реки Бельбек. <br> Почва – аллювиально-гравийная-кремниевая.
+                </span>
+                </span>
+                </span>
+            </span>
+
+            </p>
+        </div>
+
+        <div id="comp-l34o73tv"  data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0" class="_3rK5m" style=" visibility: inherit;"
+             data-angle="0" data-angle-style-location="style"
+             data-screen-in-hide="done">
+            <div data-testid="link" class="VNb9p" title="" role="img">
+                <div class="_20oHq">
+                    <wix-image id="img_comp-l34o73tv_0" class="_1-6YJ _2Ms4G">
+                        <img src="images/5.png"
+                             alt="" role="none"
+                             style="width: 411px; height: 1020px; object-fit: contain; object-position: center center;">
+                    </wix-image>
+                </div>
+                <div class="_20oHq">
+                    <wix-image id="img_comp-l34o73tv_1" class="_1-6YJ _1m4s8">
+                        <img src="images/5.png"
+                             alt="" role="none"
+                             style="width: 411px; height: 1020px; object-fit: contain; object-position: center center;">
+                    </wix-image>
+                </div>
+                <div class="_20oHq">
+                    <wix-image id="img_comp-l34o73tv_2" class="_1-6YJ _3AalE">
+                        <img src="images/5.png"
+                             alt="" role="none"
+                             style="width: 411px; height: 1020px; object-fit: contain; object-position: center center;">
+                    </wix-image>
+                </div>
+            </div>
+        </div>
+        <div id="comp-l473ypts" data-aos="fade-right" class="_1KV2M">
+            <div data-mesh-id="comp-l473yptsinlineContent"
+                 data-testid="inline-content" class="">
+                <div data-mesh-id="comp-l473yptsinlineContent-gridContainer"
+                     data-testid="mesh-container-content">
+                    <div id="comp-l34qh194" class="single-products__title _2Hij5 _3bcaz"
+                         data-testid="richTextElement"
+                         style="visibility: inherit;" data-angle="0"
+                         data-angle-style-location="style"
+                         data-screen-in-hide="done">
+                        <h1 class="font_0"
+                            style="line-height:normal; font-size:22px;">
+                     <span style="color:#131313;"><span
+                             style="font-family:wfont_15f976_ebe9a5fc33214fbaaf57c2d3e677a13d,wf_ebe9a5fc33214fbaaf57c2d3e,orig_circe_thin;"><span
+                             style="font-size:25px;">«</span></span><span
+                             style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
+                             style="font-size:40px;">Pet-Nat Silvaner</span></span><span
+                             style="font-family:wfont_15f976_ebe9a5fc33214fbaaf57c2d3e677a13d,wf_ebe9a5fc33214fbaaf57c2d3e,orig_circe_thin;"><span
+                             style="font-size:25px;">»</span></span></span>
+                        </h1>
+                        <div class="single-products__label">
+
+                            <div id="comp-l34qh18y" class="_2Hij5 _3bcaz"
+                                 data-testid="richTextElement"
+                                 style="visibility: inherit;" data-angle="0"
+                                 data-angle-style-location="style"
+                                 data-screen-in-hide="done">
+                                <p class="font_7"
+                                   style="font-size:12px; line-height:normal;">
+                     <span style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
+                             style="color:#131313;"><span
+                             style="font-size:12px;"><span
+                             style="letter-spacing:normal;">УРОЖАЙ 2021</span></span></span></span>
+                                </p>
+                            </div>
+                            <div id="comp-l34o73tf" class="_3VCpz"
+                                 style="visibility: inherit;" data-angle="0"
+                                 data-angle-style-location="style"
+                                 data-screen-in-hide="done"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="comp-l475bhix" data-aos="fade-right" class="_1A4nG _2S73V"
+             style="visibility: inherit;" data-angle="0"
+             data-angle-style-location="style" data-screen-in-hide="done">
+            <div data-testid="linkElement" class="_2f5Ce">
+                <wix-image id="img_comp-l475bhix" class="_1-6YJ _3mKvC">
+                    <img src="images/5-min.png"
+                         alt="2021 Silvaner | Вино Вайбс | VIBES"
+                         style="width:100px;height:auto;object-fit:cover">
+                </wix-image>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <a href="/" title="Главная">
+                    <div class="images">
+                    </div>
+                    <div class="text-logo">
+                        <span class="head">VIBES</span>
+                        <span class="down">VINICULTURAL SOCIETY</span>
+                    </div>
+                </a>
+            </div>
+            <div class="email">
+                <span>contact - </span><a href="mail:vibeswine@yandex.ru">vibeswine@yandex.ru</a>
+            </div>
+            <div class="copyright">
+                <span>VIBES</span> - команда сплотившаяся c целью создать вино & поделиться с миром
+                посредством него своими
+                настроением,
+                любовью и опытом.
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" title="2021 | SILVANER">2021 | SILVANER</a>
+            <a href="#" title="2021 | RIESLING-SILVANER">2021 | RIESLING-SILVANER</a>
+            <a href="#" title="2021 | CHARDONNAY BARREL">2021 | CHARDONNAY BARREL</a>
+            <a href="#" title="2021 | CABERNET FRANС">2021 | CABERNET FRANС</a>
+            <a href="#" title="2021 | PINOT GRIGIO">2021 | PINOT GRIGIO</a>
+        </div>
+        <div class="right">
+            <div class="contacts">
+                <div class="title-line">
+                    <div class="text">ПОДПИШИТЕСЬ НА РАССЫЛКУ!</div>
+                    <div class="title">NEWS</div>
+                </div>
+                <div class="mailing">
+                    <form action="">
+                        <input type="text" placeholder="Введите e-mail">
+                        <button>Подписаться</button>
+                    </form>
+                </div>
+                <div class="social">
+                    <a href="#" target="_blank" title="Вконтакте">
+                        <img src="images/social/vk.webp" alt="Вконтакте">
+                    </a>
+                    <a href="#" target="_blank" title="Инстаграм">
+                        <img src="images/social/instagram.webp" alt="Инстаграм">
+                    </a>
+                    <a href="#" target="_blank" title="Ютуб">
+                        <img src="images/social/youtube.webp" alt="Ютуб">
+                    </a>
+                    <a href="#" target="_blank" title="Ватсап">
+                        <img src="images/social/whatsapp.webp" alt="Ватсап">
+                    </a>
+                    <a href="#" target="_blank" title="Телеграм">
+                        <img src="images/social/telegram.webp" alt="Телеграм">
+                    </a>
+                </div>
+            </div>
+            <div class="partners">
+                <a href="#" title="Adson">
+                    <img src="images/part.webp" alt="Adson">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div id="check-age" class="popup">
+    <div class="left">
+        <div class="images">
+        </div>
+        <div class="age">18+</div>
+        <div class="text">
+            Сайт содержит информацию, не рекомендованную для лиц, <b>не достигших совершеннолетнего возраста</b>. Для
+            доступа на
+            сайт подтвердите, пожалуйста, свое совершеннолетие.
+        </div>
+        <div class="btns">
+            <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" title="Есть 18 лет">Мне есть 18+</a>
+            <a href="javascript:" onclick="window.close();" class="btn-popup" title="Нет 18 лет">Мне нет 18</a>
+        </div>
+    </div>
+    <div class="right" style="background-image: url(images/background/age.webp);"></div>
+</div>
+<div id="call-back" class="popup">
+    <div class="left">
+        <div class="images">
+        </div>
+        <div class="title">
+            Обратный <p>звонок</p>
+        </div>
+        <div class="text text-popup">
+            Заполните контактную форму и отправьте заявку на обратный звонок от специалистов VIBES. Мы свяжемся с Вами в
+            ближайшее время и проконсультируем по всем возникшим вопросам!
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телофон">
+            <div class="btns">
+                <button class="btn-popup" title="Позвоните мне">Позвоните мне</button>
+            </div>
+        </form>
+    </div>
+    <div class="right" style="background-image: url(images/background/call.jpg);">
+        <a href="javascript:" onclick="ClosePopup('call-back')">
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="25.975 25.975 148.05 148.05"
+                 xmlns="http://www.w3.org/2000/svg" viewBox="25.975 25.975 148.05 148.05" role="presentation"
+                 aria-hidden="true">
+                <g>
+                    <path
+                            d="M172.9 167.6L105.3 100l67.6-67.6c1.5-1.5 1.5-3.8 0-5.3s-3.8-1.5-5.3 0L100 94.7 32.4 27.1c-1.5-1.5-3.8-1.5-5.3 0s-1.5 3.8 0 5.3L94.7 100l-67.6 67.6c-1.5 1.5-1.5 3.8 0 5.3s3.8 1.5 5.3 0l67.6-67.6 67.6 67.6c1.5 1.5 3.8 1.5 5.3 0s1.5-3.8 0-5.3z">
+                    </path>
+                </g>
+            </svg>
+        </a>
+    </div>
+</div>
+<div id="login" class="popup login">
+    <div class="left left-right form-container sign-up-container">
+        <div class="images">
+        </div>
+        <div class="title">
+            Создать <p>аккаунт</p>
+        </div>
+        <form action="#">
+
+            <div class="text text-popup">
+                Уже есть аккаунт?
+                <button class="btn-link" id="signIn">Войти</button>
+            </div>
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <div class="btns">
+                <button class="btn-popup" title="Зарегестрироваться">Зарегестрироваться</button>
+            </div>
+        </form>
+    </div>
+    <div class="left form-container sign-in-container">
+        <div class="images">
+        </div>
+        <div class="title">
+            Войти на <p>сайт</p>
+        </div>
+        <form action="#">
+            <div class="text text-popup">
+                Впервые на сайте?
+                <button class="btn-link" id="signUp">Зарегистрироваться</button>
+            </div>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <a href="#">Забыли пароль?</a>
+            <div class="btns">
+                <button class="btn-popup" title="Войти">Войти</button>
+            </div>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+
+            </div>
+            <div class="overlay-panel overlay-right">
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div onclick="ClosePopup($(this).attr('data-popup'))" class="blackout-background"></div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="js/jq.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/script.js"></script>
+<script>PopupTimer(1);</script>
+<script>
+    var about = new Swiper("#about", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 5,
+    });
+</script>
+</body>
+</html>

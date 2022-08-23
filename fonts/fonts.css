@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "Circe";
+	src: url(/fonts/circe/circe.ttf);
+}
+@font-face {
+	font-family: "Circe Bold";
+	src: url(/fonts/circe/circe_bold.ttf);
+}
+@font-face {
+	font-family: "Circe ExtraBold";
+	src: url(/fonts/circe/circe_extrabold.ttf);
+}
+@font-face {
+	font-family: "Circe ExtraLight";
+	src: url(/fonts/circe/circe_extralight.ttf);
+}
+@font-face {
+	font-family: "Circe Light";
+	src: url(/fonts/circe/circe_light.ttf);
+}
+@font-face {
+	font-family: "Circe Thin";
+	src: url(/fonts/circe/circe_thin.ttf);
+}
