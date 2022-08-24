@@ -3381,10 +3381,6 @@ footer > div .right .partners a:hover {
     height: 26px;
 }
 
-/*.fancybox__toolbar .carousel__button.fancybox__button--close svg {*/
-/*    display: none;*/
-/*}*/
-
 .fancybox__toolbar .carousel__button.fancybox__button--close::after {
     content: "";
     background-image: url(/images/sprite_fancybox.png);
@@ -3393,11 +3389,9 @@ footer > div .right .partners a:hover {
     height: 26px;
     color: rgb(19, 19, 19) !important;
     font-size: 32px;
+   
 }
 
-/*.fancybox__toolbar .carousel__button.fancybox__button--fullscreen svg {*/
-/*    display: none;*/
-/*}*/
 
 .fancybox__toolbar .carousel__button.fancybox__button--fullscreen::after {
     content: "";
