@@ -2,425 +2,971 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>VUBES</title>
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>VUBES</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/fancybox.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 <header>
-	<div class="left-menu">
-		<a href="/" title="Главная">
-			<div class="logo">
-				<div class="images">
-				</div>
-				<div class="text-logo">
-					<span class="head">VIBES</span>
-					<span class="down">VINICULTURAL SOCIETY</span>
-				</div>
-			</div>
-		</a>
-		<div class="link-menu">
-			<div class="profile">
-				<a href="javascript:" onclick="OpenPopup('login')" title="Профиль">
-					<svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg"
-						 width="50" height="50"
-						 viewBox="0 0 50 50">
-						<g>
-							<path
-									d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
-							</path>
-						</g>
-					</svg>
-				</a>
-			</div>
-			<div class="basket">
-				<a href="#" title="Корзина">
-					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
-						 viewBox="5.7 0 105.5 126.1"
-						 preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
-						<path
-								d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z">
-						</path>
-						<path
-								d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">
-						</path>
-						<text x="58.5" y="77" dy=".35em" text-anchor="middle" data-hook="items-count">
-							0
-						</text>
-					</svg>
-					<span class="quantity">0</span>
-				</a>
-			</div>
-			<div class="feedback">
-				<a href="javascript:" onclick="OpenPopup('call-back')" title="Обратная связь">
-					<img src="images/call-phone.webp" alt="Обратная связь">
-					<span>CALL BACK</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="right-menu">
-		<div class="navbar">
-			<a href="./about-the-project.html"" title="О VIBES">О VIBES</a>
-			<div class="sun-menu__wrp"><a href="./wine-list.html" title="НАШИ ВИНА" class="sub-menu">НАШИ ВИНА </a>
-				<ul class="sub-menu__list">
-					<li><a href="./silvaner.html">2021 | SILVANER</a></li>
-					<li><a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a></li>
-					<li><a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a></li>
-					<li><a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANC-PINOT NOIR</a></li>
-					<li><a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a></li>
-					<li><a href="./petNatSilvaner.html">2021 | PET-NAT SILVANER</a></li>
-					<li><a href="./petNatPinotGris.html">2021 | PET-NAT PINOT GRIS</a></li>
-				</ul>
-			</div>
-			<a href="./story.html" title="INSPIRATION">INSPIRATION</a>
-			<a href="./shops.html" title="ГДЕ КУПИТЬ?">ГДЕ КУПИТЬ?</a>
-			<a href="./events.html" title="INSPIRATION">BLOG</a>
-			<a href="./store.html" title="INSPIRATION">STORE</a>
-		</div>
-	</div>
+    <div class="left-menu">
+        <a href="/" title="Главная">
+            <div class="logo">
+                <div class="images">
+                </div>
+                <div class="text-logo">
+                    <span class="head">VIBES</span>
+                    <span class="down">VINICULTURAL SOCIETY</span>
+                </div>
+            </div>
+        </a>
+        <div class="link-menu">
+            <div class="profile">
+                <a href="javascript:" onclick="OpenPopup('login')" title="Профиль">
+                    <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg"
+                         width="50" height="50"
+                         viewBox="0 0 50 50">
+                        <g>
+                            <path
+                                    d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="basket">
+                <a href="#" title="Корзина">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
+                         viewBox="5.7 0 105.5 126.1"
+                         preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
+                        <path
+                                d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z">
+                        </path>
+                        <path
+                                d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">
+                        </path>
+                        <text x="58.5" y="77" dy=".35em" text-anchor="middle" data-hook="items-count">
+                            0
+                        </text>
+                    </svg>
+                    <span class="quantity">0</span>
+                </a>
+            </div>
+            <div class="feedback">
+                <a href="javascript:" onclick="OpenPopup('call-back')" title="Обратная связь">
+                    <img src="images/call-phone.webp" alt="Обратная связь">
+                    <span>CALL BACK</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="right-menu">
+        <div class="navbar">
+            <a href="./about-the-project.html"" title="О VIBES">О VIBES</a>
+            <div class="sun-menu__wrp"><a href="./wine-list.html" title="НАШИ ВИНА" class="sub-menu">НАШИ ВИНА </a>
+                <ul class="sub-menu__list">
+                    <li><a href="./silvaner.html">2021 | SILVANER</a></li>
+                    <li><a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a></li>
+                    <li><a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a></li>
+                    <li><a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANC-PINOT NOIR</a></li>
+                    <li><a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a></li>
+                    <li><a href="./petNatSilvaner.html">2021 | PET-NAT SILVANER</a></li>
+                    <li><a href="./petNatPinotGris.html">2021 | PET-NAT PINOT GRIS</a></li>
+                </ul>
+            </div>
+            <a href="./story.html" title="INSPIRATION">INSPIRATION</a>
+            <a href="./shops.html" title="ГДЕ КУПИТЬ?">ГДЕ КУПИТЬ?</a>
+            <a href="./events.html" title="INSPIRATION">BLOG</a>
+            <a href="./store.html" title="INSPIRATION">STORE</a>
+        </div>
+    </div>
 </header>
 
 <section class="text-page">
-		<div class="container">
-			<div class="text-block images">
-				<div data-aos="fade-right" class="text">
-					<div class="line-dotes"></div>
-					<div class="subtitle">художник VIBES</div>
-					<div class="title">Вдохновение</div>
-					<div class="text">
-						Выразить «VIBES» визуально нам помогает особенный <br> человек - одаренный художник <b>Светлана Скиба</b>. Она
-						<br> тонко чувствует Севастополь и пишет в стиле <br> экспрессионизма. Для этикеток Светлана нарисовала
-						<br> картины видов Севастополя в разные времена года. <br> Эти волшебные добрые пейзажи дополняют
-						<br> концепцию и объясняют на ментальном уровне <br> характер вин, передают эмоцию и настраивают на
-						<br> «VIBES».
-					</div>
-				</div>
-				<div data-aos="fade-left" class="images">
-					<img src="images/story.webp" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section  class="slider-block no50">
-		<div class="container">
-			<div id="about" class="swiper">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/1.jpg">
-							<div class="big slide" style="background-image: url(images/story/1.jpg);">
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide small">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/2.jpg">
-							<div class="small-img slide top" style="background-image: url(images/story/2.jpg);"></div>
-						</a>
-						<div class="video slide">
-							<a data-fancybox="gallery" data-ratio="2" href="images/story/3.jpg">
-								<div class="small slide" style="background-image: url(images/story/3.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/4.jpg">
-							<div class="big slide" style="background-image: url(images/story/4.jpg);"></div>
-						</a>
-					</div>
-					<div class="swiper-slide small">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/5.jpg">
-							<div class="small-img slide top" style="background-image: url(images/story/5.jpg);"></div>
-						</a>
-						<div class="video slide">
-							<a data-fancybox="gallery" data-ratio="2" href="images/story/6.jpg">
-								<div class="small slide" style="background-image: url(images/story/6.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/7.jpg">
-							<div class="big slide" style="background-image: url(images/story/7.jpg);">
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide small">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/8.jpg">
-							<div class="small-img slide top" style="background-image: url(images/story/8.jpg);"></div>
-						</a>
-						<div class="video slide">
-							<a data-fancybox="gallery" data-ratio="2" href="images/story/9.jpg">
-								<div class="small slide" style="background-image: url(images/story/9.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/10.jpg">
-							<div class="big slide" style="background-image: url(images/story/10.jpg);">
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide small">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/11.jpg">
-							<div class="small-img slide top" style="background-image: url(images/story/11.jpg);"></div>
-						</a>
-						<div class="video slide">
-							<a data-fancybox="gallery" data-ratio="2" href="images/story/12.jpg">
-								<div class="small slide" style="background-image: url(images/story/12.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/13.jpg">
-							<div class="big slide" style="background-image: url(images/story/13.jpg);">
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide small">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/14.jpg">
-							<div class="small-img slide top" style="background-image: url(images/story/14.jpg);"></div>
-						</a>
-						<div class="video slide">
-							<a data-fancybox="gallery" data-ratio="2" href="images/story/15.jpg">
-								<div class="small slide" style="background-image: url(images/story/15.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/16.jpg">
-							<div class="big slide" style="background-image: url(images/story/16.jpg);">
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide small">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/17.jpg">
-							<div class="small-img slide top" style="background-image: url(images/story/17.jpg);"></div>
-						</a>
-						<div class="video slide">
-							<a data-fancybox="gallery" data-ratio="2" href="images/story/18.jpg">
-								<div class="small slide" style="background-image: url(images/story/18.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/19.jpg">
-							<div class="big slide" style="background-image: url(images/story/19.jpg);">
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide small">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/20.jpg">
-							<div class="small-img slide top" style="background-image: url(images/story/20.jpg);"></div>
-						</a>
-						<div class="video slide">
-							<a data-fancybox="gallery" data-ratio="2" href="images/story/21.jpg">
-								<div class="small slide" style="background-image: url(images/story/21.jpg);"></div>
-							</a>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<a data-fancybox="gallery" data-ratio="2" href="images/story/22.jpg">
-							<div class="big slide" style="background-image: url(images/story/22.jpg);">
-							</div>
-						</a>
-					</div>
+    <div class="container">
+        <div class="text-block images">
+            <div data-aos="fade-right" class="text">
+                <div class="line-dotes"></div>
+                <div class="subtitle">художник VIBES</div>
+                <div class="title">Вдохновение</div>
+                <div class="text">
+                    Выразить «VIBES» визуально нам помогает особенный <br> человек - одаренный художник <b>Светлана
+                    Скиба</b>. Она
+                    <br> тонко чувствует Севастополь и пишет в стиле <br> экспрессионизма. Для этикеток Светлана
+                    нарисовала
+                    <br> картины видов Севастополя в разные времена года. <br> Эти волшебные добрые пейзажи дополняют
+                    <br> концепцию и объясняют на ментальном уровне <br> характер вин, передают эмоцию и настраивают на
+                    <br> «VIBES».
+                </div>
+            </div>
+            <div data-aos="fade-left" class="images">
+                <img src="images/story.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider-block no50">
+    <div class="container swiper__wrapper">
+        <div id="about" class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/1.jpg">
+                            <div class="big slide" style="background-image: url(images/story/1.jpg);">
+                            </div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Silvaner</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide small">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2"
+                           href="images/story/2.jpg">
+                            <div class="small-img slide top" style="background-image: url(images/story/2.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Riesling - Silvaner</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="video slide ">
+                        <div class="swiper-slide__wrap-link">
+                            <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/3.jpg">
+                                <div class="small slide" style="background-image: url(images/story/3.jpg);"></div>
+                            </a>
+                            <div class="slide-overlay">
+                                <div class="slide-name__wrap-title">
+                                    <h1 class="slide-name__title">Cabernet Franc - Pinot Noir</h1>
+                                    <p class="slide-name__label">VIBES</p>
+                                </div>
+                                <div class="slide-name__btn">
+                                    <button class="like">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="repost">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/4.jpg">
+                            <div class="big slide" style="background-image: url(images/story/4.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Chardonnay</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide small">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/5.jpg">
+                            <div class="small-img slide top" style="background-image: url(images/story/5.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Pinot Grigio</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="video slide">
+                        <div class="swiper-slide__wrap-link">
+                            <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/6.jpg">
+                                <div class="small slide" style="background-image: url(images/story/6.jpg);"></div>
+                            </a>
+                            <div class="slide-overlay">
+                                <div class="slide-name__wrap-title">
+                                    <h1 class="slide-name__title">Светлана Скиба</h1>
+                                    <p class="slide-name__label">VIBES</p>
+                                </div>
+                                <div class="slide-name__btn">
+                                    <button class="like">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="repost">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/7.jpg">
+                            <div class="big slide" style="background-image: url(images/story/7.jpg);">
+                            </div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide small">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/8.jpg">
+                            <div class="small-img slide top" style="background-image: url(images/story/8.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="video slide">
+                        <div class="swiper-slide__wrap-link">
+                            <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/9.jpg">
+                                <div class="small slide" style="background-image: url(images/story/9.jpg);"></div>
+                            </a>
+                            <div class="slide-overlay">
+                                <div class="slide-name__wrap-title">
+                                    <h1 class="slide-name__title">Светлана Скиба</h1>
+                                    <p class="slide-name__label">VIBES</p>
+                                </div>
+                                <div class="slide-name__btn">
+                                    <button class="like">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="repost">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/10.jpg">
+                            <div class="big slide" style="background-image: url(images/story/10.jpg);">
+                            </div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide small">
+                    <div class="swiper-slide__wrap-link">
+
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/11.jpg">
+                            <div class="small-img slide top" style="background-image: url(images/story/11.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="video slide">
+                        <div class="swiper-slide__wrap-link">
+
+                            <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/12.jpg">
+                                <div class="small slide" style="background-image: url(images/story/12.jpg);"></div>
+                            </a>
+                            <div class="slide-overlay">
+                                <div class="slide-name__wrap-title">
+                                    <h1 class="slide-name__title">Светлана Скиба</h1>
+                                    <p class="slide-name__label">VIBES</p>
+                                </div>
+                                <div class="slide-name__btn">
+                                    <button class="like">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="repost">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/13.jpg">
+                            <div class="big slide" style="background-image: url(images/story/13.jpg);">
+                            </div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide small">
+                    <div class="swiper-slide__wrap-link">
+
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/14.jpg">
+                            <div class="small-img slide top" style="background-image: url(images/story/14.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="video slide">
+                        <div class="swiper-slide__wrap-link">
+
+                            <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/15.jpg">
+                                <div class="small slide" style="background-image: url(images/story/15.jpg);"></div>
+                            </a>
+                            <div class="slide-overlay">
+                                <div class="slide-name__wrap-title">
+                                    <h1 class="slide-name__title">Светлана Скиба</h1>
+                                    <p class="slide-name__label">VIBES</p>
+                                </div>
+                                <div class="slide-name__btn">
+                                    <button class="like">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="repost">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/16.jpg">
+                            <div class="big slide" style="background-image: url(images/story/16.jpg);">
+                            </div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide small">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/17.jpg">
+                            <div class="small-img slide top" style="background-image: url(images/story/17.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="video slide">
+                        <div class="swiper-slide__wrap-link">
+                            <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/18.jpg">
+                                <div class="small slide" style="background-image: url(images/story/18.jpg);"></div>
+                            </a>
+                            <div class="slide-overlay">
+                                <div class="slide-name__wrap-title">
+                                    <h1 class="slide-name__title">Светлана Скиба</h1>
+                                    <p class="slide-name__label">VIBES</p>
+                                </div>
+                                <div class="slide-name__btn">
+                                    <button class="like">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="repost">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/19.jpg">
+                            <div class="big slide" style="background-image: url(images/story/19.jpg);">
+                            </div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide small">
+                    <div class="swiper-slide__wrap-link">
+
+                        <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/20.jpg">
+                            <div class="small-img slide top" style="background-image: url(images/story/20.jpg);"></div>
+                        </a>
+                        <div class="slide-overlay">
+                            <div class="slide-name__wrap-title">
+                                <h1 class="slide-name__title">Светлана Скиба</h1>
+                                <p class="slide-name__label">VIBES</p>
+                            </div>
+                            <div class="slide-name__btn">
+                                <button class="like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <button class="repost">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                              fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="video slide">
+                        <div class="swiper-slide__wrap-link">
+
+                            <a data-fancybox="gallery" data-ratio="2" href="images/story/21.jpg">
+                                <div class="small slide" style="background-image: url(images/story/21.jpg);"></div>
+                            </a>
+                            <div class="slide-overlay">
+                                <div class="slide-name__wrap-title">
+                                    <h1 class="slide-name__title">Светлана Скиба</h1>
+                                    <p class="slide-name__label">VIBES</p>
+                                </div>
+                                <div class="slide-name__btn">
+                                    <button class="like">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="repost">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                            <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                                  fill-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__wrap-link">
+
+                    <a data-fancybox="gallery" class="swiper-slide-link" data-ratio="2" href="images/story/22.jpg">
+                        <div class="big slide" style="background-image: url(images/story/22.jpg);">
+                        </div>
+                    </a>
+                    <div class="slide-overlay">
+                        <div class="slide-name__wrap-title">
+                            <h1 class="slide-name__title">Светлана Скиба</h1>
+                            <p class="slide-name__label">VIBES</p>
+                        </div>
+                        <div class="slide-name__btn">
+                            <button class="like">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path d="M8.1816,5.0039 C7.9276,5.0039 7.6696,5.0279 7.4106,5.0759 C5.7326,5.3909 4.3566,6.8479 4.0646,8.6189 C3.9346,9.4039 4.0036,10.2029 4.2616,10.9319 C4.2636,10.9379 4.2656,10.9439 4.2676,10.9499 C5.1716,13.8579 10.2066,17.4019 11.7286,18.4189 C11.8966,18.5329 12.1076,18.5309 12.2746,18.4189 C13.7956,17.4019 18.8266,13.8589 19.7326,10.9499 C19.9966,10.2029 20.0646,9.4039 19.9356,8.6189 C19.6426,6.8479 18.2666,5.3909 16.5896,5.0759 C14.9596,4.7749 13.3646,5.4459 12.4126,6.8369 C12.2256,7.1099 11.7736,7.1099 11.5876,6.8369 C10.7866,5.6669 9.5276,5.0039 8.1816,5.0039 M12.0016,19.5029 C11.7136,19.5029 11.4246,19.4189 11.1726,19.2509 C9.1366,17.8899 4.2966,14.3869 3.3156,11.2559 C3.0036,10.3719 2.9216,9.4039 3.0776,8.4569 C3.4436,6.2429 5.1106,4.4889 7.2266,4.0939 C9.0226,3.7539 10.8006,4.3809 11.9996,5.7409 C13.1996,4.3829 14.9766,3.7569 16.7736,4.0939 C18.8896,4.4899 20.5566,6.2429 20.9216,8.4569 C21.0786,9.4069 20.9956,10.3789 20.6816,11.2659 C19.7116,14.3819 14.8676,17.8889 12.8306,19.2509 C12.5786,19.4189 12.2896,19.5029 12.0016,19.5029"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <button class="repost">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next">
+            <svg class="slideshow-arrow" style="transform:scaleX(1) scale(0.9230769230769231);fill:" width="39px"
+                 height="11px" viewBox="0 0 39 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                    <g transform="translate(-29.000000, -43.000000)" fill-rule="nonzero">
+                        <polygon
+                                points="59.79296 43 67.1767272 48.2074587 59.79296 53.3482492 59.792 49.24 29 49.2402303 29 47.3156703 59.792 47.315"></polygon>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="swiper-button-prev">
+            <svg class="slideshow-arrow" width="39px" height="11px" viewBox="0 0 39 11" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 style="transform: scaleX(-1) scale(0.923077);">
+                <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                    <g transform="translate(-29.000000, -43.000000)" fill-rule="nonzero">
+                        <polygon
+                                points="59.79296 43 67.1767272 48.2074587 59.79296 53.3482492 59.792 49.24 29 49.2402303 29 47.3156703 59.792 47.315"></polygon>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <a href="/" title="Главная">
+                    <div class="images">
+                    </div>
+                    <div class="text-logo">
+                        <span class="head">VIBES</span>
+                        <span class="down">VINICULTURAL SOCIETY</span>
+                    </div>
+                </a>
+            </div>
+            <div class="email">
+                <span>contact - </span><a href="mail:vibeswine@yandex.ru">vibeswine@yandex.ru</a>
+            </div>
+            <div class="copyright">
+                <span>VIBES</span> - команда сплотившаяся c целью создать вино & поделиться с миром посредством него
+                своими
+                настроением,
+                любовью и опытом.
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" title="2021 | SILVANER">2021 | SILVANER</a>
+            <a href="#" title="2021 | RIESLING-SILVANER">2021 | RIESLING-SILVANER</a>
+            <a href="#" title="2021 | CHARDONNAY BARREL">2021 | CHARDONNAY BARREL</a>
+            <a href="#" title="2021 | CABERNET FRANС">2021 | CABERNET FRANС</a>
+            <a href="#" title="2021 | PINOT GRIGIO">2021 | PINOT GRIGIO</a>
+        </div>
+        <div class="right">
+            <div class="contacts">
+                <div class="title-line">
+                    <div class="text">ПОДПИШИТЕСЬ НА РАССЫЛКУ!</div>
+                    <div class="title">NEWS</div>
+                </div>
+                <div class="mailing">
+                    <form action="">
+                        <input type="text" placeholder="Введите e-mail">
+                        <button>Подписаться</button>
+                    </form>
+                </div>
+                <div class="social">
+                    <a href="#" target="_blank" title="Вконтакте">
+                        <img src="images/social/vk.webp" alt="Вконтакте">
+                    </a>
+                    <a href="#" target="_blank" title="Инстаграм">
+                        <img src="images/social/instagram.webp" alt="Инстаграм">
+                    </a>
+                    <a href="#" target="_blank" title="Ютуб">
+                        <img src="images/social/youtube.webp" alt="Ютуб">
+                    </a>
+                    <a href="#" target="_blank" title="Ватсап">
+                        <img src="images/social/whatsapp.webp" alt="Ватсап">
+                    </a>
+                    <a href="#" target="_blank" title="Телеграм">
+                        <img src="images/social/telegram.webp" alt="Телеграм">
+                    </a>
+                </div>
+            </div>
+            <div class="partners">
+                <a href="#" title="Adson">
+                    <img src="images/part.webp" alt="Adson">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="check-age" class="popup">
+    <div class="left">
+        <div class="images">
+        </div>
+        <div class="age">18+</div>
+        <div class="text">
+            Сайт содержит информацию, не рекомендованную для лиц, <b>не достигших совершеннолетнего возраста</b>. Для
+            доступа на
+            сайт подтвердите, пожалуйста, свое совершеннолетие.
+        </div>
+        <div class="btns">
+            <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" title="Есть 18 лет">Мне есть 18+</a>
+            <a href="javascript:" onclick="window.close();" class="btn-popup" title="Нет 18 лет">Мне нет 18</a>
+        </div>
+    </div>
+    <div class="right" style="background-image: url(images/background/age.webp);"></div>
+</div>
+<div id="call-back" class="popup">
+    <div class="left">
+        <div class="images">
+        </div>
+        <div class="title">
+            Обратный <p>звонок</p>
+        </div>
+        <div class="text text-popup">
+            Заполните контактную форму и отправьте заявку на обратный звонок от специалистов VIBES. Мы свяжемся с Вами в
+            ближайшее время и проконсультируем по всем возникшим вопросам!
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телофон">
+            <div class="btns">
+                <button class="btn-popup" title="Позвоните мне">Позвоните мне</button>
+            </div>
+        </form>
+    </div>
+    <div class="right" style="background-image: url(images/background/call.jpg);">
+        <a href="javascript:" onclick="ClosePopup('call-back')">
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="25.975 25.975 148.05 148.05"
+                 xmlns="http://www.w3.org/2000/svg" viewBox="25.975 25.975 148.05 148.05" role="presentation"
+                 aria-hidden="true">
+                <g>
+                    <path
+                            d="M172.9 167.6L105.3 100l67.6-67.6c1.5-1.5 1.5-3.8 0-5.3s-3.8-1.5-5.3 0L100 94.7 32.4 27.1c-1.5-1.5-3.8-1.5-5.3 0s-1.5 3.8 0 5.3L94.7 100l-67.6 67.6c-1.5 1.5-1.5 3.8 0 5.3s3.8 1.5 5.3 0l67.6-67.6 67.6 67.6c1.5 1.5 3.8 1.5 5.3 0s1.5-3.8 0-5.3z">
+                    </path>
+                </g>
+            </svg>
+        </a>
+    </div>
+</div>
+<div id="login" class="popup login">
+    <div class="left left-right form-container sign-up-container">
+        <div class="images">
+        </div>
+        <div class="title">
+            Создать <p>аккаунт</p>
+        </div>
+        <form action="#">
+
+            <div class="text text-popup">
+                Уже есть аккаунт?
+                <button class="btn-link" id="signIn">Войти</button>
+            </div>
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <div class="btns">
+                <button class="btn-popup" title="Зарегестрироваться">Зарегестрироваться</button>
+            </div>
+        </form>
+    </div>
+    <div class="left form-container sign-in-container">
+        <div class="images">
+        </div>
+        <div class="title">
+            Войти на <p>сайт</p>
+        </div>
+        <form action="#">
+            <div class="text text-popup">
+                Впервые на сайте?
+                <button class="btn-link" id="signUp">Зарегистрироваться</button>
+            </div>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <a href="#">Забыли пароль?</a>
+            <div class="btns">
+                <button class="btn-popup" title="Войти">Войти</button>
+            </div>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+
+            </div>
+            <div class="overlay-panel overlay-right">
 
 
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+    </div>
+</div>
+<div onclick="ClosePopup($(this).attr('data-popup'))" class="blackout-background"></div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-	<footer>
-		<div class="container">
-			<div class="left">
-				<div class="logo">
-					<a href="/" title="Главная">
-						<div class="images">
-						</div>
-						<div class="text-logo">
-							<span class="head">VIBES</span>
-							<span class="down">VINICULTURAL SOCIETY</span>
-						</div>
-					</a>
-				</div>
-				<div class="email">
-					<span>contact - </span><a href="mail:vibeswine@yandex.ru">vibeswine@yandex.ru</a>
-				</div>
-				<div class="copyright">
-					<span>VIBES</span> - команда сплотившаяся c целью создать вино & поделиться с миром посредством него своими
-					настроением,
-					любовью и опытом.
-				</div>
-			</div>
-			<div class="center">
-				<a href="#" title="2021 | SILVANER">2021 | SILVANER</a>
-				<a href="#" title="2021 | RIESLING-SILVANER">2021 | RIESLING-SILVANER</a>
-				<a href="#" title="2021 | CHARDONNAY BARREL">2021 | CHARDONNAY BARREL</a>
-				<a href="#" title="2021 | CABERNET FRANС">2021 | CABERNET FRANС</a>
-				<a href="#" title="2021 | PINOT GRIGIO">2021 | PINOT GRIGIO</a>
-			</div>
-			<div class="right">
-				<div class="contacts">
-					<div class="title-line">
-						<div class="text">ПОДПИШИТЕСЬ НА РАССЫЛКУ!</div>
-						<div class="title">NEWS</div>
-					</div>
-					<div class="mailing">
-						<form action="">
-							<input type="text" placeholder="Введите e-mail">
-							<button>Подписаться</button>
-						</form>
-					</div>
-					<div class="social">
-						<a href="#" target="_blank" title="Вконтакте">
-							<img src="images/social/vk.webp" alt="Вконтакте">
-						</a>
-						<a href="#" target="_blank" title="Инстаграм">
-							<img src="images/social/instagram.webp" alt="Инстаграм">
-						</a>
-						<a href="#" target="_blank" title="Ютуб">
-							<img src="images/social/youtube.webp" alt="Ютуб">
-						</a>
-						<a href="#" target="_blank" title="Ватсап">
-							<img src="images/social/whatsapp.webp" alt="Ватсап">
-						</a>
-						<a href="#" target="_blank" title="Телеграм">
-							<img src="images/social/telegram.webp" alt="Телеграм">
-						</a>
-					</div>
-				</div>
-				<div class="partners">
-					<a href="#" title="Adson">
-						<img src="images/part.webp" alt="Adson">
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<div id="check-age" class="popup">
-		<div class="left">
-			<div class="images">
-			</div>
-			<div class="age">18+</div>
-			<div class="text">
-				Сайт содержит информацию, не рекомендованную для лиц, <b>не достигших совершеннолетнего возраста</b>. Для
-				доступа на
-				сайт подтвердите, пожалуйста, свое совершеннолетие.
-			</div>
-			<div class="btns">
-				<a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" title="Есть 18 лет">Мне есть 18+</a>
-				<a href="javascript:" onclick="window.close();" class="btn-popup" title="Нет 18 лет">Мне нет 18</a>
-			</div>
-		</div>
-		<div class="right" style="background-image: url(images/background/age.webp);"></div>
-	</div>
-	<div id="call-back" class="popup">
-		<div class="left">
-			<div class="images">
-			</div>
-			<div class="title">
-				Обратный <p>звонок</p>
-			</div>
-			<div class="text text-popup">
-				Заполните контактную форму и отправьте заявку на обратный звонок от специалистов VIBES. Мы свяжемся с Вами в
-				ближайшее время и проконсультируем по всем возникшим вопросам!
-			</div>
-			<form action="#">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="Телофон">
-				<div class="btns">
-					<button class="btn-popup" title="Позвоните мне">Позвоните мне</button>
-				</div>
-			</form>
-		</div>
-		<div class="right" style="background-image: url(images/background/call.jpg);">
-			<a href="javascript:" onclick="ClosePopup('call-back')">
-				<svg preserveAspectRatio="xMidYMid meet" data-bbox="25.975 25.975 148.05 148.05"
-					xmlns="http://www.w3.org/2000/svg" viewBox="25.975 25.975 148.05 148.05" role="presentation"
-					aria-hidden="true">
-					<g>
-						<path
-							d="M172.9 167.6L105.3 100l67.6-67.6c1.5-1.5 1.5-3.8 0-5.3s-3.8-1.5-5.3 0L100 94.7 32.4 27.1c-1.5-1.5-3.8-1.5-5.3 0s-1.5 3.8 0 5.3L94.7 100l-67.6 67.6c-1.5 1.5-1.5 3.8 0 5.3s3.8 1.5 5.3 0l67.6-67.6 67.6 67.6c1.5 1.5 3.8 1.5 5.3 0s1.5-3.8 0-5.3z">
-						</path>
-					</g>
-				</svg>
-			</a>
-		</div>
-	</div>
-	<div id="login" class="popup login">
-		<div class="left left-right form-container sign-up-container">
-			<div class="images">
-			</div>
-			<div class="title">
-				Создать <p>аккаунт</p>
-			</div>
-			<form action="#">
-
-				<div class="text text-popup">
-					Уже есть аккаунт? <button class="btn-link" id="signIn">Войти</button>
-				</div>
-				<input type="text" placeholder="Name" />
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<div class="btns">
-					<button class="btn-popup" title="Зарегестрироваться">Зарегестрироваться</button>
-				</div>
-			</form>
-		</div>
-		<div class="left form-container sign-in-container">
-			<div class="images">
-			</div>
-			<div class="title">
-				Войти на <p>сайт</p>
-			</div>
-			<form action="#">
-				<div class="text text-popup">
-					Впервые на сайте? <button class="btn-link" id="signUp">Зарегистрироваться</button>
-				</div>
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<a href="#">Забыли пароль?</a>
-				<div class="btns">
-					<button class="btn-popup" title="Войти">Войти</button>
-				</div>
-			</form>
-		</div>
-		<div class="overlay-container">
-			<div class="overlay">
-				<div class="overlay-panel overlay-left">
-
-				</div>
-				<div class="overlay-panel overlay-right">
-
-
-				</div>
-			</div>
-		</div>
-	</div>
-	<div onclick="ClosePopup($(this).attr('data-popup'))" class="blackout-background"></div>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-	<script src="js/jq.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/fancybox.umd.js"></script>
-	<script src="js/script.js"></script>
-	<script>PopupTimer(1);</script>
-	<script>
-		var about = new Swiper("#about", {
-			slidesPerView: "auto",
-			centeredSlides: true,
-			spaceBetween: 5,
-		});
-	</script>
+<script src="js/jq.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/script.js"></script>
+<script>PopupTimer(1);</script>
+<script>
+    var about = new Swiper("#about", {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 5,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 </body>
 
 </html>
