@@ -126,11 +126,9 @@
 .carousel__button svg {
     width: var(--carousel-button-svg-width, 50%);
     height: var(--carousel-button-svg-height, 50%);
-    fill: none;
-    stroke: currentColor;
-    stroke-width: var(--carousel-button-svg-stroke-width, 1.5);
-    stroke-linejoin: bevel;
-    stroke-linecap: round;
+    fill: unset !important;
+    stroke: unset;
+
     filter: var(--carousel-button-svg-filter, none);
     pointer-events: none;
 }
@@ -196,7 +194,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     padding-top: 15px;
 }
 .carousel__button svg {
-    stroke-width: unset;
+    stroke-width: unset !important;
     filter:none;
 }
 
@@ -206,7 +204,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .fancybox__button--fullscreen {
     margin-left: 50px;
- background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADZSURBVEhL7dI/DkRAGIfhvZ6KaEWjUDqBA7iDcxCiISqdUqgJ5hC/zUgm2c18rD+zxW4UbzMz31PMzIMxhm9142R/hvd9D9/3oev6ap7nwXVd5HkuzYtIfBxHlGWJKIrIwjBEEARIkgRFUUjzosPXUtc1TNNc0jQNaZqS53iHcAE7joOqqmAYhhr8FW7bFl3XqcEFbFkWmqZZ1pTgFMy7jK/BvEv4Fsw7jX+CeafwPTBvGAZkWbb8HGqfJ+FxHMO27U14bxI+zzOmaXpbO9vqg6roxsl+FWd4AtEoF7R6sr0XAAAAAElFTkSuQmCC') no-repeat center;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADZSURBVEhL7dI/DkRAGIfhvZ6KaEWjUDqBA7iDcxCiISqdUqgJ5hC/zUgm2c18rD+zxW4UbzMz31PMzIMxhm9142R/hvd9D9/3oev6ap7nwXVd5HkuzYtIfBxHlGWJKIrIwjBEEARIkgRFUUjzosPXUtc1TNNc0jQNaZqS53iHcAE7joOqqmAYhhr8FW7bFl3XqcEFbFkWmqZZ1pTgFMy7jK/BvEv4Fsw7jX+CeafwPTBvGAZkWbb8HGqfJ+FxHMO27U14bxI+zzOmaXpbO9vqg6roxsl+FWd4AtEoF7R6sr0XAAAAAElFTkSuQmCC') no-repeat center;
     background-size:20px;
 
 }
@@ -214,7 +212,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__button--fullscreen:before {
     position: absolute;
     content: '';
-   width: 23px;
+    width: 23px;
     top: 37px;
     left: 48px;
     height: 25px;
@@ -279,7 +277,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__button--close {
     position: absolute;
     right: 30px !important;
-    top: 30px !important;
+    top: 11px !important;
 }
 
 .fancybox__button--close svg {
@@ -763,7 +761,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__carousel .fancybox__slide.has-video .fancybox__content,
 .fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
     padding: 0;
-    background: rgba(24, 24, 27, 0.9);
+    background: #EBEBEB;
     color: #fff;
 }
 
