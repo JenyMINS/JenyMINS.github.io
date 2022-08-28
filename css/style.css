@@ -3453,9 +3453,17 @@ footer > div .right .partners a:hover {
 .text-page--inspiration .subtitle{
     margin-bottom: 15px !important;
 }
-.text-page--inspiration     .title{
+.text-page--inspiration .title{
     margin-bottom: 45px;
 }
+
+
+.text-page--inspiration  .text-block.images > div:last-child{
+    padding-left: 18px !important;
+    margin-top: 5px !important;
+}
+
+
 .text-page .text-block.images > div:first-child {
     padding-right: 15px;
     width: 46%;
