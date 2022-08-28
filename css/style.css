@@ -3443,14 +3443,19 @@ footer > div .right .partners a:hover {
 }
 
 .text-page--inspiration .text {
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 17px !important;
+    line-height: 26px !important;
 }
 
 .text-page--inspiration .text-wrap {
     margin-top: 30px;
 }
-
+.text-page--inspiration .subtitle{
+    margin-bottom: 15px !important;
+}
+.text-page--inspiration     .title{
+    margin-bottom: 45px;
+}
 .text-page .text-block.images > div:first-child {
     padding-right: 15px;
     width: 46%;
