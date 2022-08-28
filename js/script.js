@@ -80,7 +80,7 @@ window.onload = function () {
 
 // Попап по таймеру
 function PopupTimer(flag) {
-    if (flag != 1) {
+    if (flag != 0) {
         let popup = $('#check-age'),
             delay2Open = 100,
             delayOpen = 1000;
