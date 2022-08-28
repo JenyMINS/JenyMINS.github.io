@@ -64,17 +64,23 @@ window.onload = function () {
         });
     }
     $('.fancybox__button--fullscreen').click(() => {
-        console.log('1');
-        $(this).toggleClass('active');
+        $('.fancybox__button--fullscreen').toggleClass('full-active');
     })
+    $('.fancybox__button--info').click(()=>{
+        $('.fancybox__carousel').toggleClass('info-active');
+    })
+
+
 };
 
 // Попап по таймеру
 function PopupTimer(flag) {
-    if (flag != 1) {
+    if (flag != 0) {
+        console.log('asdasd')
         let popup = $('#check-age'),
             delay2Open = 100,
             delayOpen = 1000;
+        console.log(popup)
         blackout = $('.blackout-background');
         setTimeout(function () {
             blackout.addClass('active').animate({opacity: 1}, delay2Open);
@@ -113,12 +119,16 @@ function OpenPopup(id) {
 function ClosePopup(id) {
     let popup = $('#' + id),
         delayClose = 200;
+    let checkAge = $('.popup-checkage')
+
     blackout = $('.blackout-background');
     blackout.animate({opacity: 0}, delayClose).attr('data-popup', '');
     popup.animate({opacity: 0}, delayClose);
     setTimeout(function () {
         popup.removeClass('active');
         blackout.removeClass('active');
+        checkAge.removeClass('active');
+
     }, delayClose);
 }
 
@@ -150,7 +160,7 @@ Fancybox.Plugins.Toolbar.defaults.items.zoomIn = {
 };
 Fancybox.Plugins.Toolbar.defaults.items.zoomOut  = {
     type: "button",
-    class: "fancybox__button--thumbs",
+    class: "fancybox__button--repost",
     label: "thumbs",
     html: '<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M14.5,14 C14.628,14 14.752,14.049 14.845,14.138 C14.944,14.232 15,14.363 15,14.5 L15,17.293 L20.293,12 L15,6.707 L15,9.5 C15,9.633 14.947,9.761 14.853,9.854 C14.759,9.947 14.632,10 14.5,10 C14.494,9.998 14.491,10 14.486,10 C13.667,10 7.407,10.222 4.606,16.837 C7.276,14.751 10.496,13.795 14.188,13.989 C14.324,13.996 14.426,14.001 14.476,14.001 C14.484,14 14.492,14 14.5,14 M3.5,19 C3.414,19 3.328,18.979 3.25,18.933 C3.052,18.819 2.957,18.585 3.019,18.365 C5.304,10.189 11.981,9.145 14,9.017 L14,5.5 C14,5.298 14.122,5.115 14.309,5.038 C14.496,4.963 14.71,5.004 14.854,5.146 L21.354,11.646 C21.549,11.842 21.549,12.158 21.354,12.354 L14.854,18.854 C14.71,18.997 14.495,19.038 14.309,18.962 C14.122,18.885 14,18.702 14,18.5 L14,14.981 C9.957,14.791 6.545,16.102 3.857,18.85 C3.761,18.948 3.631,19 3.5,19" fill-rule="evenodd"></path></svg>',
     click: function (event) {
@@ -159,7 +169,7 @@ Fancybox.Plugins.Toolbar.defaults.items.zoomOut  = {
 };
 Fancybox.Plugins.Toolbar.defaults.items.slideshow  = {
     type: "button",
-    class: "fancybox__button--thumbs",
+    class: "fancybox__button--info",
     label: "slideshow",
     html: '<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M11.5,3 C16.187,3 20,6.813 20,11.5 C20,16.187 16.187,20 11.5,20 C6.813,20 3,16.187 3,11.5 C3,6.813 6.813,3 11.5,3 Z M11.5,4 C7.364,4 4,7.364 4,11.5 C4,15.636 7.364,19 11.5,19 C15.636,19 19,15.636 19,11.5 C19,7.364 15.636,4 11.5,4 Z M12,10 L12,15 L11,15 L11,10 L12,10 Z M12,8 L12,9 L11,9 L11,8 L12,8 Z" fill-rule="evenodd"></path></svg>',
     click: function (event) {
@@ -189,7 +199,6 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
 });
 
-
 const searchBtn = document.querySelector('.js-search')
 const searchBtnInput = document.querySelector('.search-input')
 const searchBtnCross = document.querySelector('.js-cross')
@@ -197,8 +206,6 @@ if(searchBtn){
     searchBtn.addEventListener('click', () => {
         searchBtnInput.classList.add('ON6A2O')
         searchBtnCross.classList.add('active')
-
-        console.log('loh')
     })
 }
 
@@ -206,8 +213,5 @@ if(searchBtnCross){
     searchBtnCross.addEventListener('click', () => {
         searchBtnInput.classList.remove('ON6A2O')
         searchBtnCross.classList.remove('active')
-        console.log('this')
-        console.log('this2')
-
     })
 }
