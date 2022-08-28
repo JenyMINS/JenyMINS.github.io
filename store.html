@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>VUBES</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -41,7 +43,7 @@
                 </a>
             </div>
             <div class="basket">
-                <a href="#" title="Корзина">
+                <a href="./store.html" title="Корзина">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
                          viewBox="5.7 0 105.5 126.1"
                          preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
@@ -68,8 +70,8 @@
     </div>
     <div class="right-menu">
         <div class="navbar">
-            <a href="./about-the-project.html"" title="О VIBES">О VIBES</a>
-            <div class="sun-menu__wrp"><a href="./wine-list.html" title="НАШИ ВИНА" class="sub-menu">НАШИ ВИНА </a>
+            <a href="./about-the-project.html" >О VIBES</a>
+            <div class="sun-menu__wrp"><a href="./wine-list.html"  class="sub-menu">НАШИ ВИНА </a>
                 <ul class="sub-menu__list">
                     <li><a href="./silvaner.html">2021 | SILVANER</a></li>
                     <li><a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a></li>
@@ -80,22 +82,19 @@
                     <li><a href="./petNatPinotGris.html">2021 | PET-NAT PINOT GRIS</a></li>
                 </ul>
             </div>
-            <a href="./story.html" title="INSPIRATION">INSPIRATION</a>
-            <a href="./shops.html" title="ГДЕ КУПИТЬ?">ГДЕ КУПИТЬ?</a>
-            <a href="./events.html" title="INSPIRATION">BLOG</a>
-            <a href="./store.html" title="INSPIRATION">STORE</a>
+            <a href="./story.html">INSPIRATION</a>
+            <a href="./shops.html">ГДЕ КУПИТЬ?</a>
+            <a href="./events.html">BLOG</a>
+            <a href="./store.html">STORE</a>
         </div>
     </div>
 </header>
 
 
 
+
+
 <section id="comp-l40hyooj" class="_3d64y">
-    <div id="bgLayers_comp-l40hyooj" data-hook="bgLayers"
-         class="_3wnIc">
-        <div data-testid="colorUnderlay" class="_3KzuS _3SQN-"></div>
-        <div id="bgMedia_comp-l40hyooj" class="_2GUhU"></div>
-    </div>
     <div data-testid="columns" class="_1uldx">
         <div id="comp-l40hyoqy" class="_1vNJf">
             <div id="bgLayers_comp-l40hyoqy" data-hook="bgLayers"
@@ -300,7 +299,7 @@
 </footer>
 
 
-<div id="check-age" class="popup">
+<div id="check-age" class="popup popup-checkage">
     <div class="left">
         <div class="images">
         </div>
@@ -312,7 +311,7 @@
         </div>
         <div class="btns">
             <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" title="Есть 18 лет">Мне есть 18+</a>
-            <a href="javascript:" onclick="window.close();" class="btn-popup" title="Нет 18 лет">Мне нет 18</a>
+            <a href="http://www.consultant.ru/document/cons_doc_LAW_8368/" target="_blank" class="btn-popup" title="Нет 18 лет">Мне нет 18</a>
         </div>
     </div>
     <div class="right" style="background-image: url(images/background/age.webp);"></div>
@@ -403,6 +402,7 @@
     </div>
 </div>
 <div onclick="ClosePopup($(this).attr('data-popup'))" class="blackout-background"></div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script src="js/jq.min.js"></script>
 <script src="js/swiper.min.js"></script>
