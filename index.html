@@ -2,426 +2,435 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>VUBES</title>
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <title>VUBES</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/fancybox.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 <header>
-	<div class="left-menu">
-		<div title="Главная" class="logo__wrap">
-			<div class="logo">
-				<a href="/" class="images">
-				</a>
-				<a href="/" class="text-logo">
-					<span class="head">VIBES</span>
-					<span class="down">VINICULTURAL SOCIETY</span>
-				</a>
-			</div>
-		</div>
-		<div class="link-menu">
-			<div class="profile">
-				<a href="javascript:" onclick="OpenPopup('login')" title="Профиль">
-					<svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg"
-						 width="50" height="50"
-						 viewBox="0 0 50 50">
-						<g>
-							<path
-									d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
-							</path>
-						</g>
-					</svg>
-				</a>
-			</div>
-			<div class="basket">
-				<a href="./store.html" title="Корзина">
-					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
-						 viewBox="5.7 0 105.5 126.1"
-						 preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
-						<path
-								d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z">
-						</path>
-						<path
-								d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">
-						</path>
-						<text x="58.5" y="77" dy=".35em" text-anchor="middle" data-hook="items-count">
-							0
-						</text>
-					</svg>
-					<span class="quantity">0</span>
-				</a>
-			</div>
-			<div class="feedback">
-				<a href="javascript:" onclick="OpenPopup('call-back')" title="Обратная связь">
-					<img src="images/call-phone.webp" alt="Обратная связь">
-					<span>CALL BACK</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="right-menu">
-		<div class="navbar">
-			<a href="./about-the-project.html" >О VIBES</a>
-			<div class="sun-menu__wrp"><a href="./wine-list.html"  class="sub-menu">НАШИ ВИНА </a>
-				<ul class="sub-menu__list">
-					<li><a href="./silvaner.html">2021 | SILVANER</a></li>
-					<li><a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a></li>
-					<li><a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a></li>
-					<li><a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANC-PINOT NOIR</a></li>
-					<li><a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a></li>
-					<li><a href="./petNatSilvaner.html">2021 | PET-NAT SILVANER</a></li>
-					<li><a href="./petNatPinotGris.html">2021 | PET-NAT PINOT GRIS</a></li>
-				</ul>
-			</div>
-			<a href="./story.html">INSPIRATION</a>
-			<a href="./shops.html">ГДЕ КУПИТЬ?</a>
-			<a href="./events.html">BLOG</a>
-			<a href="./store.html">STORE</a>
-		</div>
-	</div>
+    <div class="left-menu">
+        <div class="logo__wrap">
+            <div class="logo">
+                <a href="/" class="images">
+                </a>
+                <a href="/" class="text-logo">
+                    <span class="head">VIBES</span>
+                    <span class="down">VINICULTURAL SOCIETY</span>
+                </a>
+            </div>
+        </div>
+        <div class="link-menu">
+            <div class="profile">
+                <a href="javascript:" onclick="OpenPopup('login')">
+                    <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg"
+                         width="50" height="50"
+                         viewBox="0 0 50 50">
+                        <g>
+                            <path
+                                    d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="basket">
+                <a href="./store.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
+                         viewBox="5.7 0 105.5 126.1"
+                         preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
+                        <path
+                                d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z">
+                        </path>
+                        <path
+                                d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z">
+                        </path>
+                        <text x="58.5" y="77" dy=".35em" text-anchor="middle" data-hook="items-count">
+                            0
+                        </text>
+                    </svg>
+                    <span class="quantity">0</span>
+                </a>
+            </div>
+            <div class="feedback">
+                <a href="javascript:" onclick="OpenPopup('call-back')">
+                    <img src="images/call-phone.webp" alt="Обратная связь">
+                    <span>CALL BACK</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="right-menu">
+        <div class="navbar">
+            <a href="./about-the-project.html">О VIBES</a>
+            <div class="sun-menu__wrp"><a href="./wine-list.html" class="sub-menu">НАШИ ВИНА </a>
+                <ul class="sub-menu__list">
+                    <li><a href="./silvaner.html">2021 | SILVANER</a></li>
+                    <li><a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a></li>
+                    <li><a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a></li>
+                    <li><a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANC-PINOT NOIR</a></li>
+                    <li><a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a></li>
+                    <li><a href="./petNatSilvaner.html">2021 | PET-NAT SILVANER</a></li>
+                    <li><a href="./petNatPinotGris.html">2021 | PET-NAT PINOT GRIS</a></li>
+                </ul>
+            </div>
+            <a href="./story.html">INSPIRATION</a>
+            <a href="./shops.html">ГДЕ КУПИТЬ?</a>
+            <a href="./events.html">BLOG</a>
+            <a href="./store.html">STORE</a>
+        </div>
+    </div>
 </header>
 
 
-
-
 <section class="main-video">
-		<a data-fancybox="gallery" data-ratio="2" href="video/main.mp4">
-			<video autoplay loop muted>
-				<source src="video/main.mp4" type="video/mp4">
-			</video>
-		</a>
-	</section>
-	<section class="project">
-		<div class="container">
-			<div class="left">
-				<h3 class="subtitle">Вибрация души, вибрация вина...</h3>
-				<h1 class="title">Винодельческий проект <span>VIBES</span></h1>
-				<p class="text">
-					Мы - винодельческий проект «Вайбс», реализуем концепцию «Terroir Hunter» и <br> постоянно находимся в поиске новых винных стилей, открываем заново «винный
-					<br> Крым». С 2020 года мы придумываем, делаем, проживаем заново и создаем новые <br> вкусы своими руками на новой винодельне, расположенной в феерически
-					<br> красивых закатных степях Западного Крыма.
-				</p>
-				<a class="btn-def" href="./wine-list.html" title="Карта вин">изучить карту вин vibes</a>
-				<div class="menu-title">
-					Фавориты в сезоне 2021/22
-				</div>
-				<div class="menu-items">
-					<a href="#" title="Chardonnay">Chardonnay</a>
-					<a href="#" title="Pinot Grigio">Pinot Grigio</a>
-					<a href="#" title="Riesling-Silvaner">Riesling-Silvaner</a>
-					<a href="#" title="Silvaner">Silvaner</a>
-					<a href="#" title="Cabernet Franc - Pinot Noir">Cabernet Franc - Pinot Noir</a>
+    <a data-fancybox="gallery" data-ratio="2" href="video/main.mp4">
+        <video autoplay loop muted>
+            <source src="video/main.mp4" type="video/mp4">
+        </video>
+    </a>
+</section>
+<section class="project">
+    <div class="container">
+        <div class="left">
+            <h3 class="subtitle">Вибрация души, вибрация вина...</h3>
+            <h1 class="title">Винодельческий проект <span>VIBES</span></h1>
+            <p class="text">
+                Мы - винодельческий проект «Вайбс», реализуем концепцию «Terroir Hunter» и <br> постоянно находимся в
+                поиске новых винных стилей, открываем заново «винный
+                <br> Крым». С 2020 года мы придумываем, делаем, проживаем заново и создаем новые <br> вкусы своими
+                руками на новой винодельне, расположенной в феерически
+                <br> красивых закатных степях Западного Крыма.
+            </p>
+            <a class="btn-def" href="./wine-list.html">изучить карту вин vibes</a>
+            <div class="menu-title">
+                Фавориты в сезоне 2021/22
+            </div>
+            <div class="menu-items">
+                <a href="./chardonnayBarrel.html" >Chardonnay</a>
+                <a href="./pinotGrigio.html">Pinot Grigio</a>
+                <a href="./rieslingSilvaner.html" >Riesling-Silvaner</a>
+                <a href="./silvaner.html" >Silvaner</a>
+                <a href="./cabernetFrancPinotNoir.html" >Cabernet Franc - Pinot Noir</a>
 
-				</div>
-			</div>
-			<div class="right">
-				<div class="item-slider">
-					<div id="wine1" class="item">
-						<a href="./petNatPinotGris.html" title="wine1">
-							<img src="images/wine/1.png" alt="wine1">
-						</a>
-					</div>
-					<div id="wine2" class="item">
-						<a href="./petNatSilvaner.html" title="wine2">
-							<img src="images/wine/2.png" alt="wine2">
-						</a>
-					</div>
-					<div id="wine3" class="item">
-						<a href="./cabernetFrancPinotNoir.html" title="wine3">
-							<img src="images/wine/3.png" alt="wine3">
-						</a>
-					</div>
-					<div id="wine4" class="item">
-						<a href="./silvaner.html" title="wine4">
-							<img src="images/wine/4.png" alt="wine4">
-						</a>
-					</div>
-					<div id="wine5" class="item">
-						<a href="./rieslingSilvaner.html" title="wine5">
-							<img src="images/wine/5.png" alt="wine5">
-						</a>
-					</div>
-					<div id="wine6" class="item">
-						<a href="./pinotGrigio.html" title="wine6">
-							<img src="images/wine/6.png" alt="wine6">
-						</a>
-					</div>
-					<div id="wine7" class="item">
-						<a href="./chardonnayBarrel.html" title="wine7">
-							<img src="images/wine/7.png" alt="wine7">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="news">
-		<div class="container">
-			<div class="news-list">
-				<div class="news-item" style="background-image: url('images/blog/blog-1.jfif');">
-					<div class="background-black">
-						<div class="top">
-							<div class="autor">
-								<a href="./events.html" title="Автор">
-									<div class="name">VIBES WINE</div>
-									<div class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" style="fill-rule: evenodd;">
-											<path
-												d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
-											</path>
-										</svg>
-									</div>
-								</a>
-							</div>
-							<div class="date">1 июня</div>
-						</div>
-						<div class="bottom">
-							<div class="name">
-								<a href="./blog-chardonnay.html" title="«Chardonnay» 🍷 Королева в восхищении!">«Chardonnay» 🍷 Королева в восхищении!
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="news-item" style="background-image: url('images/blog/blog-2.jfif');">
-					<div class="background-black">
-						<div class="top">
-							<div class="autor">
-								<a href="./events.html" title="Автор">
-									<div class="name">VIBES WINE</div>
-									<div class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" style="fill-rule: evenodd;">
-											<path
-												d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
-											</path>
-										</svg>
-									</div>
-								</a>
-							</div>
-							<div class="date">25 мая</div>
-						</div>
-						<div class="bottom">
-							<div class="name">
-								<a href="./blog-reisling-silvaner.html" title="«Reisling-Silvaner» 🍷 Холодный меч, бла бла бла">«Reisling-Silvaner» 🍷 Холодный
-									меч, бла бла бла
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="news-item" style="background-image: url('images/blog/blog-3.jfif');">
-					<div class="background-black">
-						<div class="top">
-							<div class="autor">
-								<a href="./events.html" title="Автор">
-									<div class="name">VIBES WINE</div>
-									<div class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" style="fill-rule: evenodd;">
-											<path
-												d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
-											</path>
-										</svg>
-									</div>
-								</a>
-							</div>
-							<div class="date">20 апреля</div>
-						</div>
-						<div class="bottom">
-							<div class="name">
-								<a href="./blog-silvaner.html" title="«Silvaner» 🍷 Гроза наступает!">«Silvaner» 🍷 Гроза наступает!
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="container">
-			<div class="left">
-				<div class="logo">
-					<a href="/" title="Главная">
-						<div class="images">
-						</div>
-						<div class="text-logo">
-							<span class="head">VIBES</span>
-							<span class="down">VINICULTURAL SOCIETY</span>
-						</div>
-					</a>
-				</div>
-				<div class="email">
-					<span>contact - </span><a href="mail:vibeswine@yandex.ru">vibeswine@yandex.ru</a>
-				</div>
-				<div class="copyright">
-					<span>VIBES</span> - команда сплотившаяся c целью создать вино & поделиться с миром посредством него своими
-					настроением,
-					любовью и опытом.
-				</div>
-			</div>
-			<div class="center">
-				<a href="#" title="2021 | SILVANER">2021 | SILVANER</a>
-				<a href="#" title="2021 | RIESLING-SILVANER">2021 | RIESLING-SILVANER</a>
-				<a href="#" title="2021 | CHARDONNAY BARREL">2021 | CHARDONNAY BARREL</a>
-				<a href="#" title="2021 | CABERNET FRANС">2021 | CABERNET FRANС</a>
-				<a href="#" title="2021 | PINOT GRIGIO">2021 | PINOT GRIGIO</a>
-			</div>
-			<div class="right">
-				<div class="contacts">
-					<div class="title-line">
-						<div class="text">ПОДПИШИТЕСЬ НА РАССЫЛКУ!</div>
-						<div class="title">NEWS</div>
-					</div>
-					<div class="mailing">
-						<form action="">
-							<input type="text" placeholder="Введите e-mail">
-							<button>Подписаться</button>
-						</form>
-					</div>
-					<div class="social">
-						<a href="#" target="_blank" title="Вконтакте">
-							<img src="images/social/vk.webp" alt="Вконтакте">
-						</a>
-						<a href="#" target="_blank" title="Инстаграм">
-							<img src="images/social/instagram.webp" alt="Инстаграм">
-						</a>
-						<a href="#" target="_blank" title="Ютуб">
-							<img src="images/social/youtube.webp" alt="Ютуб">
-						</a>
-						<a href="#" target="_blank" title="Ватсап">
-							<img src="images/social/whatsapp.webp" alt="Ватсап">
-						</a>
-						<a href="#" target="_blank" title="Телеграм">
-							<img src="images/social/telegram.webp" alt="Телеграм">
-						</a>
-					</div>
-				</div>
-				<div class="partners">
-					<a href="#" title="Adson">
-						<img src="images/part.webp" alt="Adson">
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+            </div>
+        </div>
+        <div class="right">
+            <div class="item-slider">
+                <div id="wine1" class="item">
+                    <a href="./petNatPinotGris.html" >
+                        <img src="images/wine/1.png" alt="wine1">
+                    </a>
+                </div>
+                <div id="wine2" class="item">
+                    <a href="./petNatSilvaner.html" >
+                        <img src="images/wine/2.png" alt="wine2">
+                    </a>
+                </div>
+                <div id="wine3" class="item">
+                    <a href="./cabernetFrancPinotNoir.html" >
+                        <img src="images/wine/3.png" alt="wine3">
+                    </a>
+                </div>
+                <div id="wine4" class="item">
+                    <a href="./silvaner.html" >
+                        <img src="images/wine/4.png" alt="wine4">
+                    </a>
+                </div>
+                <div id="wine5" class="item">
+                    <a href="./rieslingSilvaner.html" >
+                        <img src="images/wine/5.png" alt="wine5">
+                    </a>
+                </div>
+                <div id="wine6" class="item">
+                    <a href="./pinotGrigio.html" >
+                        <img src="images/wine/6.png" alt="wine6">
+                    </a>
+                </div>
+                <div id="wine7" class="item">
+                    <a href="./chardonnayBarrel.html" >
+                        <img src="images/wine/7.png" alt="wine7">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news">
+    <div class="container">
+        <div class="news-list">
+            <div class="news-item" style="background-image: url('images/blog/blog-1.jfif');">
+                <div class="background-black">
+                    <div class="top">
+                        <div class="autor">
+                            <a href="./events.html" >
+                                <div class="name">VIBES WINE</div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                         style="fill-rule: evenodd;">
+                                        <path
+                                                d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="date">1 июня</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="name">
+                            <a href="./blog-chardonnay.html" >«Chardonnay»
+                                🍷 Королева в восхищении!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-item" style="background-image: url('images/blog/blog-2.jfif');">
+                <div class="background-black">
+                    <div class="top">
+                        <div class="autor">
+                            <a href="./events.html" >
+                                <div class="name">VIBES WINE</div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                         style="fill-rule: evenodd;">
+                                        <path
+                                                d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="date">25 мая</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="name">
+                            <a href="./blog-reisling-silvaner.html"
+                               >«Reisling-Silvaner» 🍷 Холодный
+                                меч, бла бла бла
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-item" style="background-image: url('images/blog/blog-3.jfif');">
+                <div class="background-black">
+                    <div class="top">
+                        <div class="autor">
+                            <a href="./events.html" >
+                                <div class="name">VIBES WINE</div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19"
+                                         style="fill-rule: evenodd;">
+                                        <path
+                                                d="M15.3812,6.495914 L12.6789333,8.77258837 C12.6191333,8.84477644 12.5099333,8.85722265 12.4354,8.79997005 C12.4215333,8.79001308 12.4094,8.77756686 12.3998667,8.76429089 L9.78686667,6.14327115 C9.67766667,5.99225704 9.46186667,5.95491839 9.305,6.05863687 C9.26946667,6.08186981 9.23913333,6.11091099 9.21573333,6.14493065 L6.60013333,8.81075677 C6.5464,8.88626383 6.43893333,8.90534803 6.3592,8.85390366 C6.34446667,8.84394669 6.33146667,8.83233022 6.32106667,8.81905425 L3.61966667,6.50587098 C3.5018,6.36149485 3.28426667,6.33577266 3.13346667,6.44861837 C3.0494,6.51167921 3,6.60792997 3,6.70998895 L4,14 L15,14 L16,6.70169148 C16,6.51831719 15.8448667,6.36979232 15.6533333,6.36979232 C15.5476,6.36979232 15.4470667,6.41625821 15.3812,6.495914 Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="date">20 апреля</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="name">
+                            <a href="./blog-silvaner.html" >«Silvaner» 🍷 Гроза
+                                наступает!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <a href="/">
+                    <div class="images">
+                    </div>
+                    <div class="text-logo">
+                        <span class="head">VIBES</span>
+                        <span class="down">VINICULTURAL SOCIETY</span>
+                    </div>
+                </a>
+            </div>
+            <div class="email">
+                <span>contact - </span><a href="mail:vibeswine@yandex.ru">vibeswine@yandex.ru</a>
+            </div>
+            <div class="copyright">
+                <span>VIBES</span> - команда сплотившаяся c целью создать вино & поделиться с миром посредством него
+                своими
+                настроением,
+                любовью и опытом.
+            </div>
+        </div>
+        <div class="center">
+            <a href="./silvaner.html">2021 | SILVANER</a>
+            <a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a>
+            <a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a>
+            <a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANС</a>
+            <a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a>
+        </div>
+        <div class="right">
+            <div class="contacts">
+                <div class="title-line">
+                    <div class="text">ПОДПИШИТЕСЬ НА РАССЫЛКУ!</div>
+                    <div class="title">NEWS</div>
+                </div>
+                <div class="mailing">
+                    <form action="">
+                        <input type="text" placeholder="Введите e-mail">
+                        <button>Подписаться</button>
+                    </form>
+                </div>
+                <div class="social">
+                    <a href="#" target="_blank" >
+                        <img src="images/social/vk.webp" alt="Вконтакте">
+                    </a>
+                    <a href="#" target="_blank" >
+                        <img src="images/social/instagram.webp" alt="Инстаграм">
+                    </a>
+                    <a href="#" target="_blank" >
+                        <img src="images/social/youtube.webp" alt="Ютуб">
+                    </a>
+                    <a href="#" target="_blank" >
+                        <img src="images/social/whatsapp.webp" alt="Ватсап">
+                    </a>
+                    <a href="#" target="_blank" >
+                        <img src="images/social/telegram.webp" alt="Телеграм">
+                    </a>
+                </div>
+            </div>
+            <div class="partners">
+                <a href="#" >
+                    <img src="images/part.webp" alt="Adson">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <div id="check-age" class="popup popup-checkage">
-	<div class="left">
-		<div class="images">
-		</div>
-		<div class="age">18+</div>
-		<div class="text">
-			Сайт содержит информацию, не рекомендованную для лиц, <b>не достигших совершеннолетнего возраста</b>. Для
-			доступа на
-			сайт подтвердите, пожалуйста, свое совершеннолетие.
-		</div>
-		<div class="btns">
-			<a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" title="Есть 18 лет">Мне есть 18+</a>
-			<a href="http://www.consultant.ru/document/cons_doc_LAW_8368/" target="_blank" class="btn-popup" title="Нет 18 лет">Мне нет 18</a>
-		</div>
-	</div>
-	<div class="right" style="background-image: url(images/background/age.webp);"></div>
+    <div class="left">
+        <div class="images">
+        </div>
+        <div class="age">18+</div>
+        <div class="text">
+            Сайт содержит информацию, не рекомендованную для лиц, <b>не достигших совершеннолетнего возраста</b>. Для
+            доступа на
+            сайт подтвердите, пожалуйста, свое совершеннолетие.
+        </div>
+        <div class="btns">
+            <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" >Мне есть 18+</a>
+            <a href="http://www.consultant.ru/document/cons_doc_LAW_8368/" target="_blank" class="btn-popup"
+               >Мне нет 18</a>
+        </div>
+    </div>
+    <div class="right" style="background-image: url(images/background/age.webp);"></div>
 </div>
+<div id="call-back" class="popup">
+    <div class="left">
+        <div class="images">
+        </div>
+        <div class="title">
+            Обратный <p>звонок</p>
+        </div>
+        <div class="text text-popup">
+            Заполните контактную форму и отправьте заявку на обратный звонок от специалистов VIBES. Мы свяжемся с Вами в
+            ближайшее время и проконсультируем по всем возникшим вопросам!
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="Телофон">
+            <div class="btns">
+                <button class="btn-popup" >Позвоните мне</button>
+            </div>
+        </form>
+    </div>
+    <div class="right" style="background-image: url(images/background/call.jpg);">
+        <a href="javascript:" onclick="ClosePopup('call-back')">
+            <svg preserveAspectRatio="xMidYMid meet" data-bbox="25.975 25.975 148.05 148.05"
+                 xmlns="http://www.w3.org/2000/svg" viewBox="25.975 25.975 148.05 148.05" role="presentation"
+                 aria-hidden="true">
+                <g>
+                    <path
+                            d="M172.9 167.6L105.3 100l67.6-67.6c1.5-1.5 1.5-3.8 0-5.3s-3.8-1.5-5.3 0L100 94.7 32.4 27.1c-1.5-1.5-3.8-1.5-5.3 0s-1.5 3.8 0 5.3L94.7 100l-67.6 67.6c-1.5 1.5-1.5 3.8 0 5.3s3.8 1.5 5.3 0l67.6-67.6 67.6 67.6c1.5 1.5 3.8 1.5 5.3 0s1.5-3.8 0-5.3z">
+                    </path>
+                </g>
+            </svg>
+        </a>
+    </div>
+</div>
+<div id="login" class="popup login">
+    <div class="left left-right form-container sign-up-container">
+        <div class="images">
+        </div>
+        <div class="title">
+            Создать <p>аккаунт</p>
+        </div>
+        <form action="#">
 
-	<div id="call-back" class="popup">
-		<div class="left">
-			<div class="images">
-			</div>
-			<div class="title">
-				Обратный <p>звонок</p>
-			</div>
-			<div class="text text-popup">
-				Заполните контактную форму и отправьте заявку на обратный звонок от специалистов VIBES. Мы свяжемся с Вами в
-				ближайшее время и проконсультируем по всем возникшим вопросам!
-			</div>
-			<form action="#">
-				<input type="text" placeholder="Имя">
-				<input type="text" placeholder="Телофон">
-				<div class="btns">
-					<button class="btn-popup" title="Позвоните мне">Позвоните мне</button>
-				</div>
-			</form>
-		</div>
-		<div class="right" style="background-image: url(images/background/call.jpg);">
-			<a href="javascript:" onclick="ClosePopup('call-back')">
-				<svg preserveAspectRatio="xMidYMid meet" data-bbox="25.975 25.975 148.05 148.05"
-					xmlns="http://www.w3.org/2000/svg" viewBox="25.975 25.975 148.05 148.05" role="presentation"
-					aria-hidden="true">
-					<g>
-						<path
-							d="M172.9 167.6L105.3 100l67.6-67.6c1.5-1.5 1.5-3.8 0-5.3s-3.8-1.5-5.3 0L100 94.7 32.4 27.1c-1.5-1.5-3.8-1.5-5.3 0s-1.5 3.8 0 5.3L94.7 100l-67.6 67.6c-1.5 1.5-1.5 3.8 0 5.3s3.8 1.5 5.3 0l67.6-67.6 67.6 67.6c1.5 1.5 3.8 1.5 5.3 0s1.5-3.8 0-5.3z">
-						</path>
-					</g>
-				</svg>
-			</a>
-		</div>
-	</div>
-	<div id="login" class="popup login">
-		<div class="left left-right form-container sign-up-container">
-			<div class="images">
-			</div>
-			<div class="title">
-				Создать <p>аккаунт</p>
-			</div>
-			<form action="#">
+            <div class="text text-popup">
+                Уже есть аккаунт?
+                <button class="btn-link" id="signIn">Войти</button>
+            </div>
+            <input type="text" placeholder="Name"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <div class="btns">
+                <button class="btn-popup" >Зарегестрироваться</button>
+            </div>
+        </form>
+    </div>
+    <div class="left form-container sign-in-container">
+        <div class="images">
+        </div>
+        <div class="title">
+            Войти на <p>сайт</p>
+        </div>
+        <form action="#">
+            <div class="text text-popup">
+                Впервые на сайте?
+                <button class="btn-link" id="signUp">Зарегистрироваться</button>
+            </div>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <a href="#">Забыли пароль?</a>
+            <div class="btns">
+                <button class="btn-popup" >Войти</button>
+            </div>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
 
-				<div class="text text-popup">
-					Уже есть аккаунт? <button class="btn-link" id="signIn">Войти</button>
-				</div>
-				<input type="text" placeholder="Name" />
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<div class="btns">
-					<button class="btn-popup" title="Зарегестрироваться">Зарегестрироваться</button>
-				</div>
-			</form>
-		</div>
-		<div class="left form-container sign-in-container">
-			<div class="images">
-			</div>
-			<div class="title">
-				Войти на <p>сайт</p>
-			</div>
-			<form action="#">
-				<div class="text text-popup">
-					Впервые на сайте? <button class="btn-link" id="signUp">Зарегистрироваться</button>
-				</div>
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<a href="#">Забыли пароль?</a>
-				<div class="btns">
-					<button class="btn-popup" title="Войти">Войти</button>
-				</div>
-			</form>
-		</div>
-		<div class="overlay-container">
-			<div class="overlay">
-				<div class="overlay-panel overlay-left">
-
-				</div>
-				<div class="overlay-panel overlay-right">
+            </div>
+            <div class="overlay-panel overlay-right">
 
 
-				</div>
-			</div>
-		</div>
-	</div>
-	<div onclick="ClosePopup($(this).attr('data-popup'))" class="blackout-background"></div>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+<div onclick="ClosePopup($(this).attr('data-popup'))" class="blackout-background"></div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-	<script src="js/jq.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/fancybox.umd.js"></script>
-	<script src="js/script.js"></script>
-	<script>PopupTimer(1);</script>
+<script src="js/jq.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/script.js"></script>
+<script>PopupTimer(1);</script>
 </body>
 
 </html>
