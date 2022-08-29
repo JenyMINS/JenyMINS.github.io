@@ -1,12 +1,13 @@
 window.onload = function () {
 
+
     AOS.init({
         once: true,
         duration: 2000,
     });
 
 
-    $(' .more-button button').click(()=>{
+    $(' .more-button button').click(() => {
         $('.repost-block').toggleClass('active')
     })
 
@@ -86,12 +87,15 @@ function PopupTimer(flag) {
             delayOpen = 1000;
         console.log(popup)
         blackout = $('.blackout-background');
-        setTimeout(function () {
-            blackout.addClass('active').animate({opacity: 1}, delay2Open);
-        }, 3000);
-        setTimeout(function () {
-            popup.addClass('active').animate({opacity: 1}, delayOpen);
-        }, 3300);
+        if(!getCookie('popupCookie')){
+            setTimeout(function () {
+                blackout.addClass('active').animate({opacity: 1}, delay2Open);
+            }, 3000);
+            setTimeout(function () {
+                popup.addClass('active').animate({opacity: 1}, delayOpen);
+            }, 3300);
+        }
+
     }
 }
 
@@ -101,10 +105,11 @@ function ClosePopupTimer(id) {
     blackout = $('.blackout-background');
     blackout.animate({opacity: 0}, delayClose);
     popup.animate({opacity: 0}, delayClose);
-    setTimeout(function () {
-        popup.removeClass('active');
-        blackout.removeClass('active');
-    }, delayClose);
+        setTimeout(function () {
+            popup.removeClass('active');
+            blackout.removeClass('active');
+        }, delayClose);
+
 }
 
 // Попап по ссылке
@@ -135,8 +140,6 @@ function ClosePopup(id) {
 
     }, delayClose);
 }
-
-
 
 
 // Попап логина
@@ -243,5 +246,43 @@ if (searchBtnCross) {
     })
 }
 
+if (getCookie('popupCookie') != 'submited') {
+    if (getCookie('popupCookie') != 'closed') {
+        $('.popup-checkage').css("display", "block").hide().fadeIn();
+    }
+}
 
+$('#check-age .btns .btn-popup').click(function () {
+    $('.popup-checkage').fadeOut();
+    //sets the coookie to one minute if the popup is closed (whole numbers = days)
+    setCookie('popupCookie', 'submited', .00069444444);
+});
+
+// $('a.submit').click(function () {
+//     $('.popup-overlay').fadeOut();
+//     //sets the coookie to five minutes if the popup is submited (whole numbers = days)
+//     setCookie('popupCookie', 'submited', .0034722222);
+// });
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
