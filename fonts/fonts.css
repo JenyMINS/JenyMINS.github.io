@@ -22,3 +22,7 @@
 	font-family: "Circe Thin";
 	src: url(/fonts/circe/circe_thin.ttf);
 }
+@font-face {
+	font-family: 'MADEEvolveSansBold';
+	src: url(/fonts/MADE-Evolve-Sans-Bold.otf);
+}
