@@ -248,7 +248,7 @@ if (searchBtnCross) {
 
 if (getCookie('popupCookie') != 'submited') {
     if (getCookie('popupCookie') != 'closed') {
-        $('.popup-checkage').css("display", "block").hide().fadeIn();
+        $('.popup-checkage').css("display", "flex").hide().fadeIn();
     }
 }
 
@@ -258,11 +258,7 @@ $('#check-age .btns .btn-popup').click(function () {
     setCookie('popupCookie', 'submited', .00069444444);
 });
 
-// $('a.submit').click(function () {
-//     $('.popup-overlay').fadeOut();
-//     //sets the coookie to five minutes if the popup is submited (whole numbers = days)
-//     setCookie('popupCookie', 'submited', .0034722222);
-// });
+
 
 function getCookie(cname) {
     var name = cname + "=";
