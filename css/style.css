@@ -70,7 +70,9 @@
     --minViewportSize: 320;
     --maxViewportSize: 1920
 }
-
+b{
+    font-weight: bold !important;
+}
 .font_0 {
     font: var(--font_0);
     color: rgb(var(--color_15));
@@ -2223,7 +2225,8 @@
 .blackout-background {
     width: 100%;
     height: 100vh;
-    background-color: var(--color-black);
+    /*background-color: var(--color-black);*/
+    background-image: url("../images/bgoverlay.jpg");
     top: 0;
     position: fixed;
     z-index: 30;
@@ -2393,6 +2396,7 @@
     padding-bottom: 17px;
 }
 
+
 .popup .left .btns a {
     margin-bottom: 7px;
     padding-left: 0;
@@ -2400,6 +2404,13 @@
     box-shadow: 0 6px 15px -13px rgb(0 0 0 / 40%);
     background: repeat padding-box border-box 0% / auto scroll linear-gradient(#000000, #000000) #000000;
     color: white;
+    transition: .5s;
+}
+
+.popup .left .btns a:hover{
+    background: #ffffff;
+    color: #000000;
+    transition: .5s;
 }
 
 .popup .left .title {
@@ -2464,7 +2475,6 @@
 .popup .left a, .popup .left button.btn-link {
     text-decoration: none;
     border: none;
-    font-family: var(--font-extrabold);
     font-size: 15px;
     background-color: transparent;
     cursor: pointer;
@@ -2756,14 +2766,14 @@ header .left-menu .logo__wrap .logo .text-logo .down {
     transition: var(--transition);
 }
 
-header .left-menu .logo__wrap:hover .images::after {
+header .left-menu .logo__wrap .images:hover::after {
     width: 37px;
     height: 37px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-header .left-menu .logo__wrap:hover .text-logo .down {
+header .left-menu .logo__wrap .text-logo:hover .down {
     opacity: 0.5;
 }
 
@@ -2885,12 +2895,13 @@ header .right-menu .navbar a:hover {
     color: var(--color-text);
     font-family: var(--font-thin);
     font-size: 16px;
+    font-weight: 600;
     margin: 10px 0 8px 0;
 }
 
 .project > div .left .title {
     color: var(--color-text);
-    font-family: var(--font-thin);
+    font-family: var(--font-extralight);
     font-size: 44px;
     margin-bottom: 21px;
     margin-top: 0;
@@ -3166,6 +3177,7 @@ footer > div .left .logo a .text-logo {
     color: white;
     text-transform: uppercase;
     display: flex;
+    height: 75px;
     flex-direction: column;
 }
 
@@ -3181,14 +3193,16 @@ footer > div .left .logo a .text-logo .down {
     font-size: 17px;
     opacity: 0.7;
     transition: var(--transition);
+    margin-top: 7px;
 }
 
-footer > div .left .logo:hover .images::after {
+footer > div .left .logo .images:hover::after {
     width: 45px;
     height: 44px;
+    transform: translateX(10%);
 }
 
-footer > div .left .logo:hover .text-logo .down {
+footer > div .left .logo .text-logo:hover .down {
     opacity: 0.5;
 }
 
@@ -3270,8 +3284,9 @@ footer > div .right .contacts .title-line .text {
     width: 100%;
     font-size: 12px;
     margin-right: 25px;
-    margin-top: 6px;
     text-align: right;
+    margin-top: 10px;
+    line-height: 15.5px;
 }
 
 footer > div .right .contacts .title-line .title {
@@ -7796,6 +7811,9 @@ body.device-mobile-optimized ._3rK5m:active ._2Ms4G, body.device-mobile-optimize
 #comp-l34k5v8c {
     --fade_next: opacity 0.1s ease 0s;
     --fade_prev: opacity 0.5s ease 0s
+}
+#comp-l34k5v8c:hover .VNb9p{
+transform: scale(0.8);
 }
 
 #comp-kh9pet52 {
