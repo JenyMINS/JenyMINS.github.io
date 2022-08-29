@@ -2509,7 +2509,7 @@ b{
 }
 
 .popup.active {
-    display: flex;
+    display: flex !important;
     background: #000;
 }
 
@@ -2753,10 +2753,10 @@ header .left-menu .logo__wrap .logo .text-logo {
 }
 
 header .left-menu .logo__wrap .logo .text-logo .head {
-    font-family: var(--font-bold);
+    font-family: MADEEvolveSansBold, sans-serif;
     font-size: 27px;
-    letter-spacing: 0.7em;
-    margin-bottom: -4px;
+    letter-spacing: 0.71em;
+    margin-bottom: 0;
 }
 
 header .left-menu .logo__wrap .logo .text-logo .down {
@@ -2775,6 +2775,7 @@ header .left-menu .logo__wrap .images:hover::after {
 
 header .left-menu .logo__wrap .text-logo:hover .down {
     opacity: 0.5;
+    margin-top: 2px;
 }
 
 header .left-menu .link-menu {
@@ -2909,7 +2910,7 @@ header .right-menu .navbar a:hover {
 }
 
 .project > div .left .title span {
-    font-family: var(--font-bold);
+    font-family: MADEEvolveSansBold, sans-serif;
     letter-spacing: 0.25em;
 }
 
@@ -3182,9 +3183,9 @@ footer > div .left .logo a .text-logo {
 }
 
 footer > div .left .logo a .text-logo .head {
-    font-family: var(--font-bold);
+    font-family: MADEEvolveSansBold, sans-serif;
     font-size: 35px;
-    letter-spacing: 0.7em;
+    letter-spacing: 0.735em;
     margin-bottom: -12px;
 }
 
@@ -3283,15 +3284,15 @@ footer > div .right .contacts .title-line .text {
     max-width: 97px;
     width: 100%;
     font-size: 12px;
-    margin-right: 25px;
+    margin-right: 22px;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 13px;
     line-height: 15.5px;
 }
 
 footer > div .right .contacts .title-line .title {
-    font-family: var(--font-bold);
-    font-size: 35px;
+    font-family: MADEEvolveSansBold, sans-serif;
+    font-size: 36px;
     letter-spacing: 0.74em;
     margin-bottom: -12px;
     text-transform: uppercase;
