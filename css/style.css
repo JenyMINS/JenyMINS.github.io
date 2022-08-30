@@ -2482,7 +2482,7 @@ b{
     color: var(--color-black);
     padding-right: 0;
 }
-.popup .left form{
+.popup .left form a{
     font-family: var(--font-light);
 }
 .popup .right {
