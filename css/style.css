@@ -2482,7 +2482,9 @@ b{
     color: var(--color-black);
     padding-right: 0;
 }
-
+.popup .left form{
+    font-family: var(--font-light);
+}
 .popup .right {
     width: 51%;
     background-position: center;
