@@ -2895,9 +2895,8 @@ header .right-menu .navbar a:hover {
 
 .project > div .left .subtitle {
     color: var(--color-text);
-    font-family: var(--font-thin);
+    font-family: var(--font-light);
     font-size: 16px;
-    font-weight: 600;
     margin: 10px 0 8px 0;
 }
 
