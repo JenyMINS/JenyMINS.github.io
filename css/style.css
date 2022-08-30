@@ -2775,7 +2775,7 @@ header .left-menu .logo__wrap .images:hover::after {
 
 header .left-menu .logo__wrap .text-logo:hover .down {
     opacity: 0.5;
-    margin-top: 2px;
+    margin-top: 0;
 }
 
 header .left-menu .link-menu {
@@ -3178,7 +3178,7 @@ footer > div .left .logo a .text-logo {
     color: white;
     text-transform: uppercase;
     display: flex;
-    height: 75px;
+    height:69px;
     flex-direction: column;
 }
 
@@ -3194,7 +3194,7 @@ footer > div .left .logo a .text-logo .down {
     font-size: 17px;
     opacity: 0.7;
     transition: var(--transition);
-    margin-top: 7px;
+    margin-top: 15px;
 }
 
 footer > div .left .logo .images:hover::after {
