@@ -255,7 +255,7 @@ if (getCookie('popupCookie') != 'submited') {
 $('#check-age .btns .btn-popup').click(function () {
     $('.popup-checkage').fadeOut();
     //sets the coookie to one minute if the popup is closed (whole numbers = days)
-    setCookie('popupCookie', 'submited', .00069444444);
+    setCookie('popupCookie', 'submited', 1);
 });
 
 
