@@ -71,7 +71,7 @@
     --maxViewportSize: 1920
 }
 b{
-    font-family: "Circe Bold", sans-serif;
+    font-family: "Circe Bold", sans-serif !important;
     font-weight: bold !important;
 }
 .font_0 {
