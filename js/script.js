@@ -194,15 +194,15 @@ Fancybox.Plugins.Toolbar.defaults.items.slideshow = {
     html: '<svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M11.5,3 C16.187,3 20,6.813 20,11.5 C20,16.187 16.187,20 11.5,20 C6.813,20 3,16.187 3,11.5 C3,6.813 6.813,3 11.5,3 Z M11.5,4 C7.364,4 4,7.364 4,11.5 C4,15.636 7.364,19 11.5,19 C15.636,19 19,15.636 19,11.5 C19,7.364 15.636,4 11.5,4 Z M12,10 L12,15 L11,15 L11,10 L12,10 Z M12,8 L12,9 L11,9 L11,8 L12,8 Z" fill-rule="evenodd"></path></svg>',
     click: function (event) {
         event.preventDefault();
-        if ($('.fancybox__container').hasClass('active-info')) {
-            $('.fancybox__container').removeClass('active-info')
-            $('.info-overlay').removeClass('active')
-            $('.info-content').removeClass('active')
-        } else {
-            $('.fancybox__container').addClass('active-info')
-            $('.info-overlay').addClass('active')
-            $('.info-content').addClass('active')
-        }
+        // if ($('.fancybox__container').hasClass('active-info')) {
+        //     $('.fancybox__container').removeClass('active-info')
+        //     $('.info-overlay').removeClass('active')
+        //     $('.info-content').removeClass('active')
+        // } else {
+        //     $('.fancybox__container').addClass('active-info')
+        //     $('.info-overlay').addClass('active')
+        //     $('.info-content').addClass('active')
+        // }
     },
 };
 
