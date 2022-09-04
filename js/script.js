@@ -25,8 +25,6 @@ window.onload = function () {
     }
 
 
-
-
     AOS.init({
         once: true,
         duration: 2000,
@@ -306,3 +304,14 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+const  innerWidth = window.innerWidth
+const textBlock = document.querySelector('.text-block .text')
+const imagesBlock = document.querySelector('.text-block .images')
+
+if(innerWidth <= 768){
+    if (textBlock && imagesBlock) {
+        textBlock.setAttribute('data-aos', 'fade-down')
+        imagesBlock.setAttribute('data-aos', 'fade-down')
+    }
+}
+
