@@ -1,6 +1,27 @@
 window.onload = function () {
 
 
+    const body = document.querySelector('body')
+    const menuBtn = document.querySelector('.js-menu-mobile')
+    const navMenu = document.querySelector('.right-menu')
+    const profileBtn = document.querySelector('.profile-btn')
+
+    menuBtn.addEventListener('click', () => {
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active')
+            menuBtn.classList.remove('active')
+            profileBtn.classList.remove('active')
+            body.style.overflow = 'visible'
+
+        } else {
+            navMenu.classList.add('active')
+            menuBtn.classList.add('active')
+            profileBtn.classList.add('active')
+
+            body.style.overflow = 'hidden'
+        }
+    })
+
     AOS.init({
         once: true,
         duration: 2000,
@@ -87,7 +108,7 @@ function PopupTimer(flag) {
             delayOpen = 1000;
         console.log(popup)
         blackout = $('.blackout-background');
-        if(!getCookie('popupCookie')){
+        if (!getCookie('popupCookie')) {
             setTimeout(function () {
                 blackout.addClass('active').animate({opacity: 1}, delay2Open);
             }, 3000);
@@ -105,10 +126,10 @@ function ClosePopupTimer(id) {
     blackout = $('.blackout-background');
     blackout.animate({opacity: 0}, delayClose);
     popup.animate({opacity: 0}, delayClose);
-        setTimeout(function () {
-            popup.removeClass('active');
-            blackout.removeClass('active');
-        }, delayClose);
+    setTimeout(function () {
+        popup.removeClass('active');
+        blackout.removeClass('active');
+    }, delayClose);
 
 }
 
@@ -257,7 +278,6 @@ $('#check-age .btns .btn-popup').click(function () {
     //sets the coookie to one minute if the popup is closed (whole numbers = days)
     setCookie('popupCookie', 'submited', 1);
 });
-
 
 
 function getCookie(cname) {
