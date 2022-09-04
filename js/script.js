@@ -5,22 +5,27 @@ window.onload = function () {
     const menuBtn = document.querySelector('.js-menu-mobile')
     const navMenu = document.querySelector('.right-menu')
     const profileBtn = document.querySelector('.profile-btn')
+    if (menuBtn) {
 
-    menuBtn.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active')
-            menuBtn.classList.remove('active')
-            profileBtn.classList.remove('active')
-            body.style.overflow = 'visible'
+        menuBtn.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active')
+                menuBtn.classList.remove('active')
+                profileBtn.classList.remove('active')
+                body.style.overflow = 'visible'
 
-        } else {
-            navMenu.classList.add('active')
-            menuBtn.classList.add('active')
-            profileBtn.classList.add('active')
+            } else {
+                navMenu.classList.add('active')
+                menuBtn.classList.add('active')
+                profileBtn.classList.add('active')
 
-            body.style.overflow = 'hidden'
-        }
-    })
+                body.style.overflow = 'hidden'
+            }
+        })
+    }
+
+
+
 
     AOS.init({
         once: true,
@@ -201,7 +206,7 @@ Fancybox.Plugins.Toolbar.defaults.items.close = {
     type: "button",
     class: "fancybox__button--close",
     label: "close",
-    html: '',
+    html: '<span></span>',
     click: function (fancybox) {
         console.log(fancybox)
         $('.info-content').removeClass('active')
@@ -301,4 +306,3 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
