@@ -29612,6 +29612,9 @@ footer .container {
 }
 
 @media only screen and (max-width: 768px) {
+    footer > div .left .logo{
+        margin-bottom: 6px;
+    }
 
     footer > div .right .contacts .mailing form button{
         max-width: 114px;
