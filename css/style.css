@@ -29625,9 +29625,9 @@ footer .container {
         max-height: 658px;
     }
     footer > div .right .contacts .mailing form input{
-        padding: 18.3px 0;
-        max-width: 256px;
         font-size: 15px;
+        padding: 18.3px 0 18.3px 30px;
+        max-width: 256px;
     }
     footer > div .right .contacts .title-line .title {
         font-size: 29px;
