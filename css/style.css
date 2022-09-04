@@ -29612,15 +29612,30 @@ footer .container {
 }
 
 @media only screen and (max-width: 768px) {
+
+    footer > div .right .contacts .mailing form button{
+        max-width: 114px;
+        font-size: 15px;
+        top: 11px;
+        right: 24px;
+        padding: 9px 0;
+    }
+
+    .project .left{
+        max-height: 658px;
+    }
     footer > div .right .contacts .mailing form input{
+        padding: 18.3px 0;
         max-width: 256px;
+        font-size: 15px;
     }
     footer > div .right .contacts .title-line .title {
         font-size: 29px;
     }
 
     footer {
-        padding-bottom: 30px;
+        padding: 94px 0 30px 0;
+        overflow: hidden;
     }
 
     footer > div .right .partners {
@@ -29677,7 +29692,7 @@ footer .container {
 
     footer > div .left .logo a .text-logo .head {
         font-size: 52px;
-        letter-spacing: 0.56em;
+        letter-spacing: 0.7em;
         padding-left: 20px;
     }
 
@@ -29729,6 +29744,7 @@ footer .container {
 
     .news {
         padding-bottom: 80px;
+        margin-bottom: 20px;
     }
 
     .project > div .left .menu-items a:nth-child(1) {
@@ -29760,7 +29776,7 @@ footer .container {
         position: absolute;
         right: -45px;
         transform: rotate(90deg);
-        bottom: 218px;
+        bottom: 156px;
         font-size: 11px;
     }
 
@@ -29823,7 +29839,7 @@ footer .container {
 
     .project > div .left .title span {
         font-family: MADEEvolveSansBold, sans-serif;
-        letter-spacing: 0.16em;
+        letter-spacing: 0.25em;
         font-weight: bold;
         font-size: 75px;
     }
