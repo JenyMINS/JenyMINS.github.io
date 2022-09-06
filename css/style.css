@@ -31068,7 +31068,7 @@ footer .container {
 
     footer > div .left .logo a .text-logo .head span {
         padding: 0 !important;
-        margin-left: -15px !important;
+        margin-left: -5px !important;
     }
 
     footer > div .left .logo a .text-logo {
@@ -31090,7 +31090,7 @@ footer .container {
 
     footer > div .left .logo a .images::after {
         background-image: url('../images/logo-white.png');
-        width: 264px;
+        width: 255px;
         height: 241px;
     }
 
