@@ -30212,9 +30212,12 @@ footer .container {
 }
 
 @media only screen and (max-width: 768px) {
+    .news > div .news-list .news-item .background-black{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
     .project{
         padding-right: 0;
-
+overflow: hidden;
     }
     .shop__social-list{
         width: 100% !important;
@@ -30961,6 +30964,7 @@ footer .container {
 
     .project .left {
         max-height: 658px;
+        width: 100%;
     }
 
     footer > div .right .contacts .mailing form input {
@@ -31019,12 +31023,15 @@ footer .container {
 
     footer > div .left .copyright {
         padding-left: 20px;
+        text-align: justify;
+        width: auto;
+        padding-right: 15px;
     }
 
     footer > div .left .logo a .text-logo .down {
         position: absolute;
         top: 92px;
-        left: 190px;
+        left: 195px;
         font-size: 18px;
         transform: rotate(-90deg);
         white-space: nowrap;
@@ -31032,13 +31039,17 @@ footer .container {
 
     footer > div .left .logo a .text-logo .head {
         font-size: 52px;
-        letter-spacing: 0.7em;
-        padding-left: 20px;
+        letter-spacing: 0.81em;
+        padding-left: 18px;
     }
-
+    footer > div .left .logo a .text-logo .head .span{
+        padding: 0 !important;
+        margin-left: -15px;
+    }
     footer > div .left .logo a .text-logo {
         margin-left: 0;
         margin-top: 10px;
+        width: 100%;
     }
 
     footer > div .left .logo a {
@@ -31114,7 +31125,7 @@ footer .container {
 
     .project > div .left .menu-title {
         position: absolute;
-        right: -45px;
+        right: -39px;
         transform: rotate(90deg);
         bottom: 156px;
         font-size: 11px;
@@ -31158,12 +31169,13 @@ footer .container {
 
     .project > div .left .menu-items {
         flex-direction: column;
+        width: 100%;
     }
 
     .project > div .left .text {
         font-size: 8px;
         max-width: 203px;
-        margin-bottom: 40px;
+        margin-bottom: 38px;
     }
 
     .project > div .left .text br {
@@ -31182,6 +31194,7 @@ footer .container {
         letter-spacing: 0.25em;
         font-weight: bold;
         font-size: 75px;
+        margin-top: -5px;
     }
 
     .project > div .left .subtitle {
@@ -31223,7 +31236,7 @@ footer .container {
 
     .left-menu {
         padding-top: 15px !important;
-        padding-left: 17px !important;
+        padding-left: 15px !important;
         padding-right: 17px !important;
     }
 
@@ -31260,12 +31273,11 @@ footer .container {
         padding-bottom: 30px;
         width: 100%;
         height: 232px;
-
     }
 
     .logo-mobile a {
         display: block;
-        /*padding-left: 7px;*/
+        padding-left: 5px;
     }
 
     .logo-mobile a img {
