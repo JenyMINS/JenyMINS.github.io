@@ -2,8 +2,8 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" id="utf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="wixViewport">
 
     <title>VUBES</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
@@ -43,7 +43,7 @@
                 </a>
             </div>
             <div class="basket">
-                <a href="./store.html" >
+                <a href="./store.html">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
                          viewBox="5.7 0 105.5 126.1"
                          preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
@@ -66,7 +66,13 @@
                     <span>CALL BACK</span>
                 </a>
             </div>
+            <div class="logo-label">
+                <a href="/" class="mobile-text-logo">
+                    <span class="down">VINICULTURAL SOCIETY</span>
+                </a>
+            </div>
         </div>
+
     </div>
     <div class="right-menu">
         <div class="navbar">
@@ -88,31 +94,70 @@
             <a href="./store.html">STORE</a>
         </div>
     </div>
+    <button class="nav-menu-btn js-menu-mobile">
+        <span class="nav-menu-btn__line-top nav-line"></span>
+        <span class="nav-menu-btn__line-mid nav-line"></span>
+        <span class="nav-menu-btn__line-bottom nav-line"></span>
+    </button>
+    <div class="profile-btn">
+        <div class="profile-btn__container">
+            <div class="profile-btn__profile-wrp">
+                <button class="profile-btn__profile">
+                    <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" width="50"
+                         height="50" viewBox="0 0 50 50">
+                        <g>
+                            <path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+                <select>
+                    <option label="Choose an option" value="-1">Choose an option</option>
+                    <option label="Profile" value="0">Profile</option>
+                    <option label="Мои заказы" value="1">Мои заказы</option>
+                    <option label="Мои адреса" value="2">Мои адреса</option>
+                    <option label="Мой кошелек" value="3">Мой кошелек</option>
+                    <option label="Мои подписки" value="4">Мои подписки</option>
+                    <option label="Мой аккаунт" value="5">Мой аккаунт</option>
+                    <option label="Log Out" value="7">Log Out</option>
+                </select>
+            </div>
+            <button class="profile-btn__notification">
+                <svg preserveAspectRatio="xMidYMid meet" id="comp-l45q041isvgcontent" data-bbox="7 3 36 45"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50" width="50" data-type="shape"
+                     role="img">
+                    <g>
+                        <path d="M38.473 34.564L43 39.273v2.298H7v-2.298l4.527-4.71V22.959c0-3.662.88-6.82 2.64-9.474 1.797-2.729 4.294-4.504 7.492-5.326V6.532c0-.972.323-1.803.97-2.495C23.275 3.346 24.066 3 25 3c.934 0 1.734.346 2.398 1.037.665.692.997 1.523.997 2.495v1.626c3.162.822 5.64 2.616 7.437 5.382 1.76 2.654 2.641 5.793 2.641 9.418v11.606zM25 48c-1.364 0-2.523-.47-3.477-1.411-.955-.94-1.432-2.078-1.432-3.41h9.818c0 1.332-.487 2.47-1.46 3.41C27.473 47.529 26.324 48 25 48z"
+                              fill-rule="evenodd"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="logo-mobile">
+        <a href="/">
+            <img src="./images/logo-white.png" alt="">
+
+        </a>
+        <span class="logo-mobile-label">VIBES</span>
+    </div>
+
 </header>
 
 
-
-
-
-<section id="comp-l40hyooj" class="_3d64y">
+<section id="comp-l40hyooj" class="_3d64y shop">
     <div data-testid="columns" class="_1uldx">
         <div id="comp-l40hyoqy" class="_1vNJf">
-            <div id="bgLayers_comp-l40hyoqy" data-hook="bgLayers"
-                 class="_3wnIc">
-                <div data-testid="colorUnderlay"
-                     class="_3KzuS _3SQN-"></div>
-                <div id="bgMedia_comp-l40hyoqy" class="_2GUhU"></div>
-            </div>
             <div data-mesh-id="comp-l40hyoqyinlineContent"
                  data-testid="inline-content" class="">
-                <div data-mesh-id="comp-l40hyoqyinlineContent-gridContainer"
+                <div data-mesh-id="comp-l40hyoqyinlineContent-gridContainer" class="shop__wrapper"
                      data-testid="mesh-container-content">
-                    <div id="comp-l5v5iqol" class="_3VCpz"
+                    <div id="comp-l5v5iqol" data-aos="fade-down" class="_3VCpz shop__line"
                          data-angle="0"
                          data-angle-style-location="style"
                          style="visibility: inherit;"
                          data-screen-in-hide="done"></div>
-                    <div id="comp-l5v5iqpz" class="_2Hij5 _3bcaz"
+                    <div id="comp-l5v5iqpz" data-aos="fade-down" class="_2Hij5 _3bcaz shop__top-label"
                          data-testid="richTextElement" data-angle="0"
                          data-angle-style-location="style"
                          style="visibility: inherit;"
@@ -125,29 +170,21 @@
                                                      style="letter-spacing:normal;">w e l c o m e</span></span></span></span>
                         </p>
                     </div>
-                    <div id="comp-l5v5iqp9" class="_2Hij5 _3bcaz"
+                    <div id="comp-l5v5iqp9" data-aos="fade-down" class="_2Hij5 _3bcaz shop__title"
                          data-testid="richTextElement" data-angle="0"
                          data-angle-style-location="style"
                          style="visibility: inherit;"
                          data-screen-in-hide="done">
-                        <h1 class="font_0"
-                            style="font-size:38px; line-height:1.1em; text-align:center;">
-                                             <span style="font-size:38px;"><span
-                                                     style="font-style:normal;"><span
-                                                     style="font-weight:400;"><span
-                                                     style="color:#131313;"><span
-                                                     style="font-family:wfont_15f976_69e8894da4e64fad9ea4d2ea49e7674e,wf_69e8894da4e64fad9ea4d2ea4,orig_circe_extralight;"><span
-                                                     style="letter-spacing:normal;">Скоро здесь появятся товары&nbsp;</span></span><span
-                                                     style="font-family:wfont_15f976_86d17d1c5be6451fbc5288c1af15c232,wf_86d17d1c5be6451fbc5288c1a,orig_circe_extrabold;"><span
-                                                     style="letter-spacing:normal;">V I B E S</span></span></span></span></span></span>
+                        <h1 class="font_0 shop__main shop__main--nowrap">
+                            Скоро здесь появятся товары <b>V I B E S</b>
                         </h1>
                     </div>
-                    <div id="comp-l5v5iqql" class="_2Hij5 _3bcaz"
+                    <div id="comp-l5v5iqql" data-aos="fade-down" class="_2Hij5 _3bcaz shop__label"
                          data-testid="richTextElement" data-angle="0"
                          data-angle-style-location="style"
                          style="visibility: inherit;"
                          data-screen-in-hide="done">
-                        <p class="font_7"
+                        <p class="font_7 shop__pre-label"
                            style="font-size:18px; line-height:normal; text-align:center;">
                                              <span style="color:#131313;"><span
                                                      style="font-family:wfont_15f976_69e8894da4e64fad9ea4d2ea49e7674e,wf_69e8894da4e64fad9ea4d2ea4,orig_circe_extralight;"><span
@@ -155,71 +192,73 @@
                                                      style="letter-spacing:normal;">Следите за новостями нашего сообщества!</span></span></span></span>
                         </p>
                     </div>
-                    <div id="comp-l5v5iqr7" class="_2O-Ry"
+                    <div id="comp-l5v5iqr7" data-aos="fade-down" class="_2O-Ry shop__social-list"
                          data-angle="0"
                          data-angle-style-location="style"
                          style="visibility: inherit;"
                          data-screen-in-hide="done">
                         <ul class="xb9fU" aria-label="Панель соцсетей">
-                            <li id="dataItem-l5v5iqwr-comp-l5v5iqr7"
-                                class="_3lu8e">
-                                <div data-testid="linkElement"
-                                     class="_26AQd">
-                                    <wix-image id="img_0_comp-l5v5iqr7"
-                                               class="_1-6YJ uWpzU">
-                                        <img alt=""
-                                             src="images/vk.png"
-                                             style="width: 30px; height: 30px; object-fit: cover;">
-                                    </wix-image>
-                                </div>
+                            <li id="dataItem-l5v5iqwr-comp-l5v5iqr7" class="_3lu8e">
+                                <a href="#">
+                                    <div data-testid="linkElement" class="_26AQd">
+                                        <wix-image id="img_0_comp-l5v5iqr7"
+                                                   class="_1-6YJ uWpzU">
+                                            <img alt=""
+                                                 src="images/vk.png"
+                                                 style="width: 30px; height: 30px; object-fit: cover;">
+                                        </wix-image>
+                                    </div>
+                                </a>
                             </li>
-                            <li id="dataItem-l5v5iqwr1-comp-l5v5iqr7"
-                                class="_3lu8e">
-                                <div data-testid="linkElement"
-                                     class="_26AQd">
-                                    <wix-image id="img_1_comp-l5v5iqr7"
-                                               class="_1-6YJ uWpzU">
-                                        <img alt=""
-                                             src="./images/inst.png"
-                                             style="width: 30px; height: 30px; object-fit: cover;">
-                                    </wix-image>
-                                </div>
+                            <li id="dataItem-l5v5iqwr1-comp-l5v5iqr7" class="_3lu8e">
+                                <a href="#">
+                                    <div data-testid="linkElement" class="_26AQd">
+                                        <wix-image id="img_1_comp-l5v5iqr7"
+                                                   class="_1-6YJ uWpzU">
+                                            <img alt=""
+                                                 src="./images/inst.png"
+                                                 style="width: 30px; height: 30px; object-fit: cover;">
+                                        </wix-image>
+                                    </div>
+                                </a>
                             </li>
-                            <li id="dataItem-l5v5iqwr2-comp-l5v5iqr7"
-                                class="_3lu8e">
-                                <div data-testid="linkElement"
-                                     class="_26AQd">
-                                    <wix-image id="img_2_comp-l5v5iqr7"
-                                               class="_1-6YJ uWpzU">
-                                        <img alt=""
-                                             src="./images/tg.png"
-                                             style="width: 30px; height: 30px; object-fit: cover;">
-                                    </wix-image>
-                                </div>
+                            <li id="dataItem-l5v5iqwr2-comp-l5v5iqr7" class="_3lu8e">
+                                <a href="#">
+                                    <div data-testid="linkElement"
+                                         class="_26AQd">
+                                        <wix-image id="img_2_comp-l5v5iqr7"
+                                                   class="_1-6YJ uWpzU">
+                                            <img alt=""
+                                                 src="./images/tg.png"
+                                                 style="width: 30px; height: 30px; object-fit: cover;">
+                                        </wix-image>
+                                    </div>
+                                </a>
                             </li>
-                            <li id="dataItem-l5v5iqwr3-comp-l5v5iqr7"
-                                class="_3lu8e">
-                                <div data-testid="linkElement"
-                                     class="_26AQd">
-                                    <wix-image id="img_3_comp-l5v5iqr7"
-                                               class="_1-6YJ uWpzU">
-                                        <img alt=""
-                                             src="./images/vb.png"
-                                             style="width: 30px; height: 30px; object-fit: cover;">
-                                    </wix-image>
-                                </div>
+                            <li id="dataItem-l5v5iqwr3-comp-l5v5iqr7" class="_3lu8e">
+                                <a href="#">
+                                    <div data-testid="linkElement"
+                                         class="_26AQd">
+                                        <wix-image id="img_3_comp-l5v5iqr7"
+                                                   class="_1-6YJ uWpzU">
+                                            <img alt=""
+                                                 src="./images/vb.png"
+                                                 style="width: 30px; height: 30px; object-fit: cover;">
+                                        </wix-image>
+                                    </div>
+                                </a>
                             </li>
-                            <li id="dataItem-l5v5iqwr4-comp-l5v5iqr7"
-                                class="_3lu8e">
-                                <div data-testid="linkElement"
-                                     class="_26AQd">
-                                    <wix-image id="img_4_comp-l5v5iqr7"
-                                               class="_1-6YJ uWpzU">
-                                        <img alt=""
-                                             src="./images/youtube.png"
-                                             style="width: 30px; height: 30px; object-fit: cover;">
-                                    </wix-image>
-                                </div>
+                            <li id="dataItem-l5v5iqwr4-comp-l5v5iqr7" class="_3lu8e">
+                                <a href="#">
+                                    <div data-testid="linkElement" class="_26AQd">
+                                        <wix-image id="img_4_comp-l5v5iqr7"
+                                                   class="_1-6YJ uWpzU">
+                                            <img alt=""
+                                                 src="./images/youtube.png"
+                                                 style="width: 30px; height: 30px; object-fit: cover;">
+                                        </wix-image>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -254,8 +293,8 @@
         </div>
         <div class="center">
             <a href="./silvaner.html">2021 | SILVANER</a>
-            <a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a>
-            <a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a>
+            <a href="rieslingSilvaner-delete.html">2021 | RIESLING-SILVANER</a>
+            <a href="chardonnayBarrel-delete.html">2021 | CHARDONNAY BARREL</a>
             <a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANС</a>
             <a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a>
         </div>
@@ -272,32 +311,31 @@
                     </form>
                 </div>
                 <div class="social">
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/vk.webp" alt="Вконтакте">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/instagram.webp" alt="Инстаграм">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/youtube.webp" alt="Ютуб">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/whatsapp.webp" alt="Ватсап">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/telegram.webp" alt="Телеграм">
                     </a>
                 </div>
             </div>
             <div class="partners">
-                <a href="#" >
+                <a href="#">
                     <img src="images/part.webp" alt="Adson">
                 </a>
             </div>
         </div>
     </div>
 </footer>
-
 
 <div id="check-age" class="popup popup-checkage">
     <div class="left">
@@ -310,7 +348,7 @@
             сайт подтвердите, пожалуйста, свое совершеннолетие.
         </div>
         <div class="btns">
-            <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" >Мне есть 18+</a>
+            <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup">Мне есть 18+</a>
             <a href="http://www.consultant.ru/document/cons_doc_LAW_8368/" target="_blank" class="btn-popup"
             >Мне нет 18</a>
         </div>
@@ -332,7 +370,7 @@
             <input type="text" placeholder="Имя">
             <input type="text" placeholder="Телофон">
             <div class="btns">
-                <button class="btn-popup" >Позвоните мне</button>
+                <button class="btn-popup">Позвоните мне</button>
             </div>
         </form>
     </div>
@@ -367,7 +405,7 @@
             <input type="email" placeholder="Email"/>
             <input type="password" placeholder="Password"/>
             <div class="btns">
-                <button class="btn-popup" >Зарегестрироваться</button>
+                <button class="btn-popup">Зарегестрироваться</button>
             </div>
         </form>
     </div>
@@ -386,7 +424,7 @@
             <input type="password" placeholder="Password"/>
             <a href="#">Забыли пароль?</a>
             <div class="btns">
-                <button class="btn-popup" >Войти</button>
+                <button class="btn-popup">Войти</button>
             </div>
         </form>
     </div>

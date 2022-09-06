@@ -2,18 +2,20 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" id="utf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="wixViewport">
 
     <title>VUBES</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body class="" cz-shortcut-listen="true" style="">
+
 <header>
     <div class="left-menu">
         <div class="logo__wrap">
@@ -41,7 +43,7 @@
                 </a>
             </div>
             <div class="basket">
-                <a href="./store.html" >
+                <a href="./store.html">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%"
                          viewBox="5.7 0 105.5 126.1"
                          preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
@@ -64,7 +66,13 @@
                     <span>CALL BACK</span>
                 </a>
             </div>
+            <div class="logo-label">
+                <a href="/" class="mobile-text-logo">
+                    <span class="down">VINICULTURAL SOCIETY</span>
+                </a>
+            </div>
         </div>
+
     </div>
     <div class="right-menu">
         <div class="navbar">
@@ -86,176 +94,134 @@
             <a href="./store.html">STORE</a>
         </div>
     </div>
+    <button class="nav-menu-btn js-menu-mobile">
+        <span class="nav-menu-btn__line-top nav-line"></span>
+        <span class="nav-menu-btn__line-mid nav-line"></span>
+        <span class="nav-menu-btn__line-bottom nav-line"></span>
+    </button>
+    <div class="profile-btn">
+        <div class="profile-btn__container">
+            <div class="profile-btn__profile-wrp">
+                <button class="profile-btn__profile">
+                    <svg data-bbox="0 0 50 50" data-type="shape" xmlns="http://www.w3.org/2000/svg" width="50"
+                         height="50" viewBox="0 0 50 50">
+                        <g>
+                            <path d="M25 48.077c-5.924 0-11.31-2.252-15.396-5.921 2.254-5.362 7.492-8.267 15.373-8.267 7.889 0 13.139 3.044 15.408 8.418-4.084 3.659-9.471 5.77-15.385 5.77m.278-35.3c4.927 0 8.611 3.812 8.611 8.878 0 5.21-3.875 9.456-8.611 9.456s-8.611-4.246-8.611-9.456c0-5.066 3.684-8.878 8.611-8.878M25 0C11.193 0 0 11.193 0 25c0 .915.056 1.816.152 2.705.032.295.091.581.133.873.085.589.173 1.176.298 1.751.073.338.169.665.256.997.135.515.273 1.027.439 1.529.114.342.243.675.37 1.01.18.476.369.945.577 1.406.149.331.308.657.472.98.225.446.463.883.714 1.313.182.312.365.619.56.922.272.423.56.832.856 1.237.207.284.41.568.629.841.325.408.671.796 1.02 1.182.22.244.432.494.662.728.405.415.833.801 1.265 1.186.173.154.329.325.507.475l.004-.011A24.886 24.886 0 0 0 25 50a24.881 24.881 0 0 0 16.069-5.861.126.126 0 0 1 .003.01c.172-.144.324-.309.49-.458.442-.392.88-.787 1.293-1.209.228-.232.437-.479.655-.72.352-.389.701-.78 1.028-1.191.218-.272.421-.556.627-.838.297-.405.587-.816.859-1.24a26.104 26.104 0 0 0 1.748-3.216c.208-.461.398-.93.579-1.406.127-.336.256-.669.369-1.012.167-.502.305-1.014.44-1.53.087-.332.183-.659.256-.996.126-.576.214-1.164.299-1.754.042-.292.101-.577.133-.872.095-.89.152-1.791.152-2.707C50 11.193 38.807 0 25 0">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+                <select>
+                    <option label="Choose an option" value="-1">Choose an option</option>
+                    <option label="Profile" value="0">Profile</option>
+                    <option label="Мои заказы" value="1">Мои заказы</option>
+                    <option label="Мои адреса" value="2">Мои адреса</option>
+                    <option label="Мой кошелек" value="3">Мой кошелек</option>
+                    <option label="Мои подписки" value="4">Мои подписки</option>
+                    <option label="Мой аккаунт" value="5">Мой аккаунт</option>
+                    <option label="Log Out" value="7">Log Out</option>
+                </select>
+            </div>
+            <button class="profile-btn__notification">
+                <svg preserveAspectRatio="xMidYMid meet" id="comp-l45q041isvgcontent" data-bbox="7 3 36 45"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50" width="50" data-type="shape"
+                     role="img">
+                    <g>
+                        <path d="M38.473 34.564L43 39.273v2.298H7v-2.298l4.527-4.71V22.959c0-3.662.88-6.82 2.64-9.474 1.797-2.729 4.294-4.504 7.492-5.326V6.532c0-.972.323-1.803.97-2.495C23.275 3.346 24.066 3 25 3c.934 0 1.734.346 2.398 1.037.665.692.997 1.523.997 2.495v1.626c3.162.822 5.64 2.616 7.437 5.382 1.76 2.654 2.641 5.793 2.641 9.418v11.606zM25 48c-1.364 0-2.523-.47-3.477-1.411-.955-.94-1.432-2.078-1.432-3.41h9.818c0 1.332-.487 2.47-1.46 3.41C27.473 47.529 26.324 48 25 48z"
+                              fill-rule="evenodd"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="logo-mobile">
+        <a href="/">
+            <img src="./images/logo-white.png" alt="">
+
+        </a>
+        <span class="logo-mobile-label">VIBES</span>
+    </div>
+
 </header>
 
 
-
-
-<section>
+<section class="single-product">
     <div data-mesh-id="ContainercwpaninlineContent-gridContainer"
          data-testid="mesh-container-content">
         <div id="comp-l473me38" class="content" style="visibility: inherit;"
              data-angle="0" data-angle-style-location="style"
              data-screen-in-hide="done">
             <div class="content__bg" data-aos="fade-left" data-testid="container-bg"></div>
-            <div data-mesh-id="comp-l473me38inlineContent"
-                 data-testid="inline-content" class="">
-                <div data-mesh-id="comp-l473me38inlineContent-gridContainer"
-                     data-testid="mesh-container-content">
-                    <div id="comp-l34sgk4b" data-aos="fade-left" class="_1KV2M"
-                         style="visibility: inherit;" data-angle="0"
-                         data-angle-style-location="style"
-                         data-screen-in-hide="done">
-                        <div data-mesh-id="comp-l34sgk4binlineContent"
-                             data-testid="inline-content" class="">
-                            <div data-mesh-id="comp-l34sgk4binlineContent-gridContainer"
-                                 data-testid="mesh-container-content">
-                                <div id="comp-l34o73ts" class="_2Hij5 _3bcaz"
-                                     data-testid="richTextElement">
-                                    <p
-                                            class="font_7"
-                                            style="font-size:20px; line-height:normal; text-align:justify;">
-                              <span style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
-                                      style="color:#131313;"><span
-                                      style="font-size:18px;"><span
-                                      style="letter-spacing:normal;">Особенности производства</span></span></span></span><span
-                                            style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                            style="color:#131313;"><span
-                                            style="font-size:18px;"><span
-                                            style="letter-spacing:normal;">:</span></span></span></span>
-                                    </p>
-                                </div>
-                                <div id="comp-l34s9s3a" class="_2Hij5 _3bcaz"
-                                     data-testid="richTextElement">
-                                    <p
-                                            class="font_7"
-                                            style="font-size:16px; line-height:normal;">
-                              <span style="font-size:16px;"><span
-                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                      style="color:#131313;"><span
-                                      style="letter-spacing:normal;">Ручной сбор, деликатная распрессовка, холодная мацерация перед брожением, длительное брожение при низких температурах, выдержка на тонком осадке после окончания брожения, розлив в инертной среде.</span></span></span></span>
-                                    </p>
-                                </div>
+            <div data-mesh-id="comp-l473me38inlineContent" class="">
+                <div data-mesh-id="comp-l473me38inlineContent-gridContainer">
+                    <div id="comp-l34sgk4b" data-aos="fade-left" class="_1KV2M desc-bottom"
+                         style="visibility: inherit;">
+                        <div data-mesh-id="comp-l34sgk4binlineContent" class="">
+                            <div data-mesh-id="comp-l34sgk4binlineContent-gridContainer">
+                                <h3>Особенности производства:</h3>
+                                <p>Ручной сбор, деликатная распрессовка, холодная мацерация перед брожением, длительное брожение при низких температурах, выдержка на тонком осадке после окончания брожения, розлив в инертной среде.</p>
+                                <br>
+                                <h3>Органолептика:</h3>
+                                <p><b>Ароматика</b>  - сверх свежая, холодная, лимонно-лаймовая, цветы <br> апельсинного дерева, пчелиная сота, пчелиный воск, мокрый известняк, <br> лемонграсс, белый персик.</p>
+                                <br>
+                                <p><b>Вкус</b> - яркая кислотность, лимонно-яблочный, минеральный, сочный и долгий, гальванический и стальной.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="comp-l34sgmun" data-aos="fade-left" data-aos-delay="1000" class="_1KV2M"
-                         style="visibility: inherit;" data-angle="0"
-                         data-angle-style-location="style"
-                         data-screen-in-hide="done">
-                        <div data-mesh-id="comp-l34sgmuninlineContent"
-                             data-testid="inline-content" class="">
-                            <div data-mesh-id="comp-l34sgmuninlineContent-gridContainer"
-                                 data-testid="mesh-container-content">
-                                <div id="comp-l34sae13" class="_2Hij5 _3bcaz"
-                                     data-testid="richTextElement">
-                                    <p
-                                            class="font_7"
-                                            style="font-size:18px; line-height:normal; text-align:justify;">
-                              <span style="font-size:18px;"><span
-                                      style="color:#131313;"><span
-                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
-                                      style="letter-spacing:normal;">Органолептика</span></span><span
-                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                      style="letter-spacing:normal;">:</span></span></span></span>
-                                    </p>
+
+                    <div id="comp-l34sgpaw" data-aos="fade-left" data-aos-delay="1000" class="_1KV2M desc-bottom-b">
+                        <div id="comp-l34o73tv" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"
+                             class="_3rK5m image-bottle--mobile"
+                             style=" visibility: inherit;"
+                             data-angle="0" data-angle-style-location="style"
+                             data-screen-in-hide="done">
+                            <div data-testid="link" class="VNb9p" role="img">
+                                <div class="_20oHq">
+                                    <wix-image id="img_comp-l34o73tv_0" class="_1-6YJ _2Ms4G">
+                                        <img src="images/rieslingSilvaner.png"
+                                             alt="" role="none"
+                                             style="width: 411px; height: 1020px; object-fit: contain; object-position: center center;">
+                                    </wix-image>
                                 </div>
-                                <div id="comp-l34sbc2e" class="_2Hij5 _3bcaz"
-                                     data-testid="richTextElement">
-                                    <p
-                                            class="font_7"
-                                            style="font-size:16px; line-height:normal;">
-                              <span style="font-size:16px;"><span
-                                      style="color:#131313;"><span
-                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
-                                      style="letter-spacing:normal;">Ароматика</span></span><span
-                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                      style="letter-spacing:normal;"> - сверх свежая, холодная, лимонно-лаймовая, цветы <br> апельсинного дерева, пчелиная сота, пчелиный воск, мокрый известняк, <br> лемонграсс, белый персик.</span></span></span></span>
-                                    </p>
+                                <div class="_20oHq">
+                                    <wix-image id="img_comp-l34o73tv_1" class="_1-6YJ _1m4s8">
+                                        <img src="images/rieslingSilvaner.png"
+                                             alt="" role="none"
+                                             style="width: 411px; height: 1020px; object-fit: contain; object-position: center center;">
+                                    </wix-image>
                                 </div>
-                                <div id="comp-l34sd1kg" class="_2Hij5 _3bcaz"
-                                     data-testid="richTextElement">
-                                    <p
-                                            class="font_7"
-                                            style="font-size:16px; line-height:normal;">
-                              <span style="font-size:16px;"><span
-                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
-                                      style="color:#131313;"><span
-                                      style="letter-spacing:normal;">Вкус</span></span></span><span
-                                      style="font-family:wfont_15f976_270b07d9ac084e40aaf3e55266409e37,wf_270b07d9ac084e40aaf3e5526,orig_circe;"><span
-                                      style="color:#131313;"><span
-                                      style="letter-spacing:normal;"> </span></span></span><span
-                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                      style="color:#131313;"><span
-                                      style="letter-spacing:normal;">- яркая кислотность, лимонно-яблочный, минеральный, сочный и долгий, гальванический и стальной.</span></span></span></span>
-                                    </p>
+                                <div class="_20oHq">
+                                    <wix-image id="img_comp-l34o73tv_2" class="_1-6YJ _3AalE">
+                                        <img src="images/rieslingSilvaner.png"
+                                             alt="" role="none"
+                                             style="width: 411px; height: 1020px; object-fit: contain; object-position: center center;">
+                                    </wix-image>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="comp-l34sgpaw" data-aos="fade-left" data-aos-delay="1000" class="_1KV2M"
-                         style="visibility: inherit;" data-angle="0"
-                         data-angle-style-location="style"
-                         data-screen-in-hide="done">
-                        <div data-mesh-id="comp-l34sgpawinlineContent"
-                             data-testid="inline-content" class="">
-                            <div data-mesh-id="comp-l34sgpawinlineContent-gridContainer"
-                                 data-testid="mesh-container-content">
-                                <div id="comp-l34scf9d" class="_2Hij5 _3bcaz"
-                                     data-testid="richTextElement">
-                                    <p
-                                            class="font_7"
-                                            style="font-size:18px; line-height:normal; text-align:justify;">
-                              <span style="font-size:18px;"><span
-                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
-                                      style="color:#131313;"><span
-                                      style="letter-spacing:normal;">Тираж</span></span></span><span
-                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                      style="color:#131313;"><span
-                                      style="letter-spacing:normal;">:</span></span></span></span>
-                                    </p>
-                                </div>
-                                <div id="comp-l34sdvz3" class="_2Hij5 _3bcaz"
-                                     data-testid="richTextElement">
-                                    <p
-                                            class="font_7"
-                                            style="font-size:16px; line-height:normal;">
-                              <span style="font-size:16px;"><span
-                                      style="color:#131313;"><span
-                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                      style="letter-spacing:normal;">Выпущено -<span
-                                      style="letter-spacing:normal;"> </span></span></span><span
-                                      style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
-                                      style="letter-spacing:normal;">3 200</span></span><span
-                                      style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                                      style="letter-spacing:normal;"> бутылок. Тип бутылки «Рейнская флейта». Укупорка - натуральная корковая пробка.</span></span></span></span>
-                                    </p>
+                        <div data-mesh-id="comp-l34sgpawinlineContent" class="">
+                            <div data-mesh-id="comp-l34sgpawinlineContent-gridContainer">
+                                <div id="comp-l34scf9d" class="_2Hij5 _3bcaz">
+                                    <h3>Тираж <span>:</span></h3>
+                                    <p>Выпущено - <b>3 200</b> бутылок. Тип бутылки «Рейнская флейта». Укупорка - натуральная корковая пробка.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="comp-l4737lhg" data-aos="fade-left" data-aos-delay="1000" style="visibility: inherit;"
-                         data-angle="0" data-angle-style-location="style"
-                         class="" data-screen-in-hide="done">
-                        <a
-                                data-testid="linkElement"
-                                href="https://www.vibes-wine.ru/wine-list"
-                                target="_self"
-                                class="StylableButton2545352419__root style-l47692bu__root StylableButton2545352419__link"
-                                aria-label="ИЗУЧИТЬ ВСЕ ВИНА VIBES" tabindex="0">
+                         data-angle="0" class="single-product__btn">
+                        <a data-testid="linkElement"
+                           href="https://www.vibes-wine.ru/wine-list"
+                           target="_self"
+                           class="StylableButton2545352419__root style-l47692bu__root StylableButton2545352419__link"
+                           aria-label="ИЗУЧИТЬ ВСЕ ВИНА VIBES" tabindex="0">
                             <div class="StylableButton2545352419__container">
-                        <span
-                                class="StylableButton2545352419__label"
-                                data-testid="stylablebutton-label">ИЗУЧИТЬ ВСЕ ВИНА VIBES</span>
-                                <span
-                                        class="StylableButton2545352419__icon"
-                                        aria-hidden="true"
-                                        data-testid="stylablebutton-icon">
+                                <span class="StylableButton2545352419__label">ИЗУЧИТЬ ВСЕ ВИНА VIBES</span>
+                                <span class="StylableButton2545352419__icon" aria-hidden="true">
                            <div>
-                              <svg
-                                      data-bbox="13.05 2.55 33.878 54.8"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      viewBox="0 0 60 60">
+                              <svg data-bbox="13.05 2.55 33.878 54.8"
+                                   xmlns="http://www.w3.org/2000/svg"
+                                   viewBox="0 0 60 60">
                                  <g>
                                     <path d="M46.5 28.9L20.6 3c-.6-.6-1.6-.6-2.2 0l-4.8 4.8c-.6.6-.6 1.6 0 2.2l19.8 20-19.9 19.9c-.6.6-.6 1.6 0 2.2l4.8 4.8c.6.6 1.6.6 2.2 0l21-21 4.8-4.8c.8-.6.8-1.6.2-2.2z"></path>
                                  </g>
@@ -268,64 +234,52 @@
                 </div>
             </div>
         </div>
-
-        <div id="comp-l34qjneb" data-aos="fade-right" class="_2Hij5 _3bcaz"
+        <div id="comp-l34qi8f2" data-aos="fade-right" class="_2Hij5 _3bcaz"
              data-testid="richTextElement" style="visibility: inherit;"
              data-angle="0" data-angle-style-location="style"
              data-screen-in-hide="done">
-            <p class="font_7"
-               style="font-size:14px; line-height:normal;">
-            <span style="color:#131313;">
-                <span style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;">
-                <span style="font-size:14px;">
-                <span style="letter-spacing:normal;">Картина</span>
-            </span>
-            </span>
-                <span style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;">
-                <span style="font-size:14px;">
-                <span style="letter-spacing:normal;">: «Холодный меч, пронзающий корзину цитрусовых плодов»</span>
-                </span>
-                </span>
-            </span>
-                <span style="color:#131313;">
-                <span style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;">
-                <span style="font-size:14px;">
-                    <br>
-                <span style="letter-spacing:normal;">Девиз</span>
-            </span>
-            </span>
-                <span style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;">
-                <span style="font-size:14px;">
-                <span style="letter-spacing:normal;">: «Древний пляж Херсонеса»</span>
-                </span>
-                </span>
-            </span>
-            </p>
         </div>
-        <div id="comp-l34qwnbq" data-aos="fade-right" class="_1KV2M" style="visibility: inherit;"
+        <div id="comp-l34qjneb" data-aos="fade-right" class="image-with-text single__content _2Hij5 _3bcaz"
+             data-testid="richTextElement" style="visibility: inherit;"
              data-angle="0" data-angle-style-location="style"
              data-screen-in-hide="done">
+            <div id="comp-l475bhix" data-aos="fade-right" class="_1A4nG _2S73V"
+                 style="visibility: inherit;" data-angle="0"
+                 data-angle-style-location="style" data-screen-in-hide="done">
+                <div data-testid="linkElement" class="_2f5Ce fanc">
+                    <a data-fancybox="gallery" class=" " data-ratio="2" href="images/1.jpg">
+                        <div class="big slide prev-image" style="background-image: url(images/rieslingSilvaner-min.jpg);">
+                        </div>
+                        <img src="images/event2.webp" class="prev-image-mobile" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <p class="font_7 richTextElement ">
+                <b>Картина</b> : «Холодный меч, пронзающий корзину цитрусовых плодов» <br>
+                <b>Девиз</b> : «Древний пляж Херсонеса»
+            </p>
+        </div>
+        <div id="comp-l34qwnbq" data-aos="fade-right" class="_1KV2M single__content description-text"
+             style="visibility: inherit;">
             <div data-mesh-id="comp-l34qwnbqinlineContent"
                  data-testid="inline-content" class="">
                 <div data-mesh-id="comp-l34qwnbqinlineContent-gridContainer"
                      data-testid="mesh-container-content">
-                    <div id="comp-l34qv0qv" class="_2Hij5 _3bcaz"
-                         data-testid="richTextElement">
-                        <p class="font_7"
-                           style="font-size:14px; line-height:normal;">
-                     <span style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                             style="color:#131313;"><span
-                             style="font-size:14px;"><span
-                             style="letter-spacing:normal;">Рислинг урожая <b>2021</b> года, происходит с прекрасных эльзасских лоз. Виноградник <br> расположен на северной стороне Севастополя в зоне реки Кача. Почва: аллювиально- <br> гранитная с красным песчаником. <br><br> Сильванер урожая <b>2021</b> года, происходит со старых лоз. Виноградник расположен на северной стороне Севастополя в зоне реки Бельбек. Почва: аллювиально- <br> гравийная-кремниевая с желтым песчаником.</span></span></span></span>
+                    <div id="comp-l34qh19f" class="_2Hij5 _3bcaz richTextElement">
+                        <p class="font_7">
+                            Рислинг урожая <b>2021</b> года, происходит с прекрасных эльзасских лоз. Виноградник <br> расположен на северной стороне Севастополя в зоне реки Кача. Почва: аллювиально- <br> гранитная с красным песчаником. <br><br> Сильванер урожая <b>2021</b> года, происходит со старых лоз. Виноградник расположен на северной стороне Севастополя в зоне реки Бельбек. Почва: аллювиально- <br> гравийная-кремниевая с желтым песчаником.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="comp-l34o73tv"  data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0" class="_3rK5m" style=" visibility: inherit;"
+        <div id="comp-l34o73tv" data-aos="fade-down-left" data-aos-duration="500" data-aos-delay="0"
+             class="_3rK5m image-bottle"
+             style=" visibility: inherit;"
              data-angle="0" data-angle-style-location="style"
              data-screen-in-hide="done">
-            <div data-testid="link" class="VNb9p"  role="img">
+            <div data-testid="link" class="VNb9p" role="img">
                 <div class="_20oHq">
                     <wix-image id="img_comp-l34o73tv_0" class="_1-6YJ _2Ms4G">
                         <img src="images/rieslingSilvaner.png"
@@ -349,59 +303,32 @@
                 </div>
             </div>
         </div>
-        <div id="comp-l473ypts" data-aos="fade-right" class="_1KV2M">
+        <div id="comp-l473ypts" data-aos="fade-right" class="_1KV2M single__content single__content--title">
             <div data-mesh-id="comp-l473yptsinlineContent"
                  data-testid="inline-content" class="">
                 <div data-mesh-id="comp-l473yptsinlineContent-gridContainer"
-                     data-testid="mesh-container-content">
-                    <div id="comp-l34qh194" class="single-products__title _2Hij5 _3bcaz"
+                     data-testid="mesh-container-content" class="mesh-container-content">
+                    <div id="comp-l34qh194" class="_2Hij5 _3bcaz product__title"
                          data-testid="richTextElement"
                          style="visibility: inherit;" data-angle="0"
                          data-angle-style-location="style"
                          data-screen-in-hide="done">
-                        <h1 class="font_0"
-                            style="line-height:normal; font-size:22px;">
-                     <span style="color:#131313;"><span
-                             style="font-family:wfont_15f976_ebe9a5fc33214fbaaf57c2d3e677a13d,wf_ebe9a5fc33214fbaaf57c2d3e,orig_circe_thin;"><span
-                             style="font-size:25px;">«</span></span><span
-                             style="font-family:wfont_15f976_749905c3fc37460e8676ef88a3992c88,wf_749905c3fc37460e8676ef88a,orig_circe_bold;"><span
-                             style="font-size:40px;">Riesling-Silvaner</span></span><span
-                             style="font-family:wfont_15f976_ebe9a5fc33214fbaaf57c2d3e677a13d,wf_ebe9a5fc33214fbaaf57c2d3e,orig_circe_thin;"><span
-                             style="font-size:25px;">»</span></span></span>
+                        <h1 class="font_0 ">
+                            <span class="quote quote--light">«</span>Riesling-Silvaner<span
+                                class="quote quote--light">»</span>
                         </h1>
-                        <div class="single-products__label">
-
-                            <div id="comp-l34qh18y" class="_2Hij5 _3bcaz"
-                                 data-testid="richTextElement"
-                                 style="visibility: inherit;" data-angle="0"
-                                 data-angle-style-location="style"
-                                 data-screen-in-hide="done">
-                                <p class="font_7"
-                                   style="font-size:12px; line-height:normal;">
-                     <span style="font-family:wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;"><span
-                             style="color:#131313;"><span
-                             style="font-size:12px;"><span
-                             style="letter-spacing:normal;">УРОЖАЙ 2021</span></span></span></span>
-                                </p>
-                            </div>
-                            <div id="comp-l34o73tf" class="_3VCpz"
-                                 style="visibility: inherit;" data-angle="0"
-                                 data-angle-style-location="style"
-                                 data-screen-in-hide="done"></div>
-                        </div>
                     </div>
+                    <div id="comp-l34qh18y" class="_2Hij5 _3bcaz  product__title-label">
+                        <p class="font_7">
+                            УРОЖАЙ 2021
+                        </p>
+                    </div>
+                    <div id="comp-l34o73tf" class="_3VCpz border-line"
+                         style="visibility: inherit;" data-angle="0"
+                         data-angle-style-location="style"
+                         data-screen-in-hide="done"></div>
 
                 </div>
-            </div>
-        </div>
-        <div id="comp-l475bhix" data-aos="fade-right" class="_1A4nG _2S73V"
-             style="visibility: inherit;" data-angle="0"
-             data-angle-style-location="style" data-screen-in-hide="done">
-            <div data-testid="linkElement" class="_2f5Ce fanc">
-                <a data-fancybox="gallery" class="" data-ratio="2" href="images/2.jpg">
-                    <div class="big slide" style="background-image: url(images/rieslingSilvaner-min.jpg);">
-                    </div>
-                </a>
             </div>
         </div>
     </div>
@@ -423,16 +350,14 @@
                 <span>contact - </span><a href="mail:vibeswine@yandex.ru">vibeswine@yandex.ru</a>
             </div>
             <div class="copyright">
-                <span>VIBES</span> - команда сплотившаяся c целью создать вино & поделиться с миром посредством него
-                своими
-                настроением,
-                любовью и опытом.
+                <span>VIBES</span> - наша сплоченная команда создает вино и через него делится с миром своим
+                настроением, любовью и опытом.
             </div>
         </div>
         <div class="center">
             <a href="./silvaner.html">2021 | SILVANER</a>
-            <a href="./rieslingSilvaner.html">2021 | RIESLING-SILVANER</a>
-            <a href="./chardonnayBarrel.html">2021 | CHARDONNAY BARREL</a>
+            <a href="rieslingSilvaner-delete.html">2021 | RIESLING-SILVANER</a>
+            <a href="chardonnayBarrel-delete.html">2021 | CHARDONNAY BARREL</a>
             <a href="./cabernetFrancPinotNoir.html">2021 | CABERNET FRANС</a>
             <a href="./pinotGrigio.html">2021 | PINOT GRIGIO</a>
         </div>
@@ -449,25 +374,25 @@
                     </form>
                 </div>
                 <div class="social">
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/vk.webp" alt="Вконтакте">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/instagram.webp" alt="Инстаграм">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/youtube.webp" alt="Ютуб">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/whatsapp.webp" alt="Ватсап">
                     </a>
-                    <a href="#" target="_blank" >
+                    <a href="#" target="_blank">
                         <img src="images/social/telegram.webp" alt="Телеграм">
                     </a>
                 </div>
             </div>
             <div class="partners">
-                <a href="#" >
+                <a href="#">
                     <img src="images/part.webp" alt="Adson">
                 </a>
             </div>
@@ -487,7 +412,7 @@
             сайт подтвердите, пожалуйста, свое совершеннолетие.
         </div>
         <div class="btns">
-            <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup" >Мне есть 18+</a>
+            <a href="#" onclick="ClosePopupTimer('check-age')" class="btn-popup">Мне есть 18+</a>
             <a href="http://www.consultant.ru/document/cons_doc_LAW_8368/" target="_blank" class="btn-popup"
             >Мне нет 18</a>
         </div>
@@ -509,7 +434,7 @@
             <input type="text" placeholder="Имя">
             <input type="text" placeholder="Телофон">
             <div class="btns">
-                <button class="btn-popup" >Позвоните мне</button>
+                <button class="btn-popup">Позвоните мне</button>
             </div>
         </form>
     </div>
@@ -544,7 +469,7 @@
             <input type="email" placeholder="Email"/>
             <input type="password" placeholder="Password"/>
             <div class="btns">
-                <button class="btn-popup" >Зарегестрироваться</button>
+                <button class="btn-popup">Зарегестрироваться</button>
             </div>
         </form>
     </div>
@@ -563,7 +488,7 @@
             <input type="password" placeholder="Password"/>
             <a href="#">Забыли пароль?</a>
             <div class="btns">
-                <button class="btn-popup" >Войти</button>
+                <button class="btn-popup">Войти</button>
             </div>
         </form>
     </div>
