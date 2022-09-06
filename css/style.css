@@ -31134,7 +31134,7 @@ footer .container {
 
     .project > div .left .menu-items {
         gap: 15px;
-        margin-left: 6px;
+        /*margin-left: 6px;*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
