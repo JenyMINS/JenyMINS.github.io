@@ -31042,9 +31042,9 @@ overflow: hidden;
         letter-spacing: 0.81em;
         padding-left: 18px;
     }
-    footer > div .left .logo a .text-logo .head .span{
+    footer > div .left .logo a .text-logo .head span{
         padding: 0 !important;
-        margin-left: -15px;
+        margin-left: -15px !important;
     }
     footer > div .left .logo a .text-logo {
         margin-left: 0;
