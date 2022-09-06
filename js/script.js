@@ -1,6 +1,5 @@
 window.onload = function () {
 
-
     const body = document.querySelector('body')
     const menuBtn = document.querySelector('.js-menu-mobile')
     const navMenu = document.querySelector('.right-menu')
@@ -253,20 +252,20 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
 });
 
-const searchBtn = document.querySelector('.js-search')
-const searchBtnInput = document.querySelector('.search-input')
-const searchBtnCross = document.querySelector('.js-cross')
+const searchBtn = $('.js-search')
+const searchBtnInput = $('.search-input')
+const searchBtnCross = $('.js-cross')
 if (searchBtn) {
-    searchBtn.addEventListener('click', () => {
-        searchBtnInput.classList.add('ON6A2O')
-        searchBtnCross.classList.add('active')
+    searchBtn.click(() => {
+        searchBtnInput.addClass('ON6A2O')
+        searchBtnCross.addClass('active')
     })
 }
 
 if (searchBtnCross) {
-    searchBtnCross.addEventListener('click', () => {
-        searchBtnInput.classList.remove('ON6A2O')
-        searchBtnCross.classList.remove('active')
+    searchBtnCross.click(() => {
+        searchBtnInput.removeClass('ON6A2O')
+        searchBtnCross.removeClass('active')
     })
 }
 
@@ -304,14 +303,25 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires=" + d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-const  innerWidth = window.innerWidth
+
+const innerWidth = window.innerWidth
 const textBlock = document.querySelector('.text-block .text')
 const imagesBlock = document.querySelector('.text-block .images')
 
-if(innerWidth <= 768){
+if (innerWidth <= 768) {
     if (textBlock && imagesBlock) {
         textBlock.setAttribute('data-aos', 'fade-down')
         imagesBlock.setAttribute('data-aos', 'fade-down')
     }
 }
 
+if ($(document).width() <= 768) {
+    $('#wixViewport').remove()
+    $('#utf').after($('<meta name="viewport" content="width=320, user-scalable=yes" id="wixMobileViewport">'));
+} else {
+    $('#wixViewport').remove()
+
+    $('#wixMobileViewport').remove()
+    $('#utf').after($('     <meta name="viewport" content="width=device-width, initial-scale=1.0" id="wixViewport">'));
+
+}
