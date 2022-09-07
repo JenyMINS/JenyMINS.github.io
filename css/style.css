@@ -30689,6 +30689,7 @@ footer > div .right .partners a img{
 
     [data-mesh-id=comp-l31uyxb8inlineContent-gridContainer] > .products__wrap-title {
         margin-bottom: 9px;
+        justify-content: space-between !important;
     }
 
     .products-list {
@@ -30746,7 +30747,9 @@ footer > div .right .partners a img{
         width: 100%;
         margin: 0 auto 50px auto;
     }
-
+    .products-list .product__item-description br{
+        display: none;
+    }
     .products-list .product__item-description {
         font-size: 10px;
         text-align: justify;
