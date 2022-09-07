@@ -30257,6 +30257,9 @@ footer > div .right .partners a img {
         font-size: 13px;
         max-width: 236px;
         margin-left: 9px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
     }
     .popup .left form{
         width: 274px;
