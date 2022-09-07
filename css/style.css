@@ -29516,13 +29516,13 @@ footer .container {
 }
 
 .quote {
-    font-family: wfont_15f976_69e8894da4e64fad9ea4d2ea49e7674e, wf_69e8894da4e64fad9ea4d2ea4, orig_circe_extralight;
+    font-family: wfont_15f976_ebe9a5fc33214fbaaf57c2d3e677a13d,wf_ebe9a5fc33214fbaaf57c2d3e,orig_circe_thin;
     font-size: 40px;
     color: #131313;
 }
 
 .title-1 b {
-    font-family: wfont_183f4d_f9481fa8dc8c4f7b82a1a71b4a5c172c, wf_f9481fa8dc8c4f7b82a1a71b4, orig_madeevolvesansbold;
+    font-family: wfont_183f4d_f9481fa8dc8c4f7b82a1a71b4a5c172c, wf_f9481fa8dc8c4f7b82a1a71b4, orig_madeevolvesansbold !important;
     letter-spacing: 0.1em;
 }
 
@@ -30224,6 +30224,7 @@ footer > div .right .partners a img{
 }
 
 @media only screen and (max-width: 768px) {
+
     .products__title{
         width: 100% !important;
         left: 0 !important;
@@ -30711,7 +30712,7 @@ footer > div .right .partners a img{
     }
 
     .intro-large {
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .products-list .products__text {
@@ -30746,6 +30747,9 @@ footer > div .right .partners a img{
         min-width: unset;
         width: 100%;
         margin: 0 auto 50px auto;
+    }
+    .products-list > .products__item:last-child{
+        margin-bottom: 60px !important;
     }
     .products-list .product__item-description br{
         display: none;
