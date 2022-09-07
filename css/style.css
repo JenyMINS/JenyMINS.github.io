@@ -3436,11 +3436,11 @@ footer > div .right .contacts .title-line .text {
     font-family: var(--font-light);
     max-width: 97px;
     width: 100%;
-    font-size: 12px;
+    font-size: 10px;
     margin-right: 22px;
     text-align: right;
     margin-top: 13px;
-    line-height: 15.5px;
+    line-height: 13.5px;
 }
 
 footer > div .right .contacts .title-line .title {
@@ -29792,7 +29792,13 @@ footer .container {
     font-family: wfont_15f976_69e8894da4e64fad9ea4d2ea49e7674e, wf_69e8894da4e64fad9ea4d2ea4, orig_circe_extralight;
 
 }
-
+footer > div .right .contacts .social a img{
+    width: 26px;
+    height: 26px;
+}
+footer > div .right .partners a img{
+    width: 161px;
+}
 @media only screen and (max-width: 1040px) {
     ._20oHq img {
         width: 200px !important;
@@ -30218,6 +30224,16 @@ footer .container {
 }
 
 @media only screen and (max-width: 768px) {
+    footer > div .right .partners a img{
+        width: 127px;
+    }
+
+    footer > div .right .contacts .mailing{
+        margin-bottom: 15px !important;
+    }
+    footer > div .right .contacts .title-line{
+        margin-bottom: 25px !important;
+    }
     .news > div .news-list .news-item .background-black .bottom .name a {
         font-size: 17px !important;
     }
@@ -30981,7 +30997,7 @@ footer .container {
         max-width: 114px;
         font-size: 15px;
         top: 11px;
-        right: 24px;
+        right: 14px;
         padding: 9px 0;
     }
 
@@ -30994,6 +31010,7 @@ footer .container {
         font-size: 15px;
         padding: 18.3px 0 18.3px 30px;
         max-width: 256px;
+        margin-left: -10px;
     }
 
     footer > div .right .contacts .title-line .title {
@@ -31012,31 +31029,32 @@ footer .container {
 
     footer > div .center a {
         font-size: 12.8571px;
+        margin: 8px 0 !important;
     }
 
     footer > div .left .email {
         padding-left: 20px;
         position: absolute;
         transform: rotate(-90deg);
-        left: -45px;
-        bottom: -150px;
+        left: -34px;
+        bottom: -144px;
         white-space: nowrap;
     }
 
     footer > div .left .email a {
-        font-size: 9px;
+        font-size: 8px;
 
     }
 
     footer > div .left .email span {
-        font-size: 9px;
+        font-size: 8px;
 
     }
 
     footer > div .center {
         margin: 0 auto;
-        margin-top: 20px;
-        padding-left: 20px;
+        margin-top: 5px;
+        padding-left: 28px;
 
     }
 
@@ -31247,7 +31265,7 @@ footer .container {
     }
 
     header .right-menu .navbar {
-        padding-top: 132px;
+        padding-top: 173px;
 
     }
 
@@ -31271,6 +31289,7 @@ footer .container {
 
     header .right-menu.active {
         z-index: 1;
+        background-size: 111% auto !important;
     }
 
     .profile-btn.active {
