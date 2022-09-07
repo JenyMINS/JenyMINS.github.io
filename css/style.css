@@ -30224,6 +30224,9 @@ footer > div .right .partners a img{
 }
 
 @media only screen and (max-width: 768px) {
+    .hero ._2L00W img{
+        min-height: 242px;
+    }
     footer > div .right .partners a img{
         width: 127px;
     }
@@ -30745,7 +30748,7 @@ footer > div .right .partners a img{
     }
 
     [data-mesh-id=comp-l2z4m9drinlineContent] {
-        min-height: 167px;
+        min-height: 242px;
     }
 
     .hero {
