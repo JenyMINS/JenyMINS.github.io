@@ -29802,6 +29802,10 @@ footer > div .right .partners a img {
     width: 161px;
 }
 
+#check-age .right img {
+    height: 100%;
+}
+
 @media only screen and (max-width: 1040px) {
     ._20oHq img {
         width: 200px !important;
@@ -30227,33 +30231,86 @@ footer > div .right .partners a img {
 }
 
 @media only screen and (max-width: 768px) {
-    .popup .left .images::after{
+    #check-age .left{
+        padding: 41px 0px 90px 0;
+    }
+    #check-age .left .btns a{
+        width: 267px;
+    }
+    #check-age .left .btns{
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #check-age .left .btns a {
+        font-family: wfont_15f976_de76388761304ca69f992abb9503ce6c, wf_de76388761304ca69f992abb9, orig_circe_light;
+    }
+
+    #check-age .left .text b {
+        font-family: wfont_15f976_749905c3fc37460e8676ef88a3992c88, wf_749905c3fc37460e8676ef88a, orig_circe_bold !important;
+    }
+
+    #check-age .left .text {
+        width: 277px !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .popup .left .age {
+        font-size: 120px;
+        width: 100%;
+        margin: -20px auto 3px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #check-age .right {
+        height: 302px !important;
+
+    }
+
+    #check-age .right img {
+        height: 302px !important;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .popup .left {
+        order: 2;
+    }
+
+    .popup .left .images::after {
         width: 34px;
         height: 37px;
         background-image: url(../images/modal-logo.png);
     }
-    .popup .left{
-        padding: 41px 0px 75px 0;
 
+    .popup .left {
+        padding: 41px 0px 75px 0;
     }
+
     .popup .left form .btns .btn-popup {
         max-width: 253px;
         width: 100%;
         padding: 19px 40px;
-        font-family: wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;
+        font-family: wfont_15f976_de76388761304ca69f992abb9503ce6c, wf_de76388761304ca69f992abb9, orig_circe_light;
     }
-    .popup .left form .btns{
-        margin: 23px 0 0 0 ;
+
+    .popup .left form .btns {
+        margin: 23px 0 0 0;
         width: 100%;
         max-width: 253px;
         padding-left: 10px;
         padding-bottom: 40px;
     }
+
     .popup .left form input:hover {
         border-bottom: 1px solid var(--color-black);
         margin-bottom: -1px;
     }
-    .popup .left form input{
+
+    .popup .left form input {
         font-size: 13px;
         max-width: 236px;
         margin-left: 9px;
@@ -30261,43 +30318,51 @@ footer > div .right .partners a img {
         border-left: none;
         border-right: none;
     }
-    .popup .left form{
+
+    .popup .left form {
         width: 274px;
         margin-right: 0;
         align-items: center;
         margin: 0 auto;
 
     }
-    .popup .left .title{
+
+    .popup .left .title {
         letter-spacing: -0.05em;
         margin-bottom: 15px;
         margin-right: 30px;
-        font-family: wfont_15f976_69e8894da4e64fad9ea4d2ea49e7674e,wf_69e8894da4e64fad9ea4d2ea4,orig_circe_extralight;
+        font-family: wfont_15f976_69e8894da4e64fad9ea4d2ea49e7674e, wf_69e8894da4e64fad9ea4d2ea4, orig_circe_extralight;
     }
-    .popup .left .text{
+
+    .popup .left .text {
         text-align: justify;
         margin-left: 38px;
         font-size: 10px;
         margin-right: 30px;
-        font-family: wfont_15f976_de76388761304ca69f992abb9503ce6c,wf_de76388761304ca69f992abb9,orig_circe_light;
+        font-family: wfont_15f976_de76388761304ca69f992abb9503ce6c, wf_de76388761304ca69f992abb9, orig_circe_light;
     }
-    .popup .left .images{
+
+    .popup .left .images {
         order: 4;
         position: relative;
         left: 0;
         width: 100%;
         justify-content: center;
     }
-    .popup .left .title p{
+
+    .popup .left .title p {
         display: inline-block;
     }
-    .popup .left .title{
+
+    .popup .left .title {
         font-size: 35px;
     }
-    .popup .right a svg{
+
+    .popup .right a svg {
         width: 29px;
         height: 32px;
     }
+
     .popup .right a {
         top: unset;
         bottom: 20px;
@@ -30306,11 +30371,15 @@ footer > div .right .partners a img {
     }
 
     .popup {
-        flex-direction: column-reverse;
+        flex-direction: column;
         overflow-x: scroll;
         height: 101%;
+        bottom: 0;
+        margin: 0;
+        justify-content: unset;
+        max-width: 320px;
         top: 0 !important;
-        transform: unset !important;
+        transform: translateY(0);
         min-height: unset !important;
     }
 
