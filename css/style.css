@@ -30224,6 +30224,10 @@ footer > div .right .partners a img{
 }
 
 @media only screen and (max-width: 768px) {
+    .products__title{
+        width: 100% !important;
+        left: 0 !important;
+    }
     .hero ._2L00W img{
         min-height: 242px;
     }
@@ -30684,7 +30688,7 @@ footer > div .right .partners a img{
     }
 
     [data-mesh-id=comp-l31uyxb8inlineContent-gridContainer] > .products__wrap-title {
-        margin-bottom: 15px;
+        margin-bottom: 9px;
     }
 
     .products-list {
@@ -30697,7 +30701,7 @@ footer > div .right .partners a img{
 
     .products-list .products__link {
         margin: 0 auto;
-        height: 351px;
+        height: 340px;
     }
 
     #img_comp-l2z4933g1_0 {
@@ -30745,6 +30749,7 @@ footer > div .right .partners a img{
 
     .products-list .product__item-description {
         font-size: 10px;
+        text-align: justify;
     }
 
     [data-mesh-id=comp-l2z4m9drinlineContent] {
@@ -30774,7 +30779,7 @@ footer > div .right .partners a img{
 
     .intro {
         width: auto;
-        margin: 60px auto 31px;
+        margin: 60px auto 50px;
     }
 
     #comp-l2z8v7a0, #comp-l2z8v7b9 {
@@ -30787,6 +30792,7 @@ footer > div .right .partners a img{
 
     .list-description {
         font-size: 15px;
+        padding: 0 5px;
     }
 
     .title-1 {
