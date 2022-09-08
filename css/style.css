@@ -30369,6 +30369,15 @@ footer > div .right .partners a img {
 }
 
 @media only screen and (max-width: 768px) {
+    .products__item--rotate .products__label{
+        margin-right: 0 !important;
+    }
+    footer > div .right .contacts .social{
+        max-width: unset !important;
+        width: 100%;
+        gap: 28px !important;
+        margin-left: 16px !important;
+    }
     #check-age .left{
         padding: 41px 0px 90px 0;
     }
@@ -30552,6 +30561,7 @@ footer > div .right .partners a img {
 
     footer > div .right .contacts .title-line {
         margin-bottom: 25px !important;
+        transform: translateX(-18px);
     }
 
     .news > div .news-list .news-item .background-black .bottom .name a {
@@ -31340,12 +31350,13 @@ footer > div .right .partners a img {
     footer > div .right .contacts .mailing form input {
         font-size: 15px;
         padding: 18.3px 0 18.3px 30px;
-        max-width: 256px;
+        max-width: 258px;
         margin-left: -10px;
     }
 
     footer > div .right .contacts .title-line .title {
         font-size: 29px;
+        letter-spacing: 0.7em;
     }
 
     footer {
@@ -31394,16 +31405,16 @@ footer > div .right .partners a img {
     }
 
     footer > div .left .copyright {
-        padding-left: 20px;
+        padding-left: 18px;
         text-align: justify;
         width: auto;
-        padding-right: 15px;
+        padding-right: 20px;
     }
 
     footer > div .left .logo a .text-logo .down {
         position: absolute;
         top: 92px;
-        left: 195px;
+        left: 184px;
         font-size: 18px;
         transform: rotate(-90deg);
         white-space: nowrap;
@@ -31411,8 +31422,8 @@ footer > div .right .partners a img {
 
     footer > div .left .logo a .text-logo .head {
         font-size: 52px;
-        letter-spacing: 0.75em;
-        padding-left: 18px;
+        letter-spacing: 0.73em;
+        padding-left: 17px;
     }
 
     footer > div .left .logo a .text-logo .head span {
@@ -31501,7 +31512,7 @@ footer > div .right .partners a img {
         position: absolute;
         right: -39px;
         transform: rotate(90deg);
-        bottom: 156px;
+        bottom: 167px;
         font-size: 11px;
     }
 
@@ -31592,7 +31603,7 @@ footer > div .right .partners a img {
     }
 
     header .left-menu .link-menu > div:last-child {
-        margin-left: 7px;
+        margin-left: 9px;
     }
 
     header .right-menu .navbar {
@@ -31633,10 +31644,10 @@ footer > div .right .partners a img {
         font-family: MADEEvolveSansBold, sans-serif;
         font-weight: bold;
         color: #ffffff;
-        left: 169px;
+        left: 164px;
         top: 81px;
         font-size: 36px;
-        letter-spacing: 0.6em;
+        letter-spacing: 0.7em;
         transform: rotate(270deg);
     }
 
