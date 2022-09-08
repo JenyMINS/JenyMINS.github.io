@@ -1,3 +1,87 @@
+(function r() {
+    var t = !0;
+    window.requestCloseWelcomeScreen = function () {
+        t = !0
+    };
+    var e = document.getElementById("welcome-screen"), n = document.getElementById("welcome-screen-background"),
+        r = document.getElementById("welcome-screen-logo");
+
+    function o(t) {
+        return new Promise((function (e) {
+            return setTimeout(e, t)
+        }))
+    }
+
+    function i(t) {
+        return new Promise((function (e) {
+            return t.addEventListener("animationend", e, {once: !0})
+        }))
+    }
+
+    function a(t) {
+        e.className = "welcome-screen-state-" + t
+    }
+
+    function s() {
+        a("static")
+    }
+
+    function c() {
+        return a("logo-intro"), i(r)
+    }
+
+    function u() {
+        return (a("bg-intro"), i(n)).then(c)
+    }
+
+    function l() {
+        return a("outro"), i(n)
+    }
+
+    function p() {
+        return a("loop"), e = r, n = function () {
+            return t
+        }, new Promise((function (t) {
+            e.addEventListener("animationiteration", (function r() {
+                n() && (e.removeEventListener("animationiteration", r), t())
+            }))
+        }));
+        var e, n
+    }
+
+    return e.addEventListener("touchstart", (function (t) {
+        return t.preventDefault()
+    })), {
+        play: function () {
+            return u().then((function () {
+                return o(1500)
+            })).then((function () {
+                return t ? null : p()
+            })).then((function () {
+                return l()
+            })).then((function () {
+                return e.remove()
+            }))
+        }, playStatic: s, playLogoIntro: c, playIntro: u, playIntroAndOutro: function () {
+            return u().then((function () {
+                return o(500)
+            })).then((function () {
+                return l()
+            })).then((function () {
+                return o(1e3)
+            })).then((function () {
+                return s()
+            }))
+        }
+    }
+})().play();
+
+
+
+
+
+
+
 window.onload = function () {
 
     const body = document.querySelector('body')
@@ -137,6 +221,7 @@ function ClosePopupTimer(id) {
 
 // Попап по ссылке
 function OpenPopup(id) {
+
     let popup = $('#' + id),
         delay2Open = 100,
         delayOpen = 1000;
@@ -268,6 +353,28 @@ if (searchBtnCross) {
         searchBtnCross.removeClass('active')
     })
 }
+// var Reloaded  = function(){
+//     setCookie('loaded', 'load', 1);
+// } //страницу перезагрузили
+
+// window.onload = function() {
+//     var loaded = sessionStorage.getItem('loaded');
+//     if(loaded) {
+//         Reloaded();
+//
+//         console.log('1')
+//     } else {
+//         sessionStorage.setItem('loaded', true);
+//         console.log('2')
+//     }
+// }
+// if (getCookie('loaded') != 'load') {
+//     if (getCookie('loaded') != 'closed') {
+//         // $('.popup-checkage').css("display", "flex").hide().fadeIn();
+//         console.log('adsad')
+//     }
+// }
+
 
 if (getCookie('popupCookie') != 'submited') {
     if (getCookie('popupCookie') != 'closed') {
