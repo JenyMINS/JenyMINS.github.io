@@ -372,19 +372,19 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .fancybox__container.active-info .fancybox__carousel{
     z-index: 30;
-    width: 70%;
+    width: 100%;
     overflow: visible;
 }
 .fancybox__container.active-info:after{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 48px;
-    width: 29%;
-    height: 100%;
-    background: #EBEBEB;
-    color: black;
-    z-index: 11111;
+    /*content: '';*/
+    /*position: absolute;*/
+    /*right: -18%;*/
+    /*top: 48px;*/
+    /*width: 29%;*/
+    /*height: 100%;*/
+    /*background: #EBEBEB;*/
+    /*color: black;*/
+    /*z-index: 11111;*/
 }
 .fancybox__container.active-info .fancybox__toolbar {
     z-index: 10000;
@@ -396,8 +396,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .fancybox__container.active-info .fancybox__slide {
     max-width: 80%;
-    margin-left: 77px;
-    margin-right: 77px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .fancybox__container.active-info .fancybox__nav .carousel__button.is-prev {
