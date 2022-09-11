@@ -334,7 +334,6 @@ function getText() {
     $('.slide-name__title').html()
     $('.fancybox__content').append($('.slide-name__title').html())
 }
-
 Fancybox.bind('[data-fancybox="gallery"]', {
     caption: function (fancybox, carousel, slide) {
         return (
