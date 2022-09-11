@@ -405,7 +405,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 .fancybox__container.active-info .fancybox__nav .carousel__button.is-next {
-    right: 23px;
+    right: 34%;
 }
 
 .fancybox__carousel.has-dots {
