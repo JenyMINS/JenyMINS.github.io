@@ -357,15 +357,6 @@ Fancybox.bind('[data-fancybox="gallery"]', {
                 return 1;
             },
         },
-        click: function () {
-            // const self = $('.fancybox__content')
-            // const ge = $('.slide-name__title').html()
-            //
-            // console.log(ge)
-            // const ge = $('.slide-name__title').html()
-            // self.append(ge);
-        },
-
     },
     Toolbar: {
         autoEnable: false,
@@ -453,6 +444,12 @@ if (innerWidth <= 768) {
         imagesBlock.setAttribute('data-aos', 'fade-down')
     }
 }
+$(".open-sub-menu").click(() => {
+    $(".sub-menu__list").toggleClass('active')
+    $(".open-sub-menu").toggleClass('active')
+})
+
+
 
 if ($(document).width() <= 768) {
     $('#wixViewport').remove()
@@ -464,9 +461,3 @@ if ($(document).width() <= 768) {
     $('#utf').after($('<meta name="viewport" content="width=device-width, initial-scale=1.0" id="wixViewport">'));
 
 }
-
-$(".open-sub-menu").click(() => {
-    $(".sub-menu__list").toggleClass('active')
-    $(".open-sub-menu").toggleClass('active')
-})
-
