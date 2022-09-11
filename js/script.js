@@ -338,14 +338,14 @@ function getText() {
 Fancybox.bind('[data-fancybox="gallery"]', {
     caption: function (fancybox, carousel, slide) {
         return (
-            ` <div class="slide-name__wrap-title" 
+            ` <div class="slide-name__wrap-title fancybox-slide-title" 
                     style="position: relative; top: unset; left: unset; transform: unset; text-align: center;">
                  <h1 class="slide-name__title" 
-                    style=" font-size: 22px; font-family: wfont_15f976_69e8894da4e64fad9ea4d2ea49e7674e,wf_69e8894da4e64fad9ea4d2ea4,orig_circe_extralight !important">
+                    style=" font-size: 22px;">
                     ${slide.caption}
                   </h1> 
                  <p class="slide-name__label" 
-                    style="font-size: 11px;margin-top: 10px;">
+                    style="margin-top: 10px;">
                     V I B E S
                  </p>
                </div>`
