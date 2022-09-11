@@ -253,6 +253,13 @@ function ClosePopup(id) {
     }, delayClose);
 }
 
+$('#call-back .left .images').click(()=>{
+    $('.popup-call-back').removeClass('active')
+    $('.blackout-background').removeClass('active')
+    $("html, body").animate({
+        scrollTop: 0
+    }, 1000)
+})
 
 // Попап логина
 const signUpButton = $('#signUp'),
@@ -318,6 +325,12 @@ Fancybox.Plugins.Toolbar.defaults.items.slideshow = {
     },
 };
 
+function getText() {
+    console.log('asdsadas')
+    $('.slide-name__title').html()
+    $('.fancybox__content').append($('.slide-name__title').html())
+}
+
 Fancybox.bind('[data-fancybox="gallery"]', {
     Image: {
         Panzoom: {
@@ -326,8 +339,13 @@ Fancybox.bind('[data-fancybox="gallery"]', {
                 return 1;
             },
         },
-        click: ()=>{
-           
+        click: function () {
+            // const self = $('.fancybox__content')
+            // const ge = $('.slide-name__title').html()
+            //
+            // console.log(ge)
+            // const ge = $('.slide-name__title').html()
+            // self.append(ge);
         },
 
     },
