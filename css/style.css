@@ -32149,7 +32149,7 @@ footer > div .right .partners a img {
     }
 
     .nav-menu-btn {
-        right: 0px !important;
+        right: -1px !important;
     }
 
     .logo-label .mobile-text-logo {
