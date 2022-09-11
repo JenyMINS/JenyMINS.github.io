@@ -1,88 +1,92 @@
-(function r() {
-    var t = !0;
-    window.requestCloseWelcomeScreen = function () {
-        t = !0
-    };
-    var e = document.getElementById("welcome-screen"), n = document.getElementById("welcome-screen-background"),
-        r = document.getElementById("welcome-screen-logo");
+setTimeout(function () {
+    setCookie('loaded', 'load', 0.5);
 
-    function o(t) {
-        return new Promise((function (e) {
-            return setTimeout(e, t)
-        }))
-    }
+}, 1000)
+if (getCookie('loaded') === 'load') {
+    $('#welcome-screen').css('display', 'none')
+} else {
+    (function r() {
+        var t = !0;
+        window.requestCloseWelcomeScreen = function () {
+            t = !0
+        };
+        var e = document.getElementById("welcome-screen"), n = document.getElementById("welcome-screen-background"),
+            r = document.getElementById("welcome-screen-logo");
 
-    function i(t) {
-        return new Promise((function (e) {
-            return t.addEventListener("animationend", e, {once: !0})
-        }))
-    }
-
-    function a(t) {
-        e.className = "welcome-screen-state-" + t
-    }
-
-    function s() {
-        a("static")
-    }
-
-    function c() {
-        return a("logo-intro"), i(r)
-    }
-
-    function u() {
-        return (a("bg-intro"), i(n)).then(c)
-    }
-
-    function l() {
-        return a("outro"), i(n)
-    }
-
-    function p() {
-        return a("loop"), e = r, n = function () {
-            return t
-        }, new Promise((function (t) {
-            e.addEventListener("animationiteration", (function r() {
-                n() && (e.removeEventListener("animationiteration", r), t())
-            }))
-        }));
-        var e, n
-    }
-
-    return e.addEventListener("touchstart", (function (t) {
-        return t.preventDefault()
-    })), {
-        play: function () {
-            return u().then((function () {
-                return o(1500)
-            })).then((function () {
-                return t ? null : p()
-            })).then((function () {
-                return l()
-            })).then((function () {
-                return e.remove()
-            }))
-        }, playStatic: s, playLogoIntro: c, playIntro: u, playIntroAndOutro: function () {
-            return u().then((function () {
-                return o(500)
-            })).then((function () {
-                return l()
-            })).then((function () {
-                return o(1e3)
-            })).then((function () {
-                return s()
+        function o(t) {
+            return new Promise((function (e) {
+                return setTimeout(e, t)
             }))
         }
-    }
-})().play();
 
+        function i(t) {
+            return new Promise((function (e) {
+                return t.addEventListener("animationend", e, {once: !0})
+            }))
+        }
 
+        function a(t) {
+            e.className = "welcome-screen-state-" + t
+        }
 
+        function s() {
+            a("static")
+        }
 
+        function c() {
+            return a("logo-intro"), i(r)
+        }
 
+        function u() {
+            return (a("bg-intro"), i(n)).then(c)
+        }
+
+        function l() {
+            return a("outro"), i(n)
+        }
+
+        function p() {
+            return a("loop"), e = r, n = function () {
+                return t
+            }, new Promise((function (t) {
+                e.addEventListener("animationiteration", (function r() {
+                    n() && (e.removeEventListener("animationiteration", r), t())
+                }))
+            }));
+            var e, n
+        }
+
+        return e.addEventListener("touchstart", (function (t) {
+            return t.preventDefault()
+        })), {
+            play: function () {
+                return u().then((function () {
+                    return o(1500)
+                })).then((function () {
+                    return t ? null : p()
+                })).then((function () {
+                    return l()
+                })).then((function () {
+                    return e.remove()
+                }))
+            }, playStatic: s, playLogoIntro: c, playIntro: u, playIntroAndOutro: function () {
+                return u().then((function () {
+                    return o(500)
+                })).then((function () {
+                    return l()
+                })).then((function () {
+                    return o(1e3)
+                })).then((function () {
+                    return s()
+                }))
+            }
+        }
+    })().play();
+}
 
 
 window.onload = function () {
+
 
     const body = document.querySelector('body')
     const menuBtn = document.querySelector('.js-menu-mobile')
@@ -315,6 +319,18 @@ Fancybox.Plugins.Toolbar.defaults.items.slideshow = {
 };
 
 Fancybox.bind('[data-fancybox="gallery"]', {
+    Image: {
+        Panzoom: {
+            zoomFriction: 1,
+            maxScale: function () {
+                return 1;
+            },
+        },
+        click: ()=>{
+           
+        },
+
+    },
     Toolbar: {
         autoEnable: false,
         display: [
@@ -337,6 +353,7 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
 });
 
+
 const searchBtn = $('.js-search')
 const searchBtnInput = $('.search-input')
 const searchBtnCross = $('.js-cross')
@@ -353,27 +370,6 @@ if (searchBtnCross) {
         searchBtnCross.removeClass('active')
     })
 }
-// var Reloaded  = function(){
-//     setCookie('loaded', 'load', 1);
-// } //страницу перезагрузили
-
-// window.onload = function() {
-//     var loaded = sessionStorage.getItem('loaded');
-//     if(loaded) {
-//         Reloaded();
-//
-//         console.log('1')
-//     } else {
-//         sessionStorage.setItem('loaded', true);
-//         console.log('2')
-//     }
-// }
-// if (getCookie('loaded') != 'load') {
-//     if (getCookie('loaded') != 'closed') {
-//         // $('.popup-checkage').css("display", "flex").hide().fadeIn();
-//         console.log('adsad')
-//     }
-// }
 
 
 if (getCookie('popupCookie') != 'submited') {
@@ -429,6 +425,11 @@ if ($(document).width() <= 768) {
     $('#wixViewport').remove()
 
     $('#wixMobileViewport').remove()
-    $('#utf').after($('     <meta name="viewport" content="width=device-width, initial-scale=1.0" id="wixViewport">'));
+    $('#utf').after($('<meta name="viewport" content="width=device-width, initial-scale=1.0" id="wixViewport">'));
 
 }
+
+$(".open-sub-menu").click(() => {
+    $(".sub-menu__list").toggleClass('active')
+    $(".open-sub-menu").toggleClass('active')
+})
