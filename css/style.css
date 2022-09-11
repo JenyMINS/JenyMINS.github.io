@@ -30504,16 +30504,22 @@ footer > div .right .partners a img {
 }
 
 @media only screen and (max-width: 768px) {
-    .fancybox__caption{
+
+    .fancybox__caption {
         display: flex;
+        max-width: unset !important;
     }
-    .fancybox__caption .slide-name__title{
+
+    .fancybox__caption .slide-name__title {
         color: #ffffff;
     }
-    .fancybox__caption .slide-name__label{
-        color: #a3a3a3;
 
+    .fancybox__caption .slide-name__label {
+        color: rgba(163,163,163,1) !important;
+        font-size: 8px !important;
+        letter-spacing: 1px;
     }
+
     .blog-page {
     }
 
@@ -32180,7 +32186,7 @@ footer > div .right .partners a img {
     }
 
     .nav-menu-btn {
-        width: 60px;
+        width: 59px;
         top: 37%;
     }
 
@@ -32189,7 +32195,7 @@ footer > div .right .partners a img {
     }
 
     .nav-menu-btn {
-        right: -1px !important;
+        right: 0px !important;
     }
 
     .logo-label .mobile-text-logo {
