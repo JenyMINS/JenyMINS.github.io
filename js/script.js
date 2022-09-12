@@ -319,22 +319,25 @@ Fancybox.Plugins.Toolbar.defaults.items.slideshow = {
             $('.info-content').removeClass('active')
             $('.fancybox__caption').removeClass('active')
             $('.fancybox__slide').removeClass('active')
+            $('.fancybox__carousel').removeClass('active-info-carousel')
+            $('.fancybox__button--info').removeClass('active')
+            $('.fancybox__track').removeClass('active')
         } else {
             $('.fancybox__container').addClass('active-info')
             $('.info-overlay').addClass('active')
             $('.info-content').addClass('active')
             $('.fancybox__caption').addClass('active')
-            $('.fancybox__slide ').addClass('active')
+            $('.fancybox__slide').addClass('active')
+            $('.fancybox__carousel').addClass('active-info-carousel')
+            $('.fancybox__button--info').addClass('active')
+            $('.fancybox__track').addClass('active')
         }
     },
 };
 
-function getText() {
-    console.log('asdsadas')
-    $('.slide-name__title').html()
-    $('.fancybox__content').append($('.slide-name__title').html())
-}
+
 Fancybox.bind('[data-fancybox="gallery"]', {
+    mainClass: 'init-gallery',
     caption: function (fancybox, carousel, slide) {
         return (
             ` <div class="slide-name__wrap-title fancybox-slide-title" 
@@ -375,6 +378,71 @@ Fancybox.bind('[data-fancybox="gallery"]', {
             html: 'asdasdasd',
             click: function (event) {
                 event.stopPropagation();
+            },
+        },
+    },
+});
+Fancybox.bind('[data-fancybox="about"]', {
+    mainClass: 'init-about',
+    caption: function (fancybox, carousel, slide) {
+        return (
+            ` <div class="slide-name__wrap-title fancybox-slide-title" 
+                    style="position: relative; top: unset; left: unset; transform: unset; text-align: center;">
+                 <h1 class="slide-name__title" 
+                    style=" font-size: 22px;">
+                    ${slide.caption}
+                  </h1> 
+                 <p class="slide-name__label" 
+                    style="margin-top: 10px;">
+                    V I B E S
+                 </p>
+               </div>`
+        );
+    },
+    Image: {
+        Panzoom: {
+            zoomFriction: 1,
+            maxScale: function () {
+                return 1;
+            },
+        },
+    },
+    Toolbar: {
+        autoEnable: false,
+        display: [
+            {id: "fullscreen", position: "left"},
+            "close",
+            "slideshow",
+            "zoomOut",
+            "zoomIn",
+
+        ],
+        download: {
+            type: "div",
+            label: "",
+            class: "fancybox__button--repost",
+            html: 'asdasdasd',
+            click: function (event) {
+                event.stopPropagation();
+            },
+        },
+    },
+    Carousel: {
+        on: {
+            change: () => {
+                // Sync Carousel slide
+                console.log('change')
+                if($('.fancybox__carousel.info-active')){
+                    $('.fancybox__caption').addClass('active')
+                    $('.fancybox__slide').addClass('active')
+                }
+                if($('.fancybox__button--info.info-active')){
+                    $('.fancybox__caption').addClass('active')
+                    $('.fancybox__slide').addClass('active')
+                }
+                // mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+                //     friction: 0,
+                // });
             },
         },
     },
@@ -450,7 +518,6 @@ $(".open-sub-menu").click(() => {
 })
 
 
-
 if ($(document).width() <= 768) {
     $('#wixViewport').remove()
     $('#utf').after($('<meta name="viewport" content="width=320, user-scalable=yes" id="wixMobileViewport">'));
@@ -461,3 +528,5 @@ if ($(document).width() <= 768) {
     $('#utf').after($('<meta name="viewport" content="width=device-width, initial-scale=1.0" id="wixViewport">'));
 
 }
+
+
