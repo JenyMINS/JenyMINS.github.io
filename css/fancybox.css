@@ -393,11 +393,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__container.active-info .fancybox__content {
     width: 80%;
 }
-
+.fancybox__track.active{
+    width: 100%;
+}
 .fancybox__container.active-info .fancybox__slide {
-    max-width: 80%;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 100%;
+    /*margin-left: 200px;*/
+    /*margin-right: 200px;*/
 }
 
 .fancybox__container.active-info .fancybox__nav .carousel__button.is-prev {
@@ -410,6 +412,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__slide.has-caption.has-html5video.is-selected{
     padding-left: 90px !important;
     padding-right: 90px !important;
+    justify-content: center;
 }
 @media only screen and (max-width: 1024px){
     .fancybox__slide.has-caption.has-html5video.is-selected{
@@ -452,12 +455,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     --carousel-button-svg-height: 22px;
 }
 
-.fancybox__slide::before,
-.fancybox__slide::after {
-    content: "";
-    flex: 0 0 0;
-    margin: auto;
-}
+/*.fancybox__slide::before,*/
+/*.fancybox__slide::after {*/
+/*    content: "";*/
+/*    flex: 0 0 0;*/
+/*    margin: auto;*/
+/*}*/
 
 @media all and (min-width: 1024px) {
     .fancybox__slide {
@@ -803,6 +806,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     max-height: 100%;
     object-fit: contain;
 }
+.fancybox__container.init-about.active-info .fancybox__track.active .fancybox__image{
+    object-fit: contain !important;
+    max-height: 500px !important;
+
+
+}
 
 .has-image[data-image-fit="contain-w"] {
     overflow-x: hidden;
@@ -850,6 +859,13 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     min-height: 1px;
     overflow: visible;
 }
+.init-about.active-info .fancybox__slide.has-html5video .fancybox__content {
+    max-width: 950px !important;
+    margin-right: auto;
+    flex-shrink: 1;
+    min-height: 1px;
+    overflow: visible;
+}
 
 .fancybox__carousel .fancybox__slide.has-iframe .fancybox__content,
 .fancybox__carousel .fancybox__slide.has-map .fancybox__content,
@@ -860,7 +876,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .fancybox__carousel .fancybox__slide.has-video .fancybox__content,
 .fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
-    width: 960px;
+    width: 950px ;
     height: 540px;
     max-width: 100%;
     max-height: 100%;

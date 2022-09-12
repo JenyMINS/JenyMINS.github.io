@@ -3690,8 +3690,11 @@ footer > div .right .partners a:hover {
 }
 
 .fancybox__slide {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
+    /*padding-right: 0 !important;*/
+    /*padding-left: 0 !important;*/
+}
+.init-about .fancybox__image{
+    width: 100% !important;
 }
 
 .fancybox__toolbar {
@@ -30024,6 +30027,11 @@ max-width: 1106px;
 .init-about.active-info .fancybox__content{
 max-width: 720px !important;
 }
+.init-about.active-info .fancybox__content .fancybox__slide {
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+}
+
 @media only screen and (max-width: 1040px) {
     ._20oHq img {
         width: 200px !important;
