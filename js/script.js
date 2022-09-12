@@ -260,6 +260,13 @@ $('#call-back .left .images').click(() => {
         scrollTop: 0
     }, 1000)
 })
+$('#login .left .images').click(() => {
+    $('.login').removeClass('active')
+    $('.blackout-background').removeClass('active')
+    $("html, body").animate({
+        scrollTop: 0
+    }, 1000)
+})
 
 // Попап логина
 const signUpButton = $('#signUp'),
