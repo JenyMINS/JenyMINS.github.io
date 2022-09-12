@@ -405,9 +405,18 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 .fancybox__container.active-info .fancybox__nav .carousel__button.is-next {
-    right: 34%;
+    right: 28%;
 }
-
+.fancybox__slide.has-caption.has-html5video.is-selected{
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+}
+@media only screen and (max-width: 1024px){
+    .fancybox__slide.has-caption.has-html5video.is-selected{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
 .fancybox__carousel.has-dots {
     margin-bottom: calc(0.5rem + 22px);
 }
@@ -831,6 +840,12 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .fancybox__carousel .fancybox__slide.has-video .fancybox__content,
 .fancybox__carousel .fancybox__slide.has-html5video .fancybox__content {
     max-width: 100%;
+    flex-shrink: 1;
+    min-height: 1px;
+    overflow: visible;
+}
+.init-about .fancybox__slide.has-html5video .fancybox__content {
+    max-width: 1106px !important;
     flex-shrink: 1;
     min-height: 1px;
     overflow: visible;

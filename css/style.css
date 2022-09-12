@@ -29985,27 +29985,32 @@ footer > div .right .partners a img {
     position: relative;
     color: black;
     /*right: -45%;*/
-    max-width: 232px;
+    max-width: 250px;
     text-align: left;
     width: 100%;
 }
 
-.fancybox__slide.active {
+/*.fancybox__slide.active {*/
+/* */
+/*}*/
+.fancybox__container.active-info .fancybox__track.active .fancybox__slide{
     display: flex;
     flex-direction: row;
 }
-
-.fancybox__caption.active {
+.fancybox__container.active-info .fancybox__track.active .fancybox__caption{
     display: flex;
     align-self: baseline;
     margin-left: 60px;
 }
 
-.fancybox__caption.active .slide-name__wrap-title {
+.fancybox__container.active-info .fancybox__track.active .fancybox__caption .slide-name__title {
     text-align: left !important;
 }
+.fancybox__container.active-info .fancybox__track.active .fancybox__caption .slide-name__label{
+    text-align: left !important;
 
-.fancybox__caption.active .slide-name__title {
+}
+.fancybox__container.active-info .fancybox__track.active .fancybox__caption .slide-name__title {
     font-size: 35px !important;
     margin-bottom: 20px;
     font-family: wfont_15f976_de76388761304ca69f992abb9503ce6c, wf_de76388761304ca69f992abb9, orig_circe_light !important;
@@ -30013,7 +30018,12 @@ footer > div .right .partners a img {
 .fancybox__caption .slide-name__label {
     font-size: 12px;
 }
-
+.init-about .fancybox__content{
+max-width: 1106px;
+}
+.init-about.active-info .fancybox__content{
+max-width: 720px !important;
+}
 @media only screen and (max-width: 1040px) {
     ._20oHq img {
         width: 200px !important;
@@ -30508,7 +30518,7 @@ footer > div .right .partners a img {
 }
 
 @media only screen and (max-width: 768px) {
-    .fancybox__caption.active .slide-name__title{
+    .fancybox__container.active-info .fancybox__track.active .fancybox__caption .slide-name__title{
         margin-bottom: 0;
     }
     .fancybox-slide-title .slide-name__title{
