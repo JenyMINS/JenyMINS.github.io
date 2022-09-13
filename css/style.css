@@ -30031,6 +30031,9 @@ max-width: 720px !important;
     padding-left: 90px !important;
     padding-right: 90px !important;
 }
+.single-product__btn{
+    margin-bottom: 0 !important;
+}
 
 @media only screen and (max-width: 1040px) {
     ._20oHq img {
@@ -30526,6 +30529,12 @@ max-width: 720px !important;
 }
 
 @media only screen and (max-width: 768px) {
+    .single-product__btn--cb{
+        margin-bottom: 134px;
+    }
+    .single-product__btn--rs{
+        margin-bottom: 121px;
+    }
     .fancybox__container.active-info .fancybox__track.active .fancybox__caption .slide-name__title{
         margin-bottom: 0;
     }
