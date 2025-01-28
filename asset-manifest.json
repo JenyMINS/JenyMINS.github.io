@@ -1,12 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.0a31a886.js",
-    "static/js/453.8c281a2e.chunk.js": "/static/js/453.8c281a2e.chunk.js",
+    "main.css": "/static/css/main.93e1bd95.css",
+    "main.js": "/static/js/main.12f3fe2d.js",
+    "static/media/bg.jpg": "/static/media/bg.08f07723ba33de5d0eb6.jpg",
+    "static/media/logo.png": "/static/media/logo.81d87a90fbd6cd9ecad2.png",
+    "static/media/laviossa-medium.woff": "/static/media/laviossa-medium.8c37725ffde13a224428.woff",
+    "static/media/laviossa-medium.woff2": "/static/media/laviossa-medium.9eed066b14ec058fa2ce.woff2",
+    "static/media/Trap-ExtraBold.woff": "/static/media/Trap-ExtraBold.4d59aa9347911134cf75.woff",
+    "static/media/Trap-Regular.woff": "/static/media/Trap-Regular.230143ecd2d6ef26b48f.woff",
+    "static/media/Trap-ExtraBold.woff2": "/static/media/Trap-ExtraBold.ad5d03140d79f993d599.woff2",
+    "static/media/Trap-Regular.woff2": "/static/media/Trap-Regular.6a6b33c0a681e4bdff15.woff2",
     "index.html": "/index.html",
-    "main.0a31a886.js.map": "/static/js/main.0a31a886.js.map",
-    "453.8c281a2e.chunk.js.map": "/static/js/453.8c281a2e.chunk.js.map"
+    "main.93e1bd95.css.map": "/static/css/main.93e1bd95.css.map",
+    "main.12f3fe2d.js.map": "/static/js/main.12f3fe2d.js.map"
   },
   "entrypoints": [
-    "static/js/main.0a31a886.js"
+    "static/css/main.93e1bd95.css",
+    "static/js/main.12f3fe2d.js"
   ]
 }
