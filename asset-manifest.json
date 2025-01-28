@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.93e1bd95.css",
-    "main.js": "/static/js/main.d3cf6e74.js",
+    "main.js": "/static/js/main.828b9e5f.js",
     "static/media/bg.jpg": "/static/media/bg.08f07723ba33de5d0eb6.jpg",
     "static/media/logo.png": "/static/media/logo.81d87a90fbd6cd9ecad2.png",
     "static/media/laviossa-medium.woff": "/static/media/laviossa-medium.8c37725ffde13a224428.woff",
@@ -12,10 +12,10 @@
     "static/media/Trap-Regular.woff2": "/static/media/Trap-Regular.6a6b33c0a681e4bdff15.woff2",
     "index.html": "/index.html",
     "main.93e1bd95.css.map": "/static/css/main.93e1bd95.css.map",
-    "main.d3cf6e74.js.map": "/static/js/main.d3cf6e74.js.map"
+    "main.828b9e5f.js.map": "/static/js/main.828b9e5f.js.map"
   },
   "entrypoints": [
     "static/css/main.93e1bd95.css",
-    "static/js/main.d3cf6e74.js"
+    "static/js/main.828b9e5f.js"
   ]
 }
